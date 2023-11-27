@@ -1,0 +1,36 @@
+/**
+ * @name Discord+ (Source modified)
+ * @author PlusInsta
+ * @authorId 309931975102300160
+ * @authorLink https://plusinsta.xyz
+ * @version 3.2.1
+ * @description For development of the theme. Enable alongside plugins and extras for local editing.
+ * @donate https://ko-fi.com/plusinsta
+ * @website https://plusinsta.github.io/discord-plus
+ * @source https://github.com/PlusInsta/discord-plus
+ * @updateUrl https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css
+ * @invite 2Jwh2nS
+*/
+}
+
+:root {
+	--dplus-icon-home-dark: url(https://plusinsta.github.io/discord-plus/assets/discord/home_dark.svg);
+	--dplus-icon-home-light: url(https://plusinsta.github.io/discord-plus/assets/discord/home_light.svg);
+}
+
+#app-mount .scroller__3d071 {padding-top: var(--dplus-spacing-ui)!important;}
+.tutorialContainer__890ea .childWrapper__01b9c svg {display: none !important;}
+.wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c,
+.wrapper_d281dd:hover .childWrapper__01b9c, .childWrapper__01b9c {
+	background-color: transparent!important; }
+
+.theme-dark .tutorialContainer__890ea .childWrapper__01b9c,
+.theme-light .theme-dark .tutorialContainer__890ea .childWrapper__01b9c,
+.theme-light .tutorialContainer__890ea .childWrapper__01b9c {
+	background-image: var(--dplus-icon-home-dark);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.theme-light .tutorialContainer__890ea .childWrapper__01b9c { background-image: var(--dplus-icon-home-light);
+}
