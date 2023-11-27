@@ -14,8 +14,8 @@
 }
 
 :root {
-	--dplus-icon-home-dark: url(https://plusinsta.github.io/discord-plus/assets/discord/home_dark.svg);
-	--dplus-icon-home-light: url(https://plusinsta.github.io/discord-plus/assets/discord/home_light.svg);
+	--dplus-icon-home-dark: url('https://media.discordapp.net/attachments/1165001024721915934/1178585219025084496/Screenshot_2023-11-27_at_00.36.48.png');
+	--dplus-icon-home-dark: url('https://media.discordapp.net/attachments/1165001024721915934/1178585219025084496/Screenshot_2023-11-27_at_00.36.48.png');
 }
 
 #app-mount .scroller__3d071 {padding-top: var(--dplus-spacing-ui)!important;}
