@@ -1,17 +1,16 @@
 /**
- * @name Discord+ (Source modified)
- * @author PlusInsta
- * @authorId 309931975102300160
- * @authorLink https://plusinsta.xyz
- * @version 3.2.1
- * @description For development of the theme. Enable alongside plugins and extras for local editing.
+ * @name AJRHome
+ * @author JustAundre
+ * @authorId 532681285961777154
+ * @authorLink https://discord.com/channels/@me/532681285961777154
+ * @version 1.0
+ * @description Self-expanatory, changes the home icon to be AJR
  * @donate https://ko-fi.com/plusinsta
  * @website https://plusinsta.github.io/discord-plus
  * @source https://github.com/PlusInsta/discord-plus
  * @updateUrl https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css
  * @invite 2Jwh2nS
 */
-}
 
 :root {
 	--dplus-icon-home-dark: url('https://media.discordapp.net/attachments/1165001024721915934/1178585219025084496/Screenshot_2023-11-27_at_00.36.48.png');
@@ -31,5 +30,8 @@
 	background-size: cover;
 	background-position: center;
 }
-.theme-light .tutorialContainer__890ea .childWrapper__01b9c { background-image: var(--dplus-icon-home-light);
-}
+
+
+.theme-light .tutorialContainer__890ea .childWrapper__01b9c {
+	background-image: var(--dplus-icon-home-light)
+};
