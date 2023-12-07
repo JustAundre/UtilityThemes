@@ -2,6 +2,13 @@
 
 /* Customize things here */
 :root {
+  .layer__2efaa.baseLayer__8fda3 {
+  background-image: var(--background);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
   /* font, change to 'gg sans' for default discord font*/
   --font: "Poppins";
 
@@ -82,10 +89,6 @@
 .shop_b31ed2 /* shop */,
 .wrapper_bd2abe.minimum_ebf000 /* private call */ {
   background: var(--bg4);
-}
-
-.layer__2efaa.baseLayer__8fda3 {
-background-image: var(--background);
 }
 
 .mainCard__8a660 /* forum post */ {
