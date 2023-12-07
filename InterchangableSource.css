@@ -29,30 +29,59 @@
   --roundness-xs: 10px; /* channels, buttons */
   --roundness-xxs: 8px; /* searchbar, small elements */
 
-  /* accent colors */
-  --accent1: hsl(190, 80%, 60%); /* Link colors */
-  --accent2: hsl(190, 80%, 48%); /* Unread/mention elements */
-  --accent3: hsl(190, 80%, 42%); /* Accented button color */
-  --accent4: hsl(190, 80%, 36%); /* Accented button when hovered color */
-  --accent5: hsl(190, 80%, 30%); /* Accented button when clicked */
-  --mention: hsla(190, 80%, 52%, 0.1); /* Mentions & mention messages */
-  --mentionhover: hsla(190, 80%, 52%, 0.05); /* Mentions & mention messages when hovered */
+  /* The color of links. */
+  --accent1: rgb(71, 207, 235);
 
-  /* text colors */
-  --text1: hsl(220, 40%, 90%); /* bright text on colored elements */
-  --text2: hsl(220, 25%, 70%); /* headings and important text */
-  --text3: hsl(220, 15%, 60%); /* normal text */
-  --text4: hsl(220, 15%, 40%); /* icon buttons and channels */
-  --text5: hsl(220, 15%, 25%); /* muted channels/chats and timestamps */
+  /* The color of unread dividers and some indicators. */
+  --accent2: rgb(159, 159, 159);
 
-  /* background and dark colors */
-  --bg1: hsl(220, 15%, 20%); /* dark buttons when clicked */
-  --bg2: hsl(220, 15%, 16%); /* dark buttons */
-  --bg3: hsl(220, 15%, 13%); /* spacing, secondary elements */
-  --bg4: hsl(220, 15%, 10%); /* main background color */
-  --hover: hsla(230, 20%, 40%, 0.1); /* channels and buttons when hovered */
-  --active: hsla(220, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */
-  --message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
+  /* The color of accented buttons. */
+  --accent3: rgb(167, 167, 167);
+
+  /* The color of accented buttons when hovered. */
+  --accent4: rgb(176, 176, 176);
+
+  /* The color of accented buttons when clicked. */
+  --accent5: rgb(185, 185, 185);
+
+  /* Color of mentions and messages that mention you. */
+  --mention: rgba(78, 78, 78, 1);
+
+  /* Color of mentions and messages that mention you when hovered. */
+  --mentionhover: rgba(35, 198, 231, 0.05);
+
+  /* The color for text on buttons. */
+  --txt1: rgba(219, 226, 240, 1);
+
+  /* The color of headings, and text. */
+  --txt2: rgba(159, 172, 198, 1);
+
+  /* Normal color. */
+  --txt3: rgba(138, 148, 168, 1);
+
+  /* Icons and buttons color. */
+  --txt4: rgba(87, 97, 117, 1);
+
+  /* Muted channels, chats, and timestamps. */
+  --txt5: rgba(54, 61, 73, 1);
+
+  /* The color of dark buttons when clicked. */
+	--bg1: rgba(43, 48, 59, 1);
+
+  /* The standard color of dark buttons. */
+  --bg2: rgba(35, 39, 47, 1);
+
+  /* The color of spacing around panels and secondary elements. */
+  --bg3: rgba(28, 31, 38, 1);
+
+  /* The main background color */
+  --bg4: rgba(22, 24, 29, 1);
+
+  --hover: rgba(82, 88, 122, 0.1); /* channels and buttons when hovered */
+
+  --active: rgba(82, 95, 122, 0.2); /* channels and buttons when clicked or selected */
+
+  --message-hover: rgba(0, 0, 0, 0.1); /* messages when hovered */
 }
 
 :root {
