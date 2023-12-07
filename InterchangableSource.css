@@ -53,10 +53,10 @@
   --text5: hsl(220, 15%, 25%); /* muted channels/chats and timestamps */
 
   /* background and dark colors */
-  --bg1: hsl(220, 15%, 20%); /* dark buttons when clicked */
-  --bg2: hsl(220, 15%, 16%); /* dark buttons */
-  --bg3: hsl(220, 15%, 13%); /* spacing, secondary elements */
-  --bg4: hsl(220, 15%, 10%); /* main background color */
+  --bg1: hsla(220, 15%, 20%, 0.8); /* dark buttons when clicked */
+  --bg2: hsla(220, 15%, 16%, 0.8); /* dark buttons */
+  --bg3: hsla(220, 15%, 13%, 0.8); /* spacing, secondary elements */
+  --bg4: hsla(220, 15%, 10%, 0.8); /* main background color */
   --hover: hsla(230, 20%, 40%, 0.1); /* channels and buttons when hovered */
   --active: hsla(220, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */
   --message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
@@ -720,9 +720,7 @@ button.button_afdfd9 /* small buttons */,
   --divider-strong: hsl(var(--white500-hsl) / 0.16);
   --divider-subtle: hsl(var(--white500-hsl) / 0.08);
   --focus-primary: var(--blue345);
-  --forum-post-extra-media-count-container-background: hsl(
-    var(--primary-660-hsl) / 0.8
-  );
+  --forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl) / 0.8);
   --forum-post-tag-background: hsl(var(--primary-660-hsl) / 0.9);
   --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
   --header-muted: red;
@@ -792,9 +790,7 @@ button.button_afdfd9 /* small buttons */,
   --redesign-button-danger-pressed-background: var(--red460);
   --redesign-button-danger-text: var(--white500);
   --redesign-button-overlay-alpha-background: hsl(var(--black500-hsl) / 0.54);
-  --redesign-button-overlay-alpha-pressed-background: hsl(
-    var(--black500-hsl) / 0.64
-  );
+  --redesign-button-overlay-alpha-pressed-background: hsl(var(--black500-hsl) / 0.64);
   --redesign-button-overlay-alpha-text: var(--white500);
   --redesign-button-overlay-background: var(--white500);
   --redesign-button-overlay-pressed-background: var(--primary230);
@@ -804,16 +800,12 @@ button.button_afdfd9 /* small buttons */,
   --redesign-button-positive-text: var(--white500);
   --redesign-button-primary-alt-background: hsl(var(--brand500-hsl) / 0);
   --redesign-button-primary-alt-border: var(--brand360);
-  --redesign-button-primary-alt-on-blurple-background: hsl(
-    var(--brand530-hsl) / 0
-  );
+  --redesign-button-primary-alt-on-blurple-background: hsl(var(--brand530-hsl) / 0);
   --redesign-button-primary-alt-on-blurple-border: var(--white500);
   --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand530);
   --redesign-button-primary-alt-on-blurple-pressed-border: var(--brand360);
   --redesign-button-primary-alt-on-blurple-text: var(--white500);
-  --redesign-button-primary-alt-pressed-background: hsl(
-    var(--brand-700-hsl) / 0.16
-  );
+  --redesign-button-primary-alt-pressed-background: hsl(var(--brand-700-hsl) / 0.16);
   --redesign-button-primary-alt-pressed-border: hsl(var(--brand400-hsl) / 0.5);
   --redesign-button-primary-alt-pressed-text: var(--brand360);
   --redesign-button-primary-alt-text: var(--brand360);
