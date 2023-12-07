@@ -3,7 +3,7 @@
 /* Customize things here */
 :root {
   /* font, change to 'gg sans' for default discord font*/
-  --font: "Poppins";
+  --font: 'Poppins';
 
   /* color of online status dot, change to #23a55a for default green */
   --online-indicator: var(--accent2);
