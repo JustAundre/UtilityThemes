@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /* Customize things here */
 :root {
   /* font, change to 'gg sans' for default discord font*/
-  --font: "figtree";
+  --font: "Poppins";
 
   /* color of online status dot, change to #23a55a for default green */
   --online-indicator: var(--accent2);
 
   /* top left text */
-  --corner-text: "Midnight";
+  --corner-text: "Interchangable";
 
   /* home icon */
   --moon-icon: block; /* change to none to hide moon icon */
