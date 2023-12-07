@@ -6,7 +6,7 @@
   --font: "Poppins";
 
   /* color of online status dot, change to #23a55a for default green */
-  --online-indicator: var(--accent2);
+  --online-indicator: #23a55a;
 
   /* top left text */
   --corner-text: "Interchangable";
@@ -36,12 +36,7 @@
   --accent4: hsl(190, 80%, 36%); /* accent buttons when hovered */
   --accent5: hsl(190, 80%, 30%); /* accent buttons when clicked */
   --mention: hsla(190, 80%, 52%, 0.1); /* mentions & mention messages */
-  --mention-hover: hsla(
-    190,
-    80%,
-    52%,
-    0.05
-  ); /* mentions & mention messages when hovered */
+  --mention-hover: hsla(190, 80%, 52%, 0.05); /* mentions & mention messages when hovered */
 
   /* text colors */
   --text1: hsl(220, 40%, 90%); /* bright text on colored elements */
@@ -56,12 +51,7 @@
   --bg3: hsl(220, 15%, 13%); /* spacing, secondary elements */
   --bg4: hsl(220, 15%, 10%); /* main background color */
   --hover: hsla(230, 20%, 40%, 0.1); /* channels and buttons when hovered */
-  --active: hsla(
-    220,
-    20%,
-    40%,
-    0.2
-  ); /* channels and buttons when clicked or selected */
+  --active: hsla(220, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */
   --message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
 }
 
@@ -93,6 +83,11 @@
 .wrapper_bd2abe.minimum_ebf000 /* private call */ {
   background: var(--bg4);
 }
+
+.layer__2efaa.baseLayer__8fda3 {
+background-image: var(--background);
+}
+
 .mainCard__8a660 /* forum post */ {
   background: var(--bg3);
 }
