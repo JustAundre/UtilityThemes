@@ -902,4 +902,5 @@ button.button_afdfd9 /* small buttons */,
   --primary-600: var(--bg3); /* delete message preview */
   --primary-630: var(--bg3); /* billing transaction history */
   --primary-660: var(--bg3); /* search popout "enter" bar */
+  }
 }
