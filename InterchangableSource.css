@@ -87,8 +87,8 @@
 .theme-dark .scrollerContainer_bf5dbd /* channels and roles customize */,
 .shop_b31ed2 /* shop */,
 .wrapper_bd2abe.minimum_ebf000 /* private call */ {
-    background: var(--bg4);
-  }
+  background: var(--bg4);
+}
 
   .mainCard__8a660 /* forum post */ {
     background: var(--bg3);
@@ -112,10 +112,10 @@
   }
 
   .chat__52833 /* chat + member list */,
-.sidebar_ded4b5 /* channel sidebar */,
-.privateChannels__93473 .scroller__4b984 /* dms list inner */,
-.theme-dark .innerHeader_afca2f:after /* channels and roles header shadow */,
-.attachedBars_da3c74 /* reply bar underneath */ {
+  .sidebar_ded4b5 /* channel sidebar */,
+  .privateChannels__93473 .scroller__4b984 /* dms list inner */,
+  .theme-dark .innerHeader_afca2f:after /* channels and roles header shadow */,
+  .attachedBars_da3c74 /* reply bar underneath */ {
     background: none;
   }
 
