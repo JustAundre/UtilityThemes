@@ -16,7 +16,7 @@
 }
 
 /*Forces a font size, font family, and max width onto usernames, pings, and channel mentions.*/
-.name__02dbd, .nickname__3d1d7, .username_d30d99, .username_d272d6, .channelWithIcon, .mention, .userTagUsernameBase__75fb1, .botText__19848 {
+.name__02dbd, .nickname__3d1d7, .username_d30d99, .username_d272d6, .channelWithIcon, .mention, .userTagUsernameBase__75fb1 {
 	font-family: 'Poppins';
 	font-size: 16px;
 	width: 45px;
