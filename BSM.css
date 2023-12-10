@@ -11,17 +11,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /*Makes profiles, and actual usernames comepletely hidden.*/
-.wrapper_edb6e0, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127 {
+.wrapper_edb6e0, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524 {
 	opacity: 0;
 }
 
 /*When hovering over the actual username, takes longer to reveal.*/
-.userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover {
+.userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover, .discriminator_aef524:hover {
 	color: red;
 	opacity: 1;
 	width: fit-content;
 	transition: 0.5s ease-in-out;
-	transition-delay: 2.5s;
+	transition-delay: 5s;
 }
 
 /*Slows down the reveal of your actual username when hovering over your user card.*/
