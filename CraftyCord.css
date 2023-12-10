@@ -7,14 +7,13 @@
  * @authorId 532681285961777154
 */
 
-/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!! */
+/* IMPORTANT: Make sure to enable dark mode in discord settings for the theme to apply properly. */
 
 @import url('https://refact0r.github.io/midnight-discord/midnight.css');
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* change colors and variables here */
 :root {
 	/*The code below is for the background!*/
 	.layer__2efaa.baseLayer__8fda3 {
@@ -27,18 +26,18 @@
 
 	/*The code below is for the background blur!*/
 	.container__037ed {
-		backdrop-filter: blur(3px);
+		backdrop-filter: blur('3px');
 	}
 
 	/* Change to 'gg sans' for the default discord font, Poppins, Press Start 2P, and Silkscreen are also font options..*/
 	--font: 'Press Start 2P';
 	--font-codeblocks: 'Silkscreen';
-	--font-primary: var(--font);
-	--font-display: var(--font);
+	--font-primary: var('--font');
+	--font-display: var('--font');
 
 	/*Changes the font for codeblocks*/
 	.codeView__8b1ff, .inline, code {
-		font-family: var(--font-codeblocks);
+		font-family: var('--font-codeblocks');
 }
 
 	/*Rounds off the sharp corners of the large image in your RPC.*/
@@ -53,7 +52,7 @@
 	--roundness: 16px;
 
 	/* color of green online dot, change to #23a55a for default green */
-	--online-indicator: var(--accent-2);
+	--online-indicator: var('--accent-2');
 
 	/* Home button code */
 	--moon-icon: none;
@@ -86,33 +85,43 @@
 
 	/* color of mentions and messages that mention you */
 	--mention: hsla(190, 80%, 52%, 0.1);
+
 	/* color of mentions and messages that mention you when hovered */
 	--mention-hover: hsla(190, 80%, 52%, 0.05);
 
 	/* color of bright text on colored buttons */
 	--text-1: hsl(220, 40%, 90%);
+
 	/* color of headings and important text */
 	--text-2: hsl(220, 25%, 70%);
+
 	/* color of normal text */
 	--text-3: hsl(220, 15%, 60%);
+
 	/* color of icon buttons and channels */
 	--text-4: hsl(220, 15%, 40%);
+
 	/* color of muted channels/chats and timestamps */
 	--text-5: hsl(220, 15%, 25%);
 
 	/* color of dark buttons when clicked */
 	--bg-1: hsla(220, 15%, 20%, 0.8);
+
 	/* color of dark buttons */
 	--bg-2: hsla(220, 15%, 16%, 0.8);
+
 	/* color of spacing around panels and secondary elements */
 	--bg-3: hsla(220, 15%, 13%, 0.8);
+
 	/* main background color */
 	--bg-4: hsla(220, 15%, 10%, 0.8);
 
 	/* color of channels and icon buttons when hovered */
 	--hover: hsla(230, 20%, 40%, 0.1);
+
 	/* color of channels and icon buttons when clicked or selected */
 	--active: hsla(220, 20%, 40%, 0.2);
+
 	/* color of messages when hovered */
 	--message-hover: hsla(220, 0%, 0%, 0.1);
 }
