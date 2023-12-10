@@ -27,7 +27,7 @@
 }
 
 /*When hovering over display names, pings, and channel mentions, they will turn red.*/
-.name__02dbd:hover, .nickname__3d1d7:hover, .username_d30d99:hover, .username_d272d6:hover, .channelWithIcon:hover, .mention:hover, .userTagUsernameBase__75fb1:hover {
+.name__02dbd:hover, .nickname__3d1d7:hover, .username_d30d99:hover, .username_d272d6:hover, .channelWithIcon:hover, .mention:hover {
 	color: red;
 	width: 150px;
 	opacity: 0;
@@ -36,7 +36,7 @@
 }
 
 /*When clicking on display names, pings, and channel mentions, they reveal completely.*/
-.name__02dbd:active, .nickname__3d1d7:active, .username_d30d99:active, .username_d272d6:active, .channelWithIcon:active, .mention:active, .userTagUsernameBase__75fb1 {
+.name__02dbd:active, .nickname__3d1d7:active, .username_d30d99:active, .username_d272d6:active, .channelWithIcon:active, .mention:active {
 	color: red;
 	width: unset;
 	opacity: 1;
