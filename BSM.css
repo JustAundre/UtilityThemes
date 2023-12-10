@@ -29,9 +29,9 @@
 /*When hovering over usernames, pings, and channel mentions, they will turn red.*/
 .name__02dbd:hover, .nickname__3d1d7:hover, .username_d30d99:hover, .username_d272d6:hover, .channelWithIcon:hover, .mention:hover {
 	color: red;
-	width: 200px;
+	width: 150px;
 	opacity: 0;
-	transition: 0.5s ease-in-out;
+	transition: 0.3s ease-in-out;
 	transition-delay: 0.5s;
 }
 
