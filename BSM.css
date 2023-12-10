@@ -1,0 +1,53 @@
+/**
+ * @name BetterStreamerMode
+ * @description A Discord theme made to protect the indentity of the people in your DMs, and servers.
+ * @author JustAundre
+ * @version 1.0.0
+ * @source No source given.
+ * @authorId 532681285961777154
+*/
+
+/*Imports the 'Poppins' font.*/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*Makes profiles, and actual usernames comepletely hidden.*/
+.wrapper_edb6e0, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613 {
+	opacity: 0;
+}
+
+/*Forces a font size, font family, and max width onto usernames, pings, and channel mentions.*/
+.name__02dbd, .nickname__3d1d7, .username_d30d99, .username_d272d6, .channelWithIcon, .mention {
+	font-family: 'Poppins';
+	font-size: 16px;
+	width: 45px;
+	text-wrap: nowrap;
+	overflow: hidden;
+	display: inline-flex;
+	transition: 0.2s ease-in-out;
+}
+
+/*When hovering over usernames, pings, and channel mentions, they will turn red.*/
+.name__02dbd:hover, .nickname__3d1d7:hover, .username_d30d99:hover, .username_d272d6:hover, .channelWithIcon:hover, .mention:hover {
+	color: red;
+	width: 200px;
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+	transition-delay: 0.5s;
+}
+
+/*When clicking on usernames, pings, and channel mentions, they reveal completely.*/
+.name__02dbd:active, .nickname__3d1d7:active, .username_d30d99:active, .username_d272d6:active, .channelWithIcon:active, .mention:active {
+	width: unset;
+	opacity: 1;
+	transition: 0.5s ease-in-out;
+}
+
+/*Hides the image of your/others' Discord RPC*/
+.assetsLargeImageUserPopout__6fc87, .assetsLargeImageUserPopoutV2__01dc1, .assetsLargeImageStreamPreview_db91fd, .assetsLargeImageStreamPreviewXbox_c549ba, .assetsLargeImageUserPopoutXbox__908da, .assetsLargeImageUserPopoutV2Xbox__32def .gameIcon__90c32, .medium__2316b, .gameIcon__71e13{
+	opacity: 0;
+}
+
+/*Hides the title, and mini-text of the aforementioned RPC*/
+.anchor_c8ddc0, .anchorUnderlineOnHover__78236, .bodyLink__0ab7c, .activityName__47e51, .textRow__4750e, .activityText__47ec1 {
+	opacity: 0;
+}
