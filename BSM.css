@@ -15,7 +15,7 @@
 	opacity: 0;
 }
 
-/*Forces a font size, font family, and max width onto usernames, pings, and channel mentions.*/
+/*Forces a font size, font family, and max width onto display names, pings, and channel mentions.*/
 .name__02dbd, .nickname__3d1d7, .username_d30d99, .username_d272d6, .channelWithIcon, .mention, .userTagUsernameBase__75fb1, .text-lg-semibold__18f10 {
 	font-family: 'Poppins';
 	font-size: 16px;
@@ -36,14 +36,14 @@
 }
 
 /*When clicking on display names, pings, and channel mentions, they reveal completely.*/
-.name__02dbd:active, .nickname__3d1d7:active, .username_d30d99:active, .username_d272d6:active, .channelWithIcon:active, .mention:active, .text-lg-semibold__18f10:hover {
+.name__02dbd:active, .nickname__3d1d7:active, .username_d30d99:active, .username_d272d6:active, .channelWithIcon:active, .mention:active, .text-lg-semibold__18f10:active {
 	color: red;
 	width: unset;
 	opacity: 1;
 	transition: 0.5s ease-in-out;
 }
 
-/*When hovering over the ACTUAL username, takes longer to reveal.*/
+/*When hovering over the username, takes longer to reveal.*/
 .userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover {
 	color: red;
 	opacity: 1;
