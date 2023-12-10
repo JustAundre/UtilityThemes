@@ -15,6 +15,15 @@
 	opacity: 0;
 }
 
+/*When hovering over the actual username, takes longer to reveal.*/
+.userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover, .hovered__243e5:hover {
+	color: red;
+	opacity: 1;
+	width: fit-content;
+	transition: 0.5s ease-in-out;
+	transition-delay: 2.5s;
+}
+
 /*Forces a font size, font family, and max width onto display names, pings, and channel mentions.*/
 .name__02dbd, .nickname__3d1d7, .username_d30d99, .username_d272d6, .channelWithIcon, .mention, .userTagUsernameBase__75fb1, .text-lg-semibold__18f10 {
 	font-family: 'Poppins';
@@ -41,15 +50,6 @@
 	width: unset;
 	opacity: 1;
 	transition: 0.5s ease-in-out;
-}
-
-/*When hovering over the actual username, takes longer to reveal.*/
-.userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover, .hovered__243e5:hover {
-	color: red;
-	opacity: 1;
-	width: fit-content;
-	transition: 0.5s ease-in-out;
-	transition-delay: 2.5s;
 }
 
 /*Hides the image of your/others' Discord RPC*/
