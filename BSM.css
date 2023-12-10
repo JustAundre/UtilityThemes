@@ -43,8 +43,8 @@
 	transition: 0.5s ease-in-out;
 }
 
-/*When clicking on the ACTUAL username, takes longer to reveal.*/
-.userTagUsernameBase__75fb1:active {
+/*When hovering over the ACTUAL username, takes longer to reveal.*/
+.userTagUsernameBase__75fb1:hover {
 	color: red;
 	opacity: 1;
 	transition: 0.5s ease-in-out;
