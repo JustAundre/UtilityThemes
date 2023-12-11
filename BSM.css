@@ -43,7 +43,7 @@
 /*When hovering over display names, pings, and channel mentions, they will turn red.*/
 .name__02dbd:hover, .nickname__3d1d7:hover, .username_d30d99:hover, .username_d272d6:hover, .channelWithIcon:hover, .mention:hover, .text-lg-semibold__18f10:hover, .username__81ee6:hover, .titleWrapper__482dc:hover, .text-md-semibold__4cb23:hover {
 	color: red;
-	width: 150px;
+	width: unset;
 	opacity: 0;
 	transition: 0.3s ease-in-out;
 	transition-delay: 0.5s;
@@ -55,6 +55,7 @@
 	width: unset;
 	opacity: 1;
 	transition: 0.5s ease-in-out;
+	transition-delay: 0.5s;
 }
 
 /*Hides the image of your/others' Discord RPC*/
