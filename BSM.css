@@ -1,6 +1,6 @@
 /**
  * @name StreamerMode+
- * @description A Discord theme made to protect the indentity of the people in your DMs, and servers.
+ * @description A Discord theme made to protect the identity of the people in your DMs and servers.
  * @author JustAundre
  * @version 1.0.0
  * @source No source given.
@@ -10,7 +10,7 @@
 /*Imports the 'Poppins' font.*/
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-/*Makes profiles, and actual usernames comepletely hidden.*/
+/*Makes profiles, and actual usernames completely hidden.*/
 .wrapper_edb6e0, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .replyAvatar_cea07c {
 	opacity: 0;
 }
@@ -29,7 +29,7 @@
 	transition: 3.5s ease-in-out;
 }
 
-/*Forces a font size, font family, and max width onto display names, pings, and channel mentions.*/
+/*Forces a font size, font family, and max-width onto display names, pings, and channel mentions.*/
 .name__02dbd, .nickname__3d1d7, .username_d30d99, .username_d272d6, .channelWithIcon, .mention, .userTagUsernameBase__75fb1, .text-lg-semibold__18f10, .username__81ee6, .titleWrapper__482dc, .text-md-semibold__4cb23 {
 	font-family: 'Poppins';
 	font-size: 16px;
@@ -62,12 +62,12 @@
 	opacity: 0;
 }
 
-/*Hides the title, and mini-text of the aforementioned RPC*/
+/*Hides the title and mini-text of the aforementioned RPC*/
 .bodyLink__0ab7c, .activityName__47e51, .textRow__4750e, .activityText__47ec1 {
 	opacity: 0;
 }
 
 /*Lowers attachment/embed opacity.*/
-.clickableWrapper__64072, .embedWrapper_c143d9, .embedFull__8dc21, .embed_d3cbe3, .markup_a7e664, .justifyAuto__70e6c {
+.clickableWrapper__64072, .embedWrapper_c143d9, .embedFull__8dc21, .embed_d3cbe3 {
     opacity: 0.1;
 }
