@@ -41,7 +41,7 @@
 }
 
 /*When hovering over display names, pings, and channel mentions, they will turn red.*/
-.name__02dbd:hover, .nickname__3d1d7:hover, .username_d30d99:hover, .username_d272d6:hover, .channelWithIcon:hover, .mention:hover, .text-lg-semibold__18f10:hover, .username__81ee6:hover {
+.name__02dbd:hover, .nickname__3d1d7:hover, .username_d30d99:hover, .username_d272d6:hover, .channelWithIcon:hover, .mention:hover, .text-lg-semibold__18f10:hover, .username__81ee6:hover, .titleWrapper__482dc:hover {
 	color: red;
 	width: 150px;
 	opacity: 0;
@@ -50,7 +50,7 @@
 }
 
 /*When clicking on display names, pings, and channel mentions, they reveal completely.*/
-.name__02dbd:active, .nickname__3d1d7:active, .username_d30d99:active, .username_d272d6:active, .channelWithIcon:active, .mention:active, .text-lg-semibold__18f10:active, .username__81ee6:active {
+.name__02dbd:active, .nickname__3d1d7:active, .username_d30d99:active, .username_d272d6:active, .channelWithIcon:active, .mention:active, .text-lg-semibold__18f10:active, .username__81ee6:active, .titleWrapper__482dc:active {
 	color: red;
 	width: unset;
 	opacity: 1;
