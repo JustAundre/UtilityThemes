@@ -67,13 +67,7 @@
 	opacity: 0;
 }
 
-/*Lowers attachment/embed opacity, reveals them more clearly if hovered.*/
-.clickableWrapper__64072 {
-    opacity: 0.01;
-}
-
-.clickableWrapper__64072:hover {
-    opacity: 1;
-	transition: 0.3s ease-in-out;
-	transition-delay: 0.5s;
+/*Lowers attachment/embed opacity.*/
+.clickableWrapper__64072. .embedWrapper_c143d9, .embedFull__8dc21, .embed_d3cbe3, .markup_a7e664, .justifyAuto__70e6c {
+    opacity: 0.1;
 }
