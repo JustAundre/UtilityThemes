@@ -38,7 +38,7 @@
 	text-wrap: nowrap;
 	overflow: hidden;
 	display: inline-flex;
-	transition: 0.5s ease-in-out;
+	transition: 0.1s ease-in-out;
 }
 
 /*When hovering over display names, pings, and channel mentions, they will turn red.*/
