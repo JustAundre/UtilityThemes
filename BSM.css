@@ -15,6 +15,13 @@
 	opacity: 0;
 }
 
+/*Un-hides side-bar icons when hovered for 3 seconds.*/
+.wrapper_d281dd:hover {
+	transition-delay: 3s;
+	transition: 1s ease-in-out;
+	opacity: 1;
+}
+
 /*When hovering over the actual username, takes longer to reveal.*/
 .userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover, .discriminator_aef524:hover {
 	color: red;
