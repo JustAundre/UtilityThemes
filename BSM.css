@@ -26,7 +26,8 @@
 
 /*Slows down the reveal of your actual username when hovering over your user card.*/
 .hoverRoll__041cb.forceHover__71322:not(.disabled__89e5c) .hovered__243e5, .hoverRoll__041cb:hover:not(.disabled__89e5c) .hovered__243e5 {
-	transition: 3.5s ease-in-out;
+	transition-delay: 4s;
+	transition: 0.5s ease-in-out;
 }
 
 /*Forces a font size, font family, and max-width onto display names, pings, and channel mentions.*/
@@ -45,7 +46,7 @@
 	color: red;
 	max-width: 1000px;
 	opacity: 0;
-	transition: 0.75s ease-in-out;
+	transition: 1.5s ease-in-out;
 	transition-delay: 0.5s;
 }
 
@@ -54,8 +55,8 @@
 	color: red;
 	max-width: 1000px;
 	opacity: 1;
-	transition: 1s ease-in-out;
-	transition-delay: 1.5s;
+	transition: 1.5s ease-in-out;
+	transition-delay: 2s;
 }
 
 /*Hides the image of your/others' Discord RPC*/
