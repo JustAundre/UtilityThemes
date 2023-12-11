@@ -71,6 +71,9 @@
 .clickableWrapper__64072 {
     opacity: 0.01;
 }
+
 .clickableWrapper__64072:hover {
     opacity: 1;
+	transition: 0.3s ease-in-out;
+	transition-delay: 0.5s;
 }
