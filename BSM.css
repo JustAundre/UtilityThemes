@@ -10,8 +10,8 @@
 /*Imports the 'Poppins' font.*/
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-/*Makes profiles, and actual usernames/display names comepletely hidden.*/
-.wrapper_edb6e0, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .replyAvatar_cea07c, .titleWrapper__482dc {
+/*Makes profiles, and actual usernames comepletely hidden.*/
+.wrapper_edb6e0, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .replyAvatar_cea07c {
 	opacity: 0;
 }
 
