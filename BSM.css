@@ -1,6 +1,6 @@
 /**
  * @name StreamerMode+
- * @description A Discord theme made to protect the identity of the people in your DMs and servers.
+ * @description If you're on the web, right click the tab and click 'Pin' for greater effect.
  * @author JustAundre
  * @version 1.0.0
  * @source No source given.
@@ -11,20 +11,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /*Makes profiles, and actual usernames completely hidden.*/
-.wrapper_edb6e0, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .replyAvatar_cea07c, .wrapper_d281dd {
+.wrapper_edb6e0, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .replyAvatar_cea07c, .listItemWrapper__1f93b img {
 	opacity: 0;
 }
 
 /*Un-hides everyone's status. (i.e. Do not disturb, online, invisible.)*/
 .pointerEvents__33f6a {
 	opacity: 1;
-}
-
-/*Un-hides side-bar icons when hovered for 3 seconds.*/
-.wrapper_d281dd:hover {
-	opacity: 1;
-	transition: 1s ease-in-out;
-	transition-delay: 3s;
 }
 
 /*When hovering over the actual username, takes longer to reveal.*/
@@ -46,7 +39,7 @@
 .name__02dbd, .nickname__3d1d7, .username_d30d99, .username_d272d6, .channelWithIcon, .mention, .userTagUsernameBase__75fb1, .text-lg-semibold__18f10, .username__81ee6, .titleWrapper__482dc, .text-md-semibold__4cb23 {
 	font-family: 'Poppins';
 	font-size: 16px;
-	max-width: 30px;
+	max-width: 40px;
 	text-wrap: nowrap;
 	overflow: hidden;
 	display: inline-flex;
