@@ -24,7 +24,7 @@
 .userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover, .discriminator_aef524:hover {
 	color: red;
 	opacity: 1;
-	width: fit-content;
+	max-width: 1000px;
 	transition: 0.5s ease-in-out;
 	transition-delay: 5s;
 }
