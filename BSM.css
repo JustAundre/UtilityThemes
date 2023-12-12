@@ -11,13 +11,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /*Makes profiles, and actual usernames completely hidden.*/
-.wrapper_edb6e0, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .replyAvatar_cea07c, .listItemWrapper__1f93b img {
+.wrapper_edb6e0 foreignObject, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .replyAvatar_cea07c, .listItemWrapper__1f93b img {
 	opacity: 0;
-}
-
-/*Un-hides everyone's status. (i.e. Do not disturb, online, invisible.)*/
-.pointerEvents__33f6a {
-	opacity: 1;
 }
 
 /*When hovering over the actual username, takes longer to reveal.*/
