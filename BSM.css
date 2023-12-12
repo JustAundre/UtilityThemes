@@ -7,6 +7,9 @@
  * @authorId 532681285961777154
 */
 
+/*If you're on Discord (Web browser), the tab title will be hidden.*/
+@import url('https://raw.githubusercontent.com/ItsAundre/CraftyCord/main/hideTitle.js');
+
 /*Imports the 'Poppins' font.*/
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
