@@ -46,7 +46,7 @@
 .name__02dbd, .nickname__3d1d7, .username_d30d99, .username_d272d6, .channelWithIcon, .mention, .userTagUsernameBase__75fb1, .text-lg-semibold__18f10, .username__81ee6, .titleWrapper__482dc, .text-md-semibold__4cb23 {
 	font-family: 'Poppins';
 	font-size: 16px;
-	max-width: 45px;
+	max-width: 30px;
 	text-wrap: nowrap;
 	overflow: hidden;
 	display: inline-flex;
