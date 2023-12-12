@@ -12,13 +12,13 @@
 
 /*Makes profiles, and actual usernames completely hidden.*/
 .wrapper_edb6e0 foreignObject, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .replyAvatar_cea07c, .listItemWrapper__1f93b img, .usernameInnerRow__7f209 span {
-	opacity: 0;
+	filter: blur(10px);
 }
 
 /*When hovering over the actual username it reveals. (Takes longer to reveal.)*/
 .userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover, .discriminator_aef524:hover, .usernameInnerRow__7f209 span {
 	color: red;
-	opacity: 1;
+	filter: blur(0px);
 	max-width: 1000px;
 	transition: 0.5s ease-in-out;
 	transition-delay: 5s;
@@ -45,7 +45,7 @@
 .name__02dbd:hover, .nickname__3d1d7:hover, .username_d30d99:hover, .username_d272d6:hover, .channelWithIcon:hover, .mention:hover, .text-lg-semibold__18f10:hover, .username__81ee6:hover, .titleWrapper__482dc:hover, .text-md-semibold__4cb23:hover, .listName_dbd44a:hover span, .userTag__4ca14:hover span, .constrainedRow_b9e8cf:hover {
 	color: red;
 	max-width: 1000px;
-	opacity: 0;
+	filter: blur(10px);
 	transition: 0.25s ease-in-out;
 	transition-delay: 0.5s;
 }
@@ -54,7 +54,7 @@
 .name__02dbd:active, .nickname__3d1d7:active, .username_d30d99:active, .username_d272d6:active, .channelWithIcon:active, .mention:active, .text-lg-semibold__18f10:active, .username__81ee6:active, .titleWrapper__482dc:active, .text-md-semibold__4cb23:active, .listName_dbd44a:active span, .userTag__4ca14:active span, .constrainedRow_b9e8cf:active {
 	color: red;
 	max-width: 1000px;
-	opacity: 1;
+	filter: blur(0px);
 	transition: 0.25s ease-in-out;
 	transition-delay: 2s;
 }
@@ -64,7 +64,11 @@
 	opacity: 0;
 }
 
-/*Lowers attachment/embed opacity.*/
+/*Blurs attachment/embed opacity, unless clicked.*/
 .clickableWrapper__64072, .embedWrapper_c143d9 {
-    opacity: 0.1;
+    filter: blur(8px);
+}
+
+.clickableWrapper__64072:active, .embedWrapper_c143d9:active {
+    filter: blur(0px);
 }
