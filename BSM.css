@@ -11,12 +11,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /*Makes profiles, and actual usernames completely hidden.*/
-.wrapper_edb6e0 foreignObject, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .replyAvatar_cea07c, .listItemWrapper__1f93b img {
+.wrapper_edb6e0 foreignObject, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .replyAvatar_cea07c, .listItemWrapper__1f93b img, .usernameInnerRow__7f209 span {
 	opacity: 0;
 }
 
-/*When hovering over the actual username, takes longer to reveal.*/
-.userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover, .discriminator_aef524:hover {
+/*When hovering over the actual username it reveals. (Takes longer to reveal.)*/
+.userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover, .discriminator_aef524:hover, .usernameInnerRow__7f209 span {
 	color: red;
 	opacity: 1;
 	max-width: 1000px;
@@ -31,7 +31,7 @@
 }
 
 /*Forces a font size, font family, and max-width onto display names, pings, and channel mentions.*/
-.name__02dbd, .nickname__3d1d7, .username_d30d99, .username_d272d6, .channelWithIcon, .mention, .userTagUsernameBase__75fb1, .text-lg-semibold__18f10, .username__81ee6, .titleWrapper__482dc, .text-md-semibold__4cb23, .listName_dbd44a span {
+.name__02dbd, .nickname__3d1d7, .username_d30d99, .username_d272d6, .channelWithIcon, .mention, .userTagUsernameBase__75fb1, .text-lg-semibold__18f10, .username__81ee6, .titleWrapper__482dc, .text-md-semibold__4cb23, .listName_dbd44a span, .userTag__4ca14 span, .constrainedRow_b9e8cf {
 	font-family: 'Poppins';
 	font-size: 16px;
 	max-width: 40px;
@@ -42,7 +42,7 @@
 }
 
 /*When hovering over display names, pings, and channel mentions, they will turn red.*/
-.name__02dbd:hover, .nickname__3d1d7:hover, .username_d30d99:hover, .username_d272d6:hover, .channelWithIcon:hover, .mention:hover, .text-lg-semibold__18f10:hover, .username__81ee6:hover, .titleWrapper__482dc:hover, .text-md-semibold__4cb23:hover, .listName_dbd44a:hover span {
+.name__02dbd:hover, .nickname__3d1d7:hover, .username_d30d99:hover, .username_d272d6:hover, .channelWithIcon:hover, .mention:hover, .text-lg-semibold__18f10:hover, .username__81ee6:hover, .titleWrapper__482dc:hover, .text-md-semibold__4cb23:hover, .listName_dbd44a:hover span, .userTag__4ca14:hover span, .constrainedRow_b9e8cf:hover {
 	color: red;
 	max-width: 1000px;
 	opacity: 0;
@@ -51,7 +51,7 @@
 }
 
 /*When clicking on display names, pings, and channel mentions, they reveal completely.*/
-.name__02dbd:active, .nickname__3d1d7:active, .username_d30d99:active, .username_d272d6:active, .channelWithIcon:active, .mention:active, .text-lg-semibold__18f10:active, .username__81ee6:active, .titleWrapper__482dc:active, .text-md-semibold__4cb23:active, .listName_dbd44a:active span {
+.name__02dbd:active, .nickname__3d1d7:active, .username_d30d99:active, .username_d272d6:active, .channelWithIcon:active, .mention:active, .text-lg-semibold__18f10:active, .username__81ee6:active, .titleWrapper__482dc:active, .text-md-semibold__4cb23:active, .listName_dbd44a:active span, .userTag__4ca14:active span, .constrainedRow_b9e8cf:active {
 	color: red;
 	max-width: 1000px;
 	opacity: 1;
@@ -59,13 +59,8 @@
 	transition-delay: 2s;
 }
 
-/*Hides the image of your/others' Discord RPC*/
-.assetsLargeImageUserPopout__6fc87, .assetsLargeImageUserPopoutV2__01dc1, .assetsLargeImageStreamPreview_db91fd, .assetsLargeImageStreamPreviewXbox_c549ba, .assetsLargeImageUserPopoutXbox__908da, .assetsLargeImageUserPopoutV2Xbox__32def .gameIcon__90c32, .medium__2316b, .gameIcon__71e13{
-	opacity: 0;
-}
-
-/*Hides the title, image and mini-text of the aforementioned RPC*/
-.bodyLink__0ab7c, .activityName__47e51, .textRow__4750e, .activityText__47ec1, .spotifySection__1d573, .activitySection_b322be {
+/*Hides the title, image and mini-text of yours, and others Discord RPC.*/
+.bodyLink__0ab7c, .activityName__47e51, .textRow__4750e, .activityText__47ec1, .spotifySection__1d573, .activitySection_b322be .assetsLargeImageUserPopout__6fc87, .assetsLargeImageUserPopoutV2__01dc1, .assetsLargeImageStreamPreview_db91fd, .assetsLargeImageStreamPreviewXbox_c549ba, .assetsLargeImageUserPopoutXbox__908da, .assetsLargeImageUserPopoutV2Xbox__32def .gameIcon__90c32, .medium__2316b, .gameIcon__71e13 {
 	opacity: 0;
 }
 
