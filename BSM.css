@@ -64,8 +64,8 @@
 	opacity: 0;
 }
 
-/*Hides the title and mini-text of the aforementioned RPC*/
-.bodyLink__0ab7c, .activityName__47e51, .textRow__4750e, .activityText__47ec1 {
+/*Hides the title, image and mini-text of the aforementioned RPC*/
+.bodyLink__0ab7c, .activityName__47e51, .textRow__4750e, .activityText__47ec1, .spotifySection__1d573, .activitySection_b322be {
 	opacity: 0;
 }
 
