@@ -74,13 +74,16 @@
 	opacity: 0;
 }
 
-/*Blurs attachment/embed opacity, unless clicked.*/
+/*Blurs attachment/embed opacity, unless hovered for 4 seconds.*/
 .clickableWrapper__64072, .embedWrapper_c143d9 {
 	opacity: 0.95;
     filter: blur(8px);
+	transition: all 0.5s ease-in-out;
 }
 
-.clickableWrapper__64072:active, .embedWrapper_c143d9:active {
+.clickableWrapper__64072:hover, .embedWrapper_c143d9:hover {
 	opacity: 1;
     filter: blur(0px);
+	transition: all 0.5s ease-in-out;
+	transition-delay: 4s;
 }
