@@ -11,7 +11,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /*Makes profiles, and actual usernames completely hidden.*/
-.wrapper_edb6e0 foreignObject, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .replyAvatar_cea07c, {
+.wrapper_edb6e0 foreignObject, .avatar__08316.clickable_d866f1, .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .replyAvatar_cea07c, .listItemWrapper__1f93b img {
 	opacity: 0;
 }
 
