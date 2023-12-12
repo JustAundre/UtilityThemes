@@ -23,15 +23,11 @@
 	/*The code below is for the background!*/
 	.layer__2efaa.baseLayer__8fda3 {
 		background-image: url('https://bit.ly/48aTwoo');
+		filter: blur(3px);
 		background-color: rgba(0, 0, 0, 0);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-	}
-
-	/*The code below is for the background blur!*/
-	.container__037ed {
-		backdrop-filter: blur('3px');
 	}
 
 	/* Change to 'gg sans' for the default discord font, Poppins, Press Start 2P, and Silkscreen are also font options..*/
