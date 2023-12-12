@@ -74,16 +74,15 @@
 	opacity: 0;
 }
 
-/*Blurs attachment/embed opacity, unless hovered for 4 seconds.*/
-.clickableWrapper__64072, .embedWrapper_c143d9 {
-	opacity: 0.95;
-    filter: blur(8px);
-	transition: all 0.5s ease-in-out;
+/*Lowers attachment/embed opacity, unless hovered.*/
+.embedWrapper_c143d9 {
+	opacity: 0.1;
+	filter: blur(5px);
+	transition: all 0.25s ease-in-out;
 }
 
-.clickableWrapper__64072:hover, .embedWrapper_c143d9:hover {
+.embedWrapper_c143d9:hover {
+	filter: blur(0px);
 	opacity: 1;
-    filter: blur(0px);
-	transition: all 0.5s ease-in-out;
-	transition-delay: 4s;
+	transition: all 1s ease-in-out;
 }
