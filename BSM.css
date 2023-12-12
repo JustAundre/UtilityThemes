@@ -31,8 +31,8 @@
 
 /*Slows down the reveal of your actual username when hovering over your user card.*/
 .hoverRoll__041cb.forceHover__71322:not(.disabled__89e5c) .hovered__243e5, .hoverRoll__041cb:hover:not(.disabled__89e5c) .hovered__243e5 {
-	transition-delay: 4s;
 	transition: 0.5s ease-in-out;
+	transition-delay: 4s;
 }
 
 /*Forces a font size, font family, and max-width onto display names, pings, and channel mentions.*/
