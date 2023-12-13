@@ -16,6 +16,11 @@
 	filter: blur(8px);
 }
 
+/*Self-explanatory, hides profile picture overflow.*/
+.wrapper_edb6e0 foreignObject {
+	overflow: hidden;
+}
+
 /*When hovering over the actual username it reveals. (Takes longer to reveal.)*/
 .userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover, .discriminator_aef524:hover, .usernameInnerRow__7f209 span {
 	color: red;
