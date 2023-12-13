@@ -10,19 +10,19 @@
 /*Theme settings*/
         /*Remove URL inside parenthesis to disable option*/
         /*Blurs attachments (images, videos, embeds etc.) unless hovered.*/
-    @import url('https://raw.githubusercontent.com/ItsAundre/CraftyCord/main/');
+    @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/blurAttachments-Embeds.css');
 
         /*Hides yours and your friend's Discord RPC.*/
-    @import url('https://raw.githubusercontent.com/ItsAundre/CraftyCord/main/');
+    @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/hideDiscordRPC.css');
 
         /*Blurs profile pictures.*/
-    @import url('https://raw.githubusercontent.com/ItsAundre/CraftyCord/main/');
+    @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/hideProfiles.css');
 
         /*Hides usernames unless hovered for 5 seconds.*/
-    @import url('https://raw.githubusercontent.com/ItsAundre/CraftyCord/main/');
+    @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/hideUsernames.css');
         
         /*Shortens display names, unless clicked.*/
-    @import url('https://raw.githubusercontent.com/ItsAundre/CraftyCord/main/');
+    @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/shortenDisplaynamesChannelmentionsUsermentions.css');
 
 
 /*Required.*/
