@@ -1,0 +1,32 @@
+/**
+ * @name StreamerMode+
+ * @description If you're on the web, right click the tab and click 'Pin' for greater effect.
+ * @author JustAundre
+ * @version 1.0.0
+ * @source No source given.
+ * @authorId 532681285961777154
+*/
+
+/*Theme settings*/
+        /*Remove URL inside parenthesis to disable option*/
+        /*Blurs attachments (images, videos, embeds etc.) unless hovered.*/
+    @import url('https://raw.githubusercontent.com/ItsAundre/CraftyCord/main/');
+
+        /*Hides yours and your friend's Discord RPC.*/
+    @import url('https://raw.githubusercontent.com/ItsAundre/CraftyCord/main/');
+
+        /*Blurs profile pictures.*/
+    @import url('https://raw.githubusercontent.com/ItsAundre/CraftyCord/main/');
+
+        /*Hides usernames unless hovered for 5 seconds.*/
+    @import url('https://raw.githubusercontent.com/ItsAundre/CraftyCord/main/');
+        
+        /*Shortens display names, unless clicked.*/
+    @import url('https://raw.githubusercontent.com/ItsAundre/CraftyCord/main/');
+
+
+/*Required.*/
+    @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+
