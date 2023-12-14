@@ -15,7 +15,6 @@
 .name__02dbd:hover, .nickname__3d1d7:hover, .username_d30d99:hover, .username_d272d6:hover, .mention:hover, .text-lg-semibold__18f10:hover, .username__81ee6:hover, .titleWrapper__482dc:hover, .text-md-semibold__4cb23:hover, .listName_dbd44a:hover span, .userTag__4ca14:hover span, .constrainedRow_b9e8cf:hover, .channelMention:hover {
 	color: red;
 	opacity: 0;
-	filter: blur(8px);
 	max-width: 1000px;
 	transition: 1s ease-in-out;
 	transition-delay: 1s;
@@ -25,7 +24,6 @@
 .name__02dbd:active, .nickname__3d1d7:active, .username_d30d99:active, .username_d272d6:active, .mention:active, .text-lg-semibold__18f10:active, .username__81ee6:active, .titleWrapper__482dc:active, .text-md-semibold__4cb23:active, .listName_dbd44a:active span, .userTag__4ca14:active span, .constrainedRow_b9e8cf:active, .channelMention:active {
 	color: red;
 	opacity: 1;
-	filter: blur(0px);
 	max-width: 1000px;
 	transition: 1s ease-in-out;
 	transition-delay: 2s;
