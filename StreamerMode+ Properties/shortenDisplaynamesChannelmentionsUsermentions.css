@@ -16,7 +16,7 @@
 	color: red;
 	opacity: 0;
 	max-width: 1000px;
-	transition: 1s ease-in-out;
+	transition: 0.75s ease-in-out;
 	transition-delay: 1s;
 }
 
