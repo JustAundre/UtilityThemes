@@ -10,3 +10,8 @@
 .wrapper_edb6e0 foreignObject {
 	overflow: hidden;
 }
+
+/*Hides the overflowing blur.*/
+.wrapper_edb6e0 {
+	overflow: hidden;
+}
