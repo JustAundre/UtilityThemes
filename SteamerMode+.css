@@ -14,13 +14,13 @@
     /*Set value to 1 to enable, set value to 0 to disable.*/
     --hideRPC: 1;
 
-    /*Disable BOTH to disale shortenDisplayNames.*/
+    /*Disable BOTH to disable shortenDisplayNames.*/
     /*Set value to 1 to enable, set value to 0 to disable.*/
 	--shortenDisplays-1: 1;
     /*Set value to red to enable, set value to inherit to disable.*/
 	--shortenDisplays-2: red;
 
-    /*Disable BOTH to disale hideUsernames.*/
+    /*Disable BOTH to disable hideUsernames.*/
     /*Set value to 1 to enable, set value to 0 to disable.*/
 	--hideUsernames-1: 1;
     /*Set value to red to enable, set value to inherit to disable.*/
