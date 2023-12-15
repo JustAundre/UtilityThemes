@@ -2,22 +2,27 @@
 
 /*Hides and blurs usernames.*/
 .userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .usernameInnerRow__7f209 span {
-	opacity: 0.2;
-	filter: blur(8px);
+	opacity: calc(var(--hideUsernames-1) * 0.2);
+	filter: blur(calc(var(--hideUsernames-1) * 8px));
 }
 
 /*When hovering over the actual username it reveals. (Takes longer to reveal.)*/
 .userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover, .discriminator_aef524:hover, .usernameInnerRow__7f209 span {
-	color: red;
+	color: var(--hideUsernames-2);
 	opacity: 1;
 	filter: blur(0px);
-	max-width: 1000px;
-	transition: 0.5s ease-in-out;
-	transition-delay: 5s;
+	max-width: calc(var(--hideUsernames-1) * 1000px);
+	transition: calc(var(--hideUsernames-1) * 0.5s) ease-in-out;
+	transition-delay: calc(var(--hideUsernames-1) * 5s);
 }
 
 /*Slows down the reveal of your actual username when hovering over your user card.*/
 .hoverRoll__041cb.forceHover__71322:not(.disabled__89e5c) .hovered__243e5, .hoverRoll__041cb:hover:not(.disabled__89e5c) .hovered__243e5 {
-	transition: 0.5s ease-in-out;
-	transition-delay: 5s;
+	transition: calc(var(--hideUsernames-1) * 0.5s) ease-in-out;
+	transition-delay: calc(var(--hideUsernames-1) * 5s);
+}
+
+:root {
+	--hideUsernames-1: 1;
+	--hideUsernames-2: red;
 }

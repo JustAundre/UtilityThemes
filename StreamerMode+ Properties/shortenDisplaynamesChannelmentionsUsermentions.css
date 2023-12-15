@@ -3,28 +3,33 @@
 /*Forces a font size, font family, and max-width onto display names, pings, and channel mentions.*/
 .name__02dbd, .nickname__3d1d7, .username_d30d99, .username_d272d6, .mention, .userTagUsernameBase__75fb1, .text-lg-semibold__18f10, .username__81ee6, .titleWrapper__482dc, .text-md-semibold__4cb23, .listName_dbd44a span, .userTag__4ca14 span, .constrainedRow_b9e8cf, .channelMention {
 	font-family: 'Poppins';
-	font-size: 16px;
-	max-width: 40px;
+	font-size: calc(var(--shortenDisplays-1) * 16px);
+	max-width: calc(var(--shortenDisplays-1) * 40px);
 	text-wrap: nowrap;
 	overflow: hidden;
 	display: inline-flex;
-	transition: 0.5s ease-in-out;
+	transition: calc(0.5s * var(--shortenDisplays-1)); ease-in-out;
 }
 
 /*When hovering over display names, pings, and channel mentions, they will turn red.*/
 .name__02dbd:hover, .nickname__3d1d7:hover, .username_d30d99:hover, .username_d272d6:hover, .mention:hover, .text-lg-semibold__18f10:hover, .username__81ee6:hover, .titleWrapper__482dc:hover, .text-md-semibold__4cb23:hover, .listName_dbd44a:hover span, .userTag__4ca14:hover span, .constrainedRow_b9e8cf:hover, .channelMention:hover {
-	color: red;
-	opacity: 0;
-	max-width: 1000px;
-	transition: 0.75s ease-in-out;
-	transition-delay: 1s;
+	color: var(--shortenDisplays-2);
+	opacity: calc(1 - var(--shortenDisplays-1));
+	max-width: calc(var(--shortenDisplays-1) * 1000px);
+	transition: calc(var(--shortenDisplays-1) * 0.75s) ease-in-out;
+	transition-delay: calc(var(--shortenDisplays-1) * 1s);
 }
 
 /*When clicking on display names, pings, and channel mentions, they reveal completely.*/
 .name__02dbd:active, .nickname__3d1d7:active, .username_d30d99:active, .username_d272d6:active, .mention:active, .text-lg-semibold__18f10:active, .username__81ee6:active, .titleWrapper__482dc:active, .text-md-semibold__4cb23:active, .listName_dbd44a:active span, .userTag__4ca14:active span, .constrainedRow_b9e8cf:active, .channelMention:active {
-	color: red;
+	color: var(--shortenDisplays-2);
 	opacity: 1;
-	max-width: 1000px;
-	transition: 1s ease-in-out;
-	transition-delay: 1.5s;
+	max-width: calc(var(--shortenDisplays-1) * 1000px);
+	transition: calc(var(--shortenDisplays-1) * 1s) ease-in-out;
+	transition-delay: calc(1.5s * var(--shortenDisplays-1));
+}
+
+:root {
+	--shortenDisplays-1: 1;
+	--shortenDisplays-2: red;
 }

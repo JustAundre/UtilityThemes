@@ -7,21 +7,41 @@
  * @authorId 532681285961777154
 */
 
-/*Theme settings*/
-        /*Remove URL inside parenthesis to disable option*/
-        /*Blurs attachments (images, videos, embeds etc.) unless hovered.*/
+:root {
+    /*Set value to 1 to enable, set value to 0 to disable.*/
+	--hide-attachments: 1;
+
+    /*Set value to 1 to enable, set value to 0 to disable.*/
+    --hideRPC: 1;
+
+    /*Disable BOTH to disale shortenDisplayNames.*/
+    /*Set value to 1 to enable, set value to 0 to disable.*/
+	--shortenDisplays-1: 1;
+    /*Set value to red to enable, set value to inherit to disable.*/
+	--shortenDisplays-2: red;
+
+    /*Disable BOTH to disale hideUsernames.*/
+    /*Set value to 1 to enable, set value to 0 to disable.*/
+	--hideUsernames-1: 1;
+    /*Set value to red to enable, set value to inherit to disable.*/
+	--hideUsernames-2: red;
+
+    /*Set value to 1 to enable, set value to 0 to disable.*/
+    --hidePFP: 1;
+}
+
+/*Privacy changes*/
+    /*Blurs attachments (images, videos, embeds etc.) unless hovered.*/
     @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/blurAttachments-Embeds.css');
 
-        /*Hides yours and your friend's Discord RPC.*/
+    /*Hides yours and your friend's Discord RPC.*/
     @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/hideDiscordRPC.css');
 
-        /*Blurs profile pictures.*/
+    /*Blurs profile pictures.*/
     @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/hideProfiles.css');
 
-        /*Hides usernames unless hovered for 5 seconds.*/
+    /*Hides usernames unless hovered for 5 seconds.*/
     @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/hideUsernames.css');
         
-        /*Shortens display names, unless clicked.*/
+    /*Shortens display names, unless clicked.*/
     @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/shortenDisplaynamesChannelmentionsUsermentions.css');
-
-

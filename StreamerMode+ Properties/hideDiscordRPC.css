@@ -2,11 +2,15 @@
 
 /*Blurs the Discord RPC Image.*/
 .activityName__47e51, .spotifySection__1d573, .activitySection_b322be .assetsLargeImageUserPopout__6fc87, .assetsLargeImageUserPopoutV2__01dc1, .assetsLargeImageStreamPreview_db91fd, .assetsLargeImageStreamPreviewXbox_c549ba, .assetsLargeImageUserPopoutXbox__908da, .assetsLargeImageUserPopoutV2Xbox__32def .gameIcon__90c32, .medium__2316b, .gameIcon__71e13, .activitySectionAssets_ea2444 img, .headerFull_c60f77 img {
-	opacity: 0.95;
-	filter: blur(10px);
+	opacity: calc(var(--hideRPC) * 0.95);
+	filter: blur(calc(var(--hideRPC) * 10px));
 }
 
 /*Hides the Discord RPC Text.*/
 .textRow__4750e, .activityText__47ec1, .activitySection_b322be .textContent__45dd0, .textContent__45dd0 span {
-	opacity: 0;
+	opacity: calc(1 - var(--hideRPC));
+}
+
+:root {
+	--hideRPC: 1;
 }

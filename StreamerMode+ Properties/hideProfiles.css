@@ -2,16 +2,15 @@
 
 /*Hides and blurs profile pictures.*/
 .wrapper_edb6e0 foreignObject, .avatar__08316.clickable_d866f1, .replyAvatar_cea07c, .listItemWrapper__1f93b img {
-	opacity: 0.2;
-	filter: blur(8px);
+	opacity: (var(--hidePFP-1) * 0.2);
+	filter: blur(var(--hidePFP-1) * 8px);
 }
 
 /*Self-explanatory, hides profile picture overflow.*/
-.wrapper_edb6e0 foreignObject {
+.wrapper_edb6e0 foreignObject, .wrapper_edb6e0 {
 	overflow: hidden;
 }
 
-/*Hides the overflowing blur.*/
-.wrapper_edb6e0 {
-	overflow: hidden;
+:root {
+	--hidePFP: 1;
 }
