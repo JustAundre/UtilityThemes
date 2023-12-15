@@ -3,12 +3,17 @@
 /*Hides and blurs profile pictures.*/
 .wrapper_edb6e0 foreignObject, .avatar__08316.clickable_d866f1, .replyAvatar_cea07c, .listItemWrapper__1f93b img {
 	opacity: (var(--hidePFP-1) * 0.2);
-	filter: blur(var(--hidePFP-1) * 8px);
+	filter: blur(calc(var(--hidePFP) * 8px));
 }
 
 /*Self-explanatory, hides profile picture overflow.*/
-.wrapper_edb6e0 foreignObject, .wrapper_edb6e0 {
+.wrapper_edb6e0 foreignObject {
 	overflow: hidden;
+}
+
+/*Hides the blur overflow*/
+.wrapper_edb6e0 {
+	overflow: hidden
 }
 
 :root {
