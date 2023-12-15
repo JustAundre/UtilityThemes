@@ -9,19 +9,19 @@
 
 :root {
     /*Set value to 1 to enable, set value to 0 to disable.*/
-	--hide-attachments: 1;
+        --hide-attachments: 1;
 
     /*Set value to 1 to enable, set value to 0 to disable.*/
-    --hideRPC: 1;
+        --hideRPC: 1;
 
     /*Set value to 1 to enable, set value to 0 to disable.*/
-	--shortenDisplays-1: 1;
+        --shortenDisplays-1: 1;
 
     /*Set value to 1 to enable, set value to 0 to disable.*/
-	--hideUsernames: 1;
+        --hideUsernames: 1;
 
     /*Set value to 1 to enable, set value to 0 to disable.*/
-    --hidePFP: 1;
+        --hidePFP: 1;
 }
 
 /*Privacy changes*/
