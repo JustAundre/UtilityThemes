@@ -1,33 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /*Hides and blurs usernames.*/
-.userTagUsernameBase__75fb1, .title__10613, .nameTagSmall__02127, .discriminator_aef524, .usernameInnerRow__7f209 span {
-	opacity: calc(var(--hideUsernames-1) * 0.2);
-	filter: blur(calc(var(--hideUsernames-1) * 8px));
+.userTagUsernameBase__75fb1, .title__10613, .discriminator_a801dd, .discriminator_aef524, .usernameInnerRow__7f209 span {
+	opacity: calc(var(--hideUsernames) * 0.2);
+	filter: blur(calc(var(--hideUsernames) * 8px));
 }
 
 /*When hovering over the actual username it reveals. (Takes longer to reveal.)*/
-.userTagUsernameBase__75fb1:hover, .nameTagSmall__02127:hover, .discriminator_aef524:hover, .usernameInnerRow__7f209 span {
-	color: var(--hideUsernames-2);
+.userTagUsernameBase__75fb1:hover, .discriminator_a801dd:hover, .discriminator_aef524:hover, .usernameInnerRow__7f209 span {
 	opacity: 1;
 	filter: blur(0px);
-	max-width: calc(var(--hideUsernames-1) * 1000px);
-	transition: calc(var(--hideUsernames-1) * 0.5s) ease-in-out;
-	transition-delay: calc(var(--hideUsernames-1) * 5s);
+	max-width: calc(var(--hideUsernames) * 1000px);
+	transition: calc(var(--hideUsernames) * 0.5s) ease-in-out;
+	transition-delay: calc(var(--hideUsernames) * 5s);
 }
 
-/*Slows down the reveal of your actual username when hovering over your user card.*/
+/*Slows down the reveal of your actual username when hovering over your user card in the bottom left.*/
 .hoverRoll__041cb.forceHover__71322:not(.disabled__89e5c) .hovered__243e5, .hoverRoll__041cb:hover:not(.disabled__89e5c) .hovered__243e5 {
-	transition: calc(var(--hideUsernames-1) * 0.5s) ease-in-out;
-	transition-delay: calc(var(--hideUsernames-1) * 5s);
+	transition: calc(var(--hideUsernames) * 0.5s) ease-in-out;
+	transition-delay: calc(var(--hideUsernames) * 5s);
 }
 
 /*Removes all tooltips.*/
 .tooltip__01384 {
-	opacity: calc(1 - var(--hideUsernames-1)) !important;
+	opacity: calc(1 - var(--hideUsernames)) !important;
 }
 
 :root {
-	--hideUsernames-1: 1;
-	--hideUsernames-2: red;
+	--hideUsernames: 1;
 }
