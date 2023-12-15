@@ -22,6 +22,11 @@
 	transition-delay: calc(var(--hideUsernames-1) * 5s);
 }
 
+/*Removes all tooltips.*/
+.tooltip__01384 {
+	opacity: calc(1 - var(--hideUsernames-1)) !important;
+}
+
 :root {
 	--hideUsernames-1: 1;
 	--hideUsernames-2: red;

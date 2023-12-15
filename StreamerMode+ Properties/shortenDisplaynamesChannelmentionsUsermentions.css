@@ -29,6 +29,11 @@
 	transition-delay: calc(1.5s * var(--shortenDisplays-1));
 }
 
+/*Removes all tooltips.*/
+.tooltip__01384 {
+	opacity: calc(1 - var(--shortenDisplays-1)) !important;
+}
+
 :root {
 	--shortenDisplays-1: 1;
 	--shortenDisplays-2: red;
