@@ -7,7 +7,7 @@
 }
 
 /*Hides the Discord RPC Text.*/
-.textRow__4750e, .activityText__47ec1, .activitySection_b322be .textContent__45dd0, .textContent__45dd0 span, .xboxSection__66be0 div {
+.textRow__4750e, .activityText__47ec1, .activitySection_b322be .textContent__45dd0, .textContent__45dd0 span, .xboxSection__66be0 div, .activity__24558 {
 	opacity: calc(1 - var(--hideRPC));
 }
 
