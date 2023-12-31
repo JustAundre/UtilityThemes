@@ -4,7 +4,7 @@
 .userTagUsernameBase__75fb1, .title__10613, .discriminator_a801dd, .discriminator_aef524, .usernameInnerRow__7f209 span {
 	opacity: calc(var(--hideUsernames) * 0.2);
 	filter: blur(calc(var(--hideUsernames) * 8px));
-	max-width: calc(var(--hideUsernames) * 1000px);
+	max-height: calc(var(--hideUsernames) * 16px);
 }
 
 /*When hovering over the actual username it reveals. (Takes longer to reveal.)*/
