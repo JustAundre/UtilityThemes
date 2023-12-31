@@ -3,15 +3,14 @@
 /*Hides and blurs usernames.*/
 .userTagUsernameBase__75fb1, .title__10613, .discriminator_a801dd, .discriminator_aef524, .usernameInnerRow__7f209 span {
 	opacity: calc(var(--hideUsernames) * 0.2);
-	filter: blur(calc(var(--hideUsernames) * 5px));
-	overflow: hidden;
+	filter: blur(calc(var(--hideUsernames) * 8px));
 }
 
 /*When hovering over the actual username it reveals. (Takes longer to reveal.)*/
 .userTagUsernameBase__75fb1:hover, .discriminator_a801dd:hover, .discriminator_aef524:hover, .usernameInnerRow__7f209 span {
 	opacity: 1;
 	filter: blur(0px);
-	overflow: show;
+	max-width: calc(var(--hideUsernames) * 1000px);
 	transition: calc(var(--hideUsernames) * 0.5s) ease-in-out;
 	transition-delay: calc(var(--hideUsernames) * 5s);
 }
