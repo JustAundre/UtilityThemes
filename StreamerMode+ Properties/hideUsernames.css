@@ -4,7 +4,6 @@
 .userTagUsernameBase__75fb1, .title__10613, .discriminator_a801dd, .discriminator_aef524, .usernameInnerRow__7f209 span {
 	opacity: calc(var(--hideUsernames) * 0.2);
 	filter: blur(calc(var(--hideUsernames) * 8px));
-	max-width: calc(var(--hideUsernames) * 1000px);
 	overflow-y: hidden;
 	text-wrap: nowrap;
 }
@@ -13,6 +12,7 @@
 .userTagUsernameBase__75fb1:hover, .discriminator_a801dd:hover, .discriminator_aef524:hover, .usernameInnerRow__7f209 span {
 	opacity: 1;
 	filter: blur(0px);
+	max-width: calc(var(--hideUsernames) * 1000px);
 	transition: calc(var(--hideUsernames) * 0.5s) ease-in-out;
 	transition-delay: calc(var(--hideUsernames) * 5s);
 }
