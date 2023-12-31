@@ -5,6 +5,7 @@
 	opacity: calc(var(--hideUsernames) * 0.2);
 	filter: blur(calc(var(--hideUsernames) * 8px));
 	max-height: calc(var(--hideUsernames) * 16px);
+	overflow: hidden;
 }
 
 /*When hovering over the actual username it reveals. (Takes longer to reveal.)*/
