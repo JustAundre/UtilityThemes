@@ -5,6 +5,8 @@
 	font-family: 'Poppins';
 	font-size: calc(var(--shortenDisplays) * 16px);
 	max-width: calc(var(--shortenDisplays) * 40px);
+	text-overflow: hidden;
+	text-wrap: nowrap;
 	display: inline-flex;
 	transition: calc(0.5s * var(--shortenDisplays)) ease-in-out;
 }
