@@ -5,7 +5,7 @@
 	font-family: 'Poppins';
 	font-size: calc(var(--shortenDisplays) * 16px);
 	max-width: calc(var(--shortenDisplays) * 40px);
-	max-height: calc(var(--shortenDisplays) * 16px);
+	max-height: calc(var(--shortenDisplays) * 20px);
 	text-wrap: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
