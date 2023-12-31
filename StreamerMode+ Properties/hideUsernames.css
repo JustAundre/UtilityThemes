@@ -3,7 +3,7 @@
 /*Hides and blurs usernames.*/
 .userTagUsernameBase__75fb1, .title__10613, .discriminator_a801dd, .discriminator_aef524, .usernameInnerRow__7f209 span {
 	opacity: calc(var(--hideUsernames) * 0.2);
-	filter: blur(calc(var(--hideUsernames) * 8px));
+	filter: blur(calc(var(--hideUsernames) * 5px));
 	overflow: hidden;
 }
 
