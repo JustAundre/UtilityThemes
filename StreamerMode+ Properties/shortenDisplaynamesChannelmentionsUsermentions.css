@@ -6,7 +6,8 @@
 	font-size: calc(var(--shortenDisplays) * 16px);
 	max-width: calc(var(--shortenDisplays) * 40px);
 	text-wrap: nowrap;
-	overflow: hidden;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
 	display: inline-flex;
 	transition: calc(0.5s * var(--shortenDisplays)) ease-in-out;
 }
