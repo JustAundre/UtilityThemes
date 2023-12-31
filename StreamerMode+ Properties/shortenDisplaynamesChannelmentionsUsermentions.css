@@ -7,7 +7,7 @@
 	max-width: calc(var(--shortenDisplays) * 40px);
 	text-overflow: hidden;
 	text-wrap: nowrap;
-	display: flex;
+	display: inline-flex;
 	transition: calc(0.5s * var(--shortenDisplays)) ease-in-out;
 }
 
