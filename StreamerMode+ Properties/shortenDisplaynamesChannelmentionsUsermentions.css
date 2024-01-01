@@ -4,6 +4,7 @@
 	font-family: 'Poppins';
 	font-size: calc(var(--shortenDisplays-1) * 16px);
 	max-width: calc(var(--shortenDisplays-1) * 40px);
+	max-height: calc(var(--shortenDisplays-1) * 16px);
 	text-wrap: nowrap;
 	-webkit-overflow: hidden !important;
 	-webkit-text-overflow: hidden !important;
