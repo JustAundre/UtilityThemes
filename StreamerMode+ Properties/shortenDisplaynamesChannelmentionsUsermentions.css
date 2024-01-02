@@ -4,10 +4,10 @@
 	font-family: 'Poppins';
 	font-size: calc(var(--shortenDisplays-1) * 16px);
 	max-width: calc(var(--shortenDisplays-1) * 40px);
-	max-height: calc(var(--shortenDisplays-1) * 15px);
+	max-height: calc(var(--shortenDisplays-1) * 18px);
 	text-wrap: nowrap;
-	-webkit-overflow: hidden !important;
-	-webkit-text-overflow: hidden !important;
+	overflow: hidden !important;
+    text-overflow: hidden !important;
 	display: inline-flex;
 	transition: calc(0.5s * var(--shortenDisplays-1)) ease-in-out;
 }
