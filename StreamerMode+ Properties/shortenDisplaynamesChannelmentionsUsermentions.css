@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 /*Forces a font size, font family, and max-width onto display names, pings, and channel mentions.*/
 .name__02dbd, .nickname__3d1d7, .username_d30d99, .username_d272d6, .mention, .userTagUsernameBase__75fb1, .text-lg-semibold__18f10, .username__81ee6, .titleWrapper__482dc, .text-md-semibold__4cb23, .listName_dbd44a span, .userTag__4ca14 span, .constrainedRow_b9e8cf, .channelMention {
-	font-family: 'Poppins';
-	font-size: calc(var(--shortenDisplays-1) * 16px);
+	font-family: 'Poppins' !important;
+	font-size: calc(var(--shortenDisplays-1) * 16px) !important;
 	max-width: calc(var(--shortenDisplays-1) * 40px);
 	max-height: calc(var(--shortenDisplays-1) * 18px);
 	text-wrap: nowrap;
 	overflow: hidden !important;
     text-overflow: hidden !important;
-	display: inline-flex;
-	transition: calc(0.5s * var(--shortenDisplays-1)) ease-in-out;
+	display: inline-flex !important;
+	transition: calc(0.5s * var(--shortenDisplays-1)) ease-in-out !important;
 }
 
 /*When hovering over display names, pings, and channel mentions, they will reveal-fade*/
