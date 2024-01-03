@@ -7,7 +7,7 @@
 }
 
 /*Hides the Discord RPC Text.*/
-.textRow__4750e, .activityText__47ec1, .activitySection_b322be .textContent__45dd0, .textContent__45dd0 span, .xboxSection__66be0 div, .activity__24558, .voiceSectionDetails_b9919a, /*This is an image-*/ .voiceSectionIconWrapper_c50254 {
+.textRow__4750e, .activityText__47ec1, .activitySection_b322be .textContent__45dd0, .textContent__45dd0 span, .xboxSection__66be0 div, .activity__24558, .voiceSectionDetails_b9919a, /*This is an image-*/ .voiceSectionIconWrapper_c50254, /*Also an image*/.speakerIconContainer__94fb2, .voiceChannelInfo__41ce2 {
 	opacity: calc(1 - var(--hideRPC));
 }
 
