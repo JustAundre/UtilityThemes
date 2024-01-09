@@ -2,7 +2,7 @@
 
 /* Lowers attachment/embed opacity, unless hovered. */
 .embedWrapper_c143d9 {
-	opacity: calc(var(--hide-attachments) * 0.1);
+	opacity: calc(0.1 * var(--hide-attachments));
 	filter: blur(calc(var(--hide-attachments) * 5px));
 	transition: all 0.25s ease-in-out;
 }
