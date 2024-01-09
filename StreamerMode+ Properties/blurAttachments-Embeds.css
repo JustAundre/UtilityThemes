@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
 /* Lowers attachment/embed opacity, unless hovered. */
 .embedWrapper_c143d9 {
-	opacity: calc(0.1 * var(--hide-attachments));
-	filter: blur(calc(var(--hide-attachments) * 5px));
+	opacity: calc(0.1 * var(--hideAttachments));
+	filter: blur(calc(var(--hideAttachments) * 5px));
 	transition: all 0.25s ease-in-out;
 }
 
@@ -14,5 +12,5 @@
 }
 
 :root {
-	--hide-attachments: 1;
+	--hideAttachments: 1;
 }

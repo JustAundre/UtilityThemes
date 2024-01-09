@@ -14,12 +14,10 @@
     @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/shortenDisplaynamesChannelmentionsUsermentions.css');
 
 :root {
-    /*Set value to "1" to enable, set value to "0" to disable.*/
-        --hide-attachments: 1;
-        --hideRPC: 1;
-        --shortenDisplays: 1;
-        --hidePFP: 1;
-
     /*Set value to "1" to enable, set value to "inherit" to disable.*/
         --hideUsernames: 1;
+        --shortenDisplays: 1;
+        --hideAttachments: 1;
+        --hideRpc: 1;
+        --hidePfp: 1;
 }

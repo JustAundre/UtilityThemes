@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
 /*Hides and blurs profile pictures.*/
 .wrapper_edb6e0 foreignObject, .avatar__08316.clickable_d866f1, .replyAvatar_cea07c, .listItemWrapper__1f93b img {
-	opacity: (var(--hidePFP-1) * 0.2);
-	filter: blur(calc(var(--hidePFP) * 8px));
+	opacity: (var(--hidePfp) * 0.2);
+	filter: blur(calc(var(--hidePfp) * 8px));
 }
 
 /*Self-explanatory, hides profile picture overflow.*/
@@ -17,5 +15,5 @@
 }
 
 :root {
-	--hidePFP: 1;
+	--hidePfp: 1;
 }

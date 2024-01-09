@@ -26,6 +26,7 @@
 	transition: calc(var(--shortenDisplays) * 1s) ease-in-out;
 	transition-delay: calc(1.5s * var(--shortenDisplays));
 }
+
 /*Removes all tooltips.*/
 .tooltip__01384 {
 	opacity: calc(1 - var(--shortenDisplays-1)) !important;

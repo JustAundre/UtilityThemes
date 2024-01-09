@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
 /*Hides and blurs usernames.*/
 .userTagUsernameBase__75fb1, .title__10613, .discriminator_a801dd, .discriminator_aef524, .usernameInnerRow__7f209 span {
 	opacity: calc(0.2 * var(--hideUsernames));
