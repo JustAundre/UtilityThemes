@@ -1,0 +1,67 @@
+/* Hides the Nitro button on the home page */
+[href="/shop"] {
+  display: var(--disableNitroBuy);
+}
+
+/* Hides the store button on the home page */
+[href="/store"] {
+  display: var(--disableStore);
+}
+
+/* Hides the Gift button in the message bar */
+[aria-label="Send a gift"] {
+  display: var(--disableSendGift);
+}
+
+/* Hides the GIF button in the message bar */
+[aria-label="Open GIF picker"] {
+  display: var(--disableGifPicker);
+}
+
+/* Hides the Sticker button in the message bar */
+[aria-label="Open sticker picker"] {
+  display: var(--disableStickerPicker);
+}
+
+/* Hides the help button in the top footer */
+[aria-label="Help"] {
+  display: var(--disableHelp);
+}
+
+/* Hides the Start Video call button */
+[aria-label="Start Video Call"] {
+  display: var(--disableVideoCall);
+}
+
+/* Hides the Notification settings button in message channels on servers */
+[aria-label="Notification Settings"] {
+  display: var(--disableServerNotifButton);
+}
+
+/* Hides Create new group DM button */
+[aria-label="New Group DM" ] {
+  display: var(--disableNewGroupDm);
+}
+
+/* Hide the search bar in the home page */
+.searchBar_e4ea2a {
+  display: var(--disableSearch);
+}
+
+/* Makes the "Friends" button take the place of the search bar. */
+[href="/channels/@me"] {
+	height: 35px;
+}
+
+:root {
+  --disableNitroBuy: none;
+  --disableStore: none;
+  --disableSendGift: none;
+  --disableGifPicker: none;
+  --disableStickerPicker: none;
+  --disableHelp: none;
+  --disableVideoCall: none;
+  --disableServerNotifButton: none;
+  --disableNewGroupDm: none;
+  --disableSearch: none;
+}
