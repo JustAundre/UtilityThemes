@@ -1,56 +1,56 @@
 /* Hides the Nitro button on the home page */
 [href="/shop"] {
-  display: var(--disableNitroBuy);
+  display: var(--disableNitroBuy) !important;
 }
 
 /* Hides the store button on the home page */
 [href="/store"] {
-  display: var(--disableStore);
+  display: var(--disableStore) !important;
 }
 
 /* Hides the Gift button in the message bar */
 [aria-label="Send a gift"] {
-  display: var(--disableSendGift);
+  display: var(--disableSendGift) !important;
 }
 
 /* Hides the GIF button in the message bar */
 [aria-label="Open GIF picker"] {
-  display: var(--disableGifPicker);
+  display: var(--disableGifPicker) !important;
 }
 
 /* Hides the Sticker button in the message bar */
 [aria-label="Open sticker picker"] {
-  display: var(--disableStickerPicker);
+  display: var(--disableStickerPicker) !important;
 }
 
 /* Hides the help button in the top footer */
 [aria-label="Help"] {
-  display: var(--disableHelp);
+  display: var(--disableHelp) !important;
 }
 
 /* Hides the Start Video call button */
 [aria-label="Start Video Call"] {
-  display: var(--disableVideoCall);
+  display: var(--disableVideoCall) !important;
 }
 
 /* Hides the Notification settings button in message channels on servers */
 [aria-label="Notification Settings"] {
-  display: var(--disableServerNotifButton);
+  display: var(--disableServerNotifButton) !important;
 }
 
 /* Hides Create new group DM button */
 [aria-label="New Group DM" ] {
-  display: var(--disableNewGroupDm);
+  display: var(--disableNewGroupDm) !important;
 }
 
 /* Hide the search bar in the home page */
 .searchBar_e4ea2a {
-  display: var(--disableSearch);
+  display: var(--disableSearch) !important;
 }
 
 /* Makes the "Friends" button take the place of the search bar. */
 [href="/channels/@me"] {
-	height: 35px;
+	height: 35px !important;
 }
 
 :root {
