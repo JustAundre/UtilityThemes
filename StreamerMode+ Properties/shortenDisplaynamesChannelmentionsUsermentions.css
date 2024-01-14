@@ -33,8 +33,8 @@
 }
 
 /* Fixes "Friends" button being cutoff along with the DM names */
-[data-list-item-id="private-channels-uid_402___friends"] .name__02dbd {
-	max-width: 300px !important;
+[href="/channels/@me"] .name__02dbd {
+	width: fit-content;
 	overflow: visible;
 }
 
