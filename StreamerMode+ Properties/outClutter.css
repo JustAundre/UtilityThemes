@@ -1,3 +1,11 @@
+/**
+ * @name OutClutter
+ * @description Removes all the crap you don't need.
+ * @author JustAundre
+ * @version 1.0.0
+ * @source No source given.
+ * @authorId 532681285961777154
+*/
 /* Hides the Nitro button on the home page */
 [href="/shop"] {
   display: var(--disableNitroBuy) !important;
