@@ -47,7 +47,7 @@
 }
 
 /* Hides Create new group DM button */
-[aria-label="New Group DM" ] {
+[aria-label="New Group DM"], [aria-label="Add Friends to DM"] {
   display: var(--disableNewGroupDm) !important;
 }
 
