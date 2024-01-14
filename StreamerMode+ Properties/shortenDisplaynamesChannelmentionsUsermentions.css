@@ -34,8 +34,14 @@
 
 /* Fixes "Friends" button being cutoff along with the DM names */
 [href="/channels/@me"] .name__02dbd {
-	width: fit-content;
+	max-width: unset;
 	overflow: visible;
+}
+
+[href="/channels/@me"]:hover .name__02dbd {
+	opacity: unset;
+	transition: unset;
+	transition-delay: unset;
 }
 
 :root {
