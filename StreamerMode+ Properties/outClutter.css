@@ -61,6 +61,11 @@
 	height: 35px !important;
 }
 
+/* Who actually tweets @Discord Support when there's a connection problem? */
+[href="https://twitter.com/discord_support"] {
+  display: var(--noTweet);
+}
+
 :root {
   --disableNitroBuy: none;
   --disableStore: none;
@@ -72,4 +77,5 @@
   --disableServerNotifButton: none;
   --disableNewGroupDm: none;
   --disableSearch: none;
+  --noTweet: none;
 }
