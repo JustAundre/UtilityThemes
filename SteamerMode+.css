@@ -11,9 +11,10 @@
   @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/hideProfiles.css');
   @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/hideUsernames.css');
   @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/shortenDisplaynamesChannelmentionsUsermentions.css');
-  @import url('https://github.com/ItsAundre/CraftyCord/raw/main/StreamerMode+%20Properties/outClutter.css');
+  @import url('https://github.com/ItsAundre/CraftyCord/raw/main/OutClutter.css');
 
 :root {
+  /* StreamerMode+ Configs */
   /*Set value to "1" to enable, set value to "inherit" to disable.*/
     --hideUsernames: 1;
     --shortenDisplays: 1;
@@ -22,7 +23,7 @@
     --hidePfp: 1;
 
 
-  /* outClutter configs */
+  /* OutClutter configs */
   /* Set to inherit to disable, set to none to enable. */
     --disableNitroBuy: none;
     --disableStore: none;
@@ -35,4 +36,5 @@
     --disableNewGroupDm: none;
     --disableSearch: none;
     --noTweet: none;
+    --noBoost: none;
 }

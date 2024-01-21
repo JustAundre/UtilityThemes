@@ -66,7 +66,17 @@
   display: var(--noTweet);
 }
 
+/* Removes "Server boosts" bar at the top of channels tab. */
+.container__4f639 {
+  display: var(--noBoost);
+}
+
+[style="height: 12px;"] {
+  display: var(--noBoost);
+}
+
 :root {
+  /* Set to 'none' to enable, set to 'inherit' to disable. */
   --disableNitroBuy: none;
   --disableStore: none;
   --disableSendGift: none;
@@ -78,4 +88,5 @@
   --disableNewGroupDm: none;
   --disableSearch: none;
   --noTweet: none;
+  --noBoost: none;
 }

@@ -1,0 +1,42 @@
+/**
+ * @name Compactify
+ * @author JustAundre
+ * @version 1.0.0
+ * @description Too much space!
+*/
+
+/* Makes the channels list on servers more compact. */
+.link__95dc0, .wrapper__7bcde {
+  padding: 0 0 !important;
+}
+
+/* Makes DMs list more compact. */
+.link__2e8e1 {
+  max-height: 32px;
+}
+
+/* Makes members list compact. */
+.member_aa4760 {
+  max-height: 32px;
+}
+
+.container__4f20e, .memberInner_a32223 {
+  margin-left: 8px;
+  padding: 0 0 !important;
+  max-height: 32px;
+}
+
+/* Makes header text sent by users have less spacing. */
+h1 {
+  margin: 0;
+}
+
+/* Makes the spacing between channel categories smaller. */
+:root {
+  --custom-category-channel-space-before-category: 8px;
+}
+
+/* Makes the channels (not categories) pushed in to be differentiated from the categories. */
+.containerDefault__3187b {
+  margin-left: 16px;
+}
