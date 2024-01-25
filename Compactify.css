@@ -27,7 +27,7 @@
 }
 
 /* Makes header text sent by users have less spacing. */
-h1 {
+h1, .markup_a7e664 h1:first-child {
   margin: 0;
 }
 
