@@ -40,3 +40,9 @@ h1, .markup_a7e664 h1:first-child {
 .containerDefault__3187b {
   margin-left: 16px;
 }
+
+/* Makes messages look 'correct-er'? (Basically a small optional fix for compact mode users.) */
+.zalgo__39311.compact__54ecc .messageContent__21e69 {
+  display: block !important;
+  translate: 10px 5px !important;
+}
