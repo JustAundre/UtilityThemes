@@ -63,3 +63,8 @@ h1, .markup_a7e664 h1:first-child {
 .repliedTextPreview__90311.clickable_d866f1 {
   translate: -10px 5px;
 }
+
+/* Fixes emojis screwing up message text. */
+.emojiContainer__4a804 {
+  display: revert;
+}
