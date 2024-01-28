@@ -58,3 +58,8 @@ h1, .markup_a7e664 h1:first-child {
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
+
+/* Fixes reply text preview being mis-aligned. */
+.repliedTextPreview__90311.clickable_d866f1 {
+  translate: -10px 5px;
+}
