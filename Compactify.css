@@ -46,3 +46,15 @@ h1, .markup_a7e664 h1:first-child {
   display: block !important;
   translate: 10px -5px !important;
 }
+
+/* Removes extra padding for messages. */
+.compact__54ecc.wrapper__09ecc {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Y'know that thing that appears that separates messages sent between different dates? Yeah, I just removed 2/3rds of its extra margin. */
+.group-spacing-0 .divider__8cf56.hasContent__8519e {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
