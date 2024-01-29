@@ -6,7 +6,8 @@
 */
 
 /* Makes the channels list on servers more compact. */
-.link__95dc0, .wrapper__7bcde {
+.link__95dc0,
+.wrapper__7bcde {
   padding: 0 0 !important;
 }
 
@@ -20,14 +21,16 @@
   max-height: 32px;
 }
 
-.container__4f20e, .memberInner_a32223 {
+.container__4f20e,
+.memberInner_a32223 {
   margin-left: 8px;
   padding: 0 0 !important;
   max-height: 32px;
 }
 
 /* Makes header text sent by users have less spacing. */
-h1, .markup_a7e664 h1:first-child {
+h1,
+.markup_a7e664 h1:first-child {
   margin: 0;
 }
 

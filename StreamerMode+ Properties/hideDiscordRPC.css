@@ -1,11 +1,33 @@
 /*Blurs the Discord RPC Image.*/
-.activityName__47e51, .spotifySection__1d573, .activitySection_b322be .assetsLargeImageUserPopout__6fc87, .assetsLargeImageUserPopoutV2__01dc1, .assetsLargeImageStreamPreview_db91fd, .assetsLargeImageStreamPreviewXbox_c549ba, .assetsLargeImageUserPopoutXbox__908da, .assetsLargeImageUserPopoutV2Xbox__32def .gameIcon__90c32, .medium__2316b, .gameIcon__71e13, .activitySectionAssets_ea2444 img, .headerFull_c60f77 img, .activityUserPopoutV2__32328 img, .headerIcon__5761b, .xboxSectionIcon__34457 {
+.activityName__47e51,
+.spotifySection__1d573,
+.activitySection_b322be .assetsLargeImageUserPopout__6fc87,
+.assetsLargeImageUserPopoutV2__01dc1,
+.assetsLargeImageStreamPreview_db91fd,
+.assetsLargeImageStreamPreviewXbox_c549ba,
+.assetsLargeImageUserPopoutXbox__908da,
+.assetsLargeImageUserPopoutV2Xbox__32def .gameIcon__90c32,
+.medium__2316b, .gameIcon__71e13,
+.activitySectionAssets_ea2444 img,
+.headerFull_c60f77 img,
+.activityUserPopoutV2__32328 img,
+.headerIcon__5761b,
+.xboxSectionIcon__34457 {
 	opacity: calc(0.95 * var(--hideRpc));
 	filter: blur(calc(var(--hideRpc) * 10px));
 }
 
 /*Hides the Discord RPC Text.*/
-.textRow__4750e, .activityText__47ec1, .activitySection_b322be .textContent__45dd0, .textContent__45dd0 span, .xboxSection__66be0 div, .activity__24558, .voiceSectionDetails_b9919a, /*This is an image-*/ .voiceSectionIconWrapper_c50254, /*Also an image*/.speakerIconContainer__94fb2, .voiceChannelInfo__41ce2 {
+.textRow__4750e,
+.activityText__47ec1,
+.activitySection_b322be .textContent__45dd0,
+.textContent__45dd0 span,
+.xboxSection__66be0 div,
+.activity__24558,
+.voiceSectionDetails_b9919a,
+/*This is an image-*/ .voiceSectionIconWrapper_c50254,
+/*Also an image*/.speakerIconContainer__94fb2,
+.voiceChannelInfo__41ce2 {
 	opacity: calc(1 - var(--hideRpc));
 }
 
