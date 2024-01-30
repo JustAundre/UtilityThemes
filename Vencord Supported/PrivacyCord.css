@@ -1,0 +1,23 @@
+/**
+ * @name PrivacyCord
+ * @description If you're on the web, right click the tab and click 'Pin' for greater effect.
+ * @author JustAundre
+ * @version 1.0.0
+ * @authorId 532681285961777154
+*/
+
+  @import url('https://github.com/ItsAundre/CraftyCord/raw/main/Vencord%20Supported/PC-Properties/blurAttachmentsEmbeds.css');
+  @import url('https://github.com/ItsAundre/CraftyCord/raw/main/Vencord%20Supported/PC-Properties/hideDiscordRPC.css');
+  @import url('https://github.com/ItsAundre/CraftyCord/raw/main/Vencord%20Supported/PC-Properties/hideProfiles.css');
+  @import url('https://github.com/ItsAundre/CraftyCord/raw/main/Vencord%20Supported/PC-Properties/hideUsernames.css');
+  @import url('https://github.com/ItsAundre/CraftyCord/raw/main/Vencord%20Supported/PC-Properties/shortenDisplaynamesChannelmentionsUsermentions.css');
+
+:root {
+  /* StreamerMode+ Configs */
+  /*Set value to "1" to enable, set value to "inherit" to disable.*/
+    --hideUsernames: 1;
+    --shortenDisplays: 1;
+    --hideAttachments: 1;
+    --hideRpc: 1;
+    --hidePfp: 1;
+}
