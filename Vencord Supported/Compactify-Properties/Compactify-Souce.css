@@ -1,6 +1,5 @@
 /* Makes the channels list on servers more compact. */
-.link__95dc0,
-.wrapper__7bcde {
+.link__95dc0, .wrapper__7bcde {
   padding: 0 0 !important;
 }
 
@@ -14,16 +13,14 @@
   max-height: 32px;
 }
 
-.container__4f20e,
-.memberInner_a32223 {
+.container__4f20e, .memberInner_a32223 {
   margin-left: 8px;
   padding: 0 0 !important;
   max-height: 32px;
 }
 
 /* Makes header text sent by users have less spacing. */
-h1,
-.markup_a7e664 h1:first-child {
+h1, .markup_a7e664 h1:first-child {
   margin: 0;
 }
 
@@ -38,9 +35,10 @@ h1,
 }
 
 /* Makes messages look 'correct-er'? (Basically a small optional fix for compact mode users.) */
-.zalgo__39311.compact__54ecc .messageContent__21e69 {
+.zalgo__39311.compact__54ecc .messageContent__21e69, .container_dbadf5 {
   display: block !important;
   translate: 10px -5px !important;
+  padding: 0;
 }
 
 /* Removes extra padding for messages. */
