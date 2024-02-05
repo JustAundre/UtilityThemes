@@ -3,6 +3,11 @@
   padding: 0 0 !important;
 }
 
+/* Removes loading screen. */
+.container__4bde3.fixClipping__9c8f4 {
+  display: none;
+}
+
 /* Makes DMs list more compact. */
 .link__2e8e1 {
   max-height: 32px;
@@ -29,16 +34,9 @@ h1, .markup_a7e664 h1:first-child {
   --custom-category-channel-space-before-category: 8px;
 }
 
-/* Makes the channels (not categories) pushed in to be differentiated from the categories. */
+/* Makes the channels (not categories) indented to be differentiated from the categories. */
 .containerDefault__3187b {
   margin-left: 16px;
-}
-
-/* Makes messages look 'correct-er'? (Basically a small optional fix for compact mode users.) */
-.zalgo__39311.compact__54ecc .messageContent__21e69, .container_dbadf5 {
-  display: block !important;
-  translate: 10px -5px !important;
-  padding: 0;
 }
 
 /* Removes extra padding for messages. */
@@ -53,12 +51,22 @@ h1, .markup_a7e664 h1:first-child {
   margin-bottom: .5rem;
 }
 
-/* Fixes reply text preview being mis-aligned. */
-.repliedTextPreview__90311.clickable_d866f1 {
-  translate: -10px 5px;
-}
-
 /* Fixes emojis screwing up message text. */
 .emojiContainer__4a804 {
   display: revert;
+}
+
+/* For "Cozy" Discord users [which is most users-], there is now slightly less vertical spacing for text. */
+.markup_a7e664 {
+  line-height: 1.05rem;
+}
+
+/* Removes extra bottom and top padding for images. */
+.container_dbadf5 {
+  padding: 0;
+}
+
+/* Divides the original margin for different messages by 5. */
+.group-spacing-16 .groupStart__56db5 {
+  margin-top: .2rem;
 }
