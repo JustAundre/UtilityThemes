@@ -62,6 +62,9 @@ h1, .markup_a7e664 h1:first-child {
 .containerDefault__3187b {
   margin-left: 16px;
 }
+.containerDefault__3187b svg {
+  translate: 0 -10px;
+}
 
 /* Removes extra padding for messages. */
 .compact__54ecc.wrapper__09ecc {
