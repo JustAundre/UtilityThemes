@@ -83,7 +83,7 @@ h1, .markup_a7e664 h1:first-child /* Selects h1 (Header 1) elements */ {
 
 
 /* Removes extra padding for messages */
-.wrapper__09ecc /* Selects messages in compact mode only */ {
+.wrapper__09ecc /* Selects messages */ {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   min-height: 0;
