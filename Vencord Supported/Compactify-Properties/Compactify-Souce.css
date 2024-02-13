@@ -1,75 +1,111 @@
-/* Makes the channels list on servers more compact. */
+/* Makes the channels list on servers more compact */
 .link__95dc0, .wrapper__7bcde {
   padding: 0 0 !important;
 }
 
-/* Removes loading screen. */
+
+
+/* Removes loading screen */
 .container__4bde3.fixClipping__9c8f4 {
   display: none;
 }
 
-/* Makes DMs list more compact. */
-.link__2e8e1 {
+
+
+/* Makes DMs list more compact */
+.link__2e8e1 /* Selects every button in the DMs sidebar */ {
   max-height: 32px;
 }
 
-/* Makes members list compact. */
-.member_aa4760 {
+
+
+/* Makes members list compact */
+.member_aa4760 /* Selects each member on the members list */ {
   max-height: 32px;
 }
-
-.container__4f20e, .memberInner_a32223 {
+.container__4f20e, .memberInner_a32223 /* Selects each member on the members list */ {
   margin-left: 8px;
   padding: 0 0 !important;
   max-height: 32px;
 }
 
-/* Makes header text sent by users have less spacing. */
-h1, .markup_a7e664 h1:first-child {
+
+
+/* Makes header text sent by users have less spacing */
+h1, .markup_a7e664 h1:first-child /* Selects h1 (Header 1) elements */ {
   margin: 0;
 }
 
-/* Makes the spacing between channel categories smaller. */
+
+
+/* Makes the spacing between channel categories smaller */
 :root {
   --custom-category-channel-space-before-category: 8px;
 }
 
-/* Makes the channels (not categories) indented to be differentiated from the categories. */
-.containerDefault__3187b {
+
+
+/* Makes the channels (not categories) indented to be differentiated from the categories */
+.containerDefault__3187b /* Selects channels */ {
   margin-left: 16px;
 }
-.containerDefault__3187b .spine__88e6d {
-  translate: 0 -10px;
+
+
+
+.containerDefault__3187b .spine__88e6d /* Selects the 'spines' that connects threads to channels */ {
+  translate: 0 -10px  /* Fixes the spines being too low */;
 }
 
-/* Removes extra padding for messages. */
-.compact__54ecc.wrapper__09ecc {
+
+
+/* Removes extra padding for messages */
+.compact__54ecc.wrapper__09ecc /* Selects messages in compact mode only */ {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* Y'know that thing that appears that separates messages sent between different dates? Yeah, I just removed 2/3rds of its extra margin. */
-.group-spacing-0 .divider__8cf56.hasContent__8519e {
+
+
+/* Reduces the margin for date separaters */
+.group-spacing-0 .divider__8cf56.hasContent__8519e /* Date separaters have margin reduced */ {
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
 
-/* Fixes emojis screwing up message text. */
-.emojiContainer__4a804 {
+
+
+/* Fixes emojis screwing up message text */
+.emojiContainer__4a804 /* Self-explanatory, selects the emoji container */ {
   display: revert;
 }
 
-/* For "Cozy" Discord users [which is most users-], there is now slightly less vertical spacing for text. */
-.markup_a7e664 {
+
+
+/* For "Cozy" Discord users [which is most users-], there is now slightly less vertical spacing for text */
+.markup_a7e664 /* Selects message text */ {
   line-height: 1.05rem;
 }
-
-/* Removes extra bottom and top padding for images. */
-.container_dbadf5 {
-  padding: 0;
+.cozyMessage__64ce7.groupStart__56db5 /* Selects the first message of every grouped message */ {
+  min-height: 0;
+}
+:root {
+  --custom-emoji-size-emoji: 1.05rem; /* Self-explanatory */
 }
 
-/* Divides the original margin for different messages by 5. */
-.group-spacing-16 .groupStart__56db5 {
+
+
+/* Removes extra bottom and top padding for images */
+.container_dbadf5 /* Selects the image containers */ {
+  padding: 0;
+}
+.cozy_f5c119.wrapper__09ecc {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+
+/* Lessens the margin bewteen messages of unique users */
+.group-spacing-16 .groupStart__56db5 /* Selects every message by a different user than the message above */ {
   margin-top: .2rem;
 }
