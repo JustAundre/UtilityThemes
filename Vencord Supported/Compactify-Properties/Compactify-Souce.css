@@ -59,9 +59,10 @@ h1, .markup_a7e664 h1:first-child /* Selects h1 (Header 1) elements */ {
 
 
 /* Removes extra padding for messages */
-.compact__54ecc.wrapper__09ecc /* Selects messages in compact mode only */ {
-  padding-top: 0;
-  padding-bottom: 0;
+.wrapper__09ecc /* Selects messages in compact mode only */ {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  min-height: 0;
 }
 
 
@@ -97,10 +98,6 @@ h1, .markup_a7e664 h1:first-child /* Selects h1 (Header 1) elements */ {
 /* Removes extra bottom and top padding for images */
 .container_dbadf5 /* Selects the image containers */ {
   padding: 0;
-}
-.cozy_f5c119.wrapper__09ecc {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
 }
 
 
