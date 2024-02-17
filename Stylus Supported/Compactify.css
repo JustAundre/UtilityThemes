@@ -56,8 +56,9 @@
 
 
 /* Makes header text sent by users have less spacing */
-h1, .markup_a7e664 h1:first-child /* Selects h1 (Header 1) elements */ {
+.markup_a7e664 h1 /* Selects h1 (Header 1) elements */ {
   margin: 0;
+  line-height: 1.1em;
 }
 
 
