@@ -24,22 +24,28 @@ body {
   position: unset;
   height: 100vh;
   margin: 0px;
-  background: rgb(10, 5, 0);
+  background: rgb(0, 0, 0);
   font-family: "Comfortaa";
   font-size: 16px;
 }
 
+/* Sets the h/w of the background and actual site to be 100% of the visitor's viewport h/w */
 .background, .items {
-    width: 100%;
-    height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
+/* Blurs the graphics, and makes them fit to the screen */
 .background {
-    object-fit: cover;
+  filter: blur(25px);
+  object-fit: contain;
 }
 
+/* Makes the actual site work */
 .items {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Makes the graphics darker */
+  background: rgb(0, 0, 0, .25);
 }
