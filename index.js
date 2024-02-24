@@ -12,5 +12,8 @@ function setRandomHue() {
     document.documentElement.style.setProperty('--hue', hueValue);
   }
   
-  // Call the function initially to set the variable
-  setRandomHue();
+// Call the function initially to set the variable
+setRandomHue();
+
+// Repeat the function every 10 seconds
+setInterval(setRandomHue, 10000);
