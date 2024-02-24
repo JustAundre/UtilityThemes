@@ -35,17 +35,17 @@ body {
   height: 100vh;
 }
 
-/* Blurs the graphics, and makes them fit to the screen */
+/* Blurs the graphics, and makes them fit to the screen, makes smooth transitions */
 .background {
-  filter: blur(25px);
+  filter: hue-rotate(var(--hue));
   object-fit: contain;
+  transition: ease-in-out 3s;
 }
 
 /* Makes the actual site work */
 .items {
+  backdrop-filter: blur(5px);
   position: absolute;
   top: 0;
   left: 0;
-  /* Makes the graphics darker */
-  background: rgb(0, 0, 0, .25);
 }
