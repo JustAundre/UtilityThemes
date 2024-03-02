@@ -1,8 +1,9 @@
 /**
  * @name Compactify
+ * @description Compactify, compatability mode.
  * @author JustAundre
  * @version Compatability Mode
- * @description Welcome to Compactify Compatability Mode.
+ * @authorId 532681285961777154
 */
 
 
@@ -26,12 +27,11 @@
 .link__95dc0, .wrapper__7bcde {
   padding: 0 0 !important;
 }
-
-
-
-/* Removes loading screen */
-.container__4bde3.fixClipping__9c8f4 {
-  display: none;
+.containerDefault__3187b /* Makes you differentiate channels and categories better */{
+  margin-left: 16px;
+}
+.containerDefault__3187b .spine__88e6d /* Selects the 'spines' that connects threads to channels */ {
+  translate: 0 -10px  /* Fixes the spines being too low */;
 }
 
 
@@ -55,30 +55,9 @@
 
 
 
-/* Makes header text sent by users have less spacing */
-.markup_a7e664 h1 /* Selects h1 (Header 1) elements */ {
-  margin: 0;
-  line-height: 1.1em;
-}
-
-
-
 /* Makes the spacing between channel categories smaller */
 :root {
   --custom-category-channel-space-before-category: 8px;
-}
-
-
-
-/* Makes the channels (not categories) indented to be differentiated from the categories */
-.containerDefault__3187b /* Selects channels */ {
-  margin-left: 16px;
-}
-
-
-
-.containerDefault__3187b .spine__88e6d /* Selects the 'spines' that connects threads to channels */ {
-  translate: 0 -10px  /* Fixes the spines being too low */;
 }
 
 
@@ -88,6 +67,43 @@
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   min-height: 0;
+}
+/* Slightly less vertical spacing for text */
+.markup_a7e664 /* Selects message text */ {
+  line-height: 1.15rem;
+}
+.cozyMessage__64ce7.groupStart__56db5 /* Selects the first message of every grouped message */ {
+  min-height: 0;
+}
+/* Makes header text sent by users have less spacing */
+.markup_a7e664 h1, h1 /* Selects h1 (Header 1) elements */ {
+  margin: 0 !important;
+  line-height: 1.5rem;
+}
+:root {
+  --custom-emoji-size-emoji: 1rem; /* Self-explanatory */
+}
+/* Fixes emojis screwing up message text */
+.emojiContainer__4a804 /* Self-explanatory, selects the emoji container */ {
+  display: revert;
+}
+/* Fixes "New Message" seperater being too low. */
+.isUnread__6f880 {
+  margin: 0;
+  margin-right: .875rem;
+  top: .25rem;
+  border-width: 3px;
+}
+/* Fixes pings and replies being too small */
+.mentioned__58017:before {
+  all: unset;
+}
+.hasReply_febd50 .contents_f41bb2 {
+  translate: 0 -5px;
+}
+.hasReply_febd50 .contents_f41bb2 img {
+  margin-top: none;
+  translate: -70px;
 }
 
 
@@ -100,29 +116,11 @@
 
 
 
-/* Fixes emojis screwing up message text */
-.emojiContainer__4a804 /* Self-explanatory, selects the emoji container */ {
-  display: revert;
-}
-
-
-
-/* For "Cozy" Discord users [which is most users-], there is now slightly less vertical spacing for text */
-.markup_a7e664 /* Selects message text */ {
-  line-height: 1.05rem;
-}
-.cozyMessage__64ce7.groupStart__56db5 /* Selects the first message of every grouped message */ {
-  min-height: 0;
-}
-:root {
-  --custom-emoji-size-emoji: 1.05rem; /* Self-explanatory */
-}
-
-
-
-/* Removes extra bottom and top padding for images */
+/* Reduces bottom and top padding for images */
 .container_dbadf5 /* Selects the image containers */ {
   padding: 0;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
 }
 
 

@@ -5,51 +5,31 @@
  * @version Compatability Mode
  * @authorId 532681285961777154
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
 :root {
-  /* StreamerMode+ Configs */
-  /*Set value to "1" to enable, set value to "inherit" to disable.*/
-    --hideUsernames: 1;
-    --shortenDisplays: 1;
-    --hideAttachments: 1;
-    --hideRpc: 1;
-    --hidePfp: 1;
+	/* PrivacyCord Configs */
+	/*Set value to "1" to enable, set value to "inherit" to disable.*/
+	  --hideUsernames: 1;
+	  --shortenDisplays: 1;
+	  --hideAttachments: 1;
+	  --hideRpc: 1;
+	  --hidePfp: 1;
+  }
 
 
-  /* OutClutter configs */
-  /* Set to inherit to disable, set to none to enable. */
-    --disableNitroBuy: none;
-    --disableStore: none;
-    --disableSendGift: none;
-    --disableGifPicker: none;
-    --disableStickerPicker: none;
-    --disableHelp: none;
-    --disableVideoCall: none;
-    --disableServerNotifButton: none;
-    --disableNewGroupDm: none;
-    --disableSearch: none;
-    --noTweet: none;
-    --noBoost: none;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -111,7 +91,6 @@
 .avatar__08316.clickable_d866f1,
 .replyAvatar_cea07c,
 .listItemWrapper__1f93b img {
-	opacity: (var(--hidePfp) * 0.2);
 	filter: blur(calc(var(--hidePfp) * 8px));
 }
 
@@ -241,76 +220,4 @@
 	opacity: unset;
 	transition: unset;
 	transition-delay: unset;
-}
-
-
-
-/* OutClutter Module */
-/* Hides the Nitro button on the home page */
-[href="/shop"] {
-  display: var(--disableNitroBuy) !important;
-}
-
-/* Hides the store button on the home page */
-[href="/store"] {
-  display: var(--disableStore) !important;
-}
-
-/* Hides the Gift button in the message bar */
-[aria-label="Send a gift"] {
-  display: var(--disableSendGift) !important;
-}
-
-/* Hides the GIF button in the message bar */
-[aria-label="Open GIF picker"] {
-  display: var(--disableGifPicker) !important;
-}
-
-/* Hides the Sticker button in the message bar */
-[aria-label="Open sticker picker"] {
-  display: var(--disableStickerPicker) !important;
-}
-
-/* Hides the help button in the top footer */
-[aria-label="Help"] {
-  display: var(--disableHelp) !important;
-}
-
-/* Hides the Start Video call button */
-[aria-label="Start Video Call"] {
-  display: var(--disableVideoCall) !important;
-}
-
-/* Hides the Notification settings button in message channels on servers */
-[aria-label="Notification Settings"] {
-  display: var(--disableServerNotifButton) !important;
-}
-
-/* Hides Create new group DM button */
-[aria-label="New Group DM"], [aria-label="Add Friends to DM"] {
-  display: var(--disableNewGroupDm) !important;
-}
-
-/* Hide the search bar in the home page */
-.searchBar_e4ea2a {
-  display: var(--disableSearch) !important;
-}
-
-/* Makes the "Friends" button take the place of the search bar. */
-[href="/channels/@me"] {
-	height: 35px !important;
-}
-
-/* Who actually tweets @Discord Support when there's a connection problem? */
-[href="https://twitter.com/discord_support"] {
-  display: var(--noTweet);
-}
-
-/* Removes "Server boosts" bar at the top of channels tab. */
-.container__4f639 {
-  display: var(--noBoost);
-}
-
-[style="height: 12px;"] {
-  display: var(--noBoost);
 }
