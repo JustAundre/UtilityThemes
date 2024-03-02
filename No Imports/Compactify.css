@@ -25,7 +25,7 @@
 
 /* Makes the channels list on servers more compact */
 .link__95dc0, .wrapper__7bcde {
-  padding: 0 0 !important;
+  padding: 0 0;
 }
 .containerDefault__3187b /* Makes you differentiate channels and categories better */{
   margin-left: 16px;
@@ -38,7 +38,7 @@
 
 /* Makes DMs list more compact */
 .link__2e8e1 /* Selects every button in the DMs sidebar */ {
-  max-height: 32px;
+  max-height: 34px;
 }
 
 
@@ -49,7 +49,7 @@
 }
 .container__4f20e, .memberInner_a32223 /* Selects each member on the members list */ {
   margin-left: 8px;
-  padding: 0 0 !important;
+  padding: 0 0;
   max-height: 32px;
 }
 
@@ -64,8 +64,8 @@
 
 /* Removes extra padding for messages */
 .wrapper__09ecc /* Selects messages */ {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
   min-height: 0;
 }
 /* Slightly less vertical spacing for text */
@@ -77,7 +77,7 @@
 }
 /* Makes header text sent by users have less spacing */
 .markup_a7e664 h1, h1 /* Selects h1 (Header 1) elements */ {
-  margin: 0 !important;
+  margin: 0;
   line-height: 1.5rem;
 }
 :root {
@@ -94,18 +94,26 @@
   top: .25rem;
   border-width: 3px;
 }
-/* Fixes pings and replies being too small */
+/* Fixes ping background color being too small */
 .mentioned__58017:before {
   all: unset;
 }
-.hasReply_febd50 .contents_f41bb2 {
-  translate: 0 -5px;
-}
 .hasReply_febd50 .contents_f41bb2 img {
-  margin-top: none;
-  translate: -70px;
+  margin-top: unset;
 }
-
+.mentioned__58017 {
+  background: linear-gradient(to right, rgb(255, 202, 47, .25), rgb(0, 0, 0, 0));
+  border-left-color: rgb(255, 202, 47, .5);
+  border-left-width: 5px;
+  border-left-style: solid;
+}
+/* Truncates oversized reply previews */
+.repliedTextPreview__90291.clickable_d866f1, .repliedTextContent__75526.markup_a7e664.messageContent__21e69 {
+  width: 100px;
+  overflow: hidden;
+  height: 1.2rem;
+  translate: 0 -1px;
+}
 
 
 /* Reduces the margin for date separaters */
