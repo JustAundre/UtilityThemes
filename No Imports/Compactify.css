@@ -40,6 +40,10 @@
 .link__2e8e1 /* Selects every button in the DMs sidebar */ {
   max-height: 34px;
 }
+/* For custom fonts, fixes cut off characters */
+.name__02dbd {
+  line-height: 1.2rem;
+}
 
 
 
@@ -112,7 +116,6 @@
   width: 100px;
   overflow: hidden;
   height: 1.2rem;
-  translate: 0 -1px;
 }
 
 
