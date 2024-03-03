@@ -8,8 +8,8 @@
 */
 @import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/OutClutter.css');
 :root {
-  /* OutClutter Configs */
-  /* Set to 'none' to enable, set to 'inherit' to disable. */
+  /* OutClutter configs */
+  /* Set to inherit to disable, set to none to enable. */
   --disableNitroBuy: none;
   --disableStore: none;
   --disableSendGift: none;
@@ -17,9 +17,14 @@
   --disableStickerPicker: none;
   --disableHelp: none;
   --disableVideoCall: none;
-  --disableServerNotifButton: none;
   --disableNewGroupDm: none;
   --disableSearch: none;
   --noTweet: none;
   --noBoost: none;
+  --noStatus: none;
+  --discordStayOnWeb: none;
+  --noScrollbars: none;
+  --noTitles: none;
+  --noNowPlaying: none;
+  --noLoadingScreen: none;
 }

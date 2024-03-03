@@ -8,25 +8,24 @@
 :root {
   /* OutClutter configs */
   /* Set to inherit to disable, set to none to enable. */
-    --disableNitroBuy: none;
-    --disableStore: none;
-    --disableSendGift: none;
-    --disableGifPicker: none;
-    --disableStickerPicker: none;
-    --disableHelp: none;
-    --disableVideoCall: none;
-    --disableNewGroupDm: none;
-    --disableSearch: none;
-    --noTweet: none;
-    --noBoost: none;
-    --noStatus: none;
-    --discordStayOnWeb: none;
-    --noScrollbars: none;
-    --noTitles: none;
-    --noNowPlaying: none;
-    --noLoadingScreen: none;
+  --disableNitroBuy: none;
+  --disableStore: none;
+  --disableSendGift: none;
+  --disableGifPicker: none;
+  --disableStickerPicker: none;
+  --disableHelp: none;
+  --disableVideoCall: none;
+  --disableNewGroupDm: none;
+  --disableSearch: none;
+  --noTweet: none;
+  --noBoost: none;
+  --noStatus: none;
+  --discordStayOnWeb: none;
+  --noScrollbars: none;
+  --noTitles: none;
+  --noNowPlaying: none;
+  --noLoadingScreen: none;
 }
-
 
 
 
