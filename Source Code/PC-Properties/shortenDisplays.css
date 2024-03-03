@@ -16,7 +16,6 @@
 	font-family: 'Poppins' !important;
 	font-size: calc(var(--shortenDisplays) * 16px) !important;
 	max-width: calc(var(--shortenDisplays) * 40px);
-	max-height: calc(var(--shortenDisplays) * 18px);
 	text-wrap: nowrap;
 	overflow: hidden !important;
 	display: inline-flex !important;
