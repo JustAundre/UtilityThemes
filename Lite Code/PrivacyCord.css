@@ -5,10 +5,14 @@
  * @version 1.0.0
  * @authorId 532681285961777154
 */
-@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord.css');
+@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Blur-Attachments.css');
+@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Hide-Profiles.css');
+@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Hide-RPC.css');
+@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Hide-Usernames.css');
+@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Shorten-Displays.css');
 :root {
   /* PrivacyCord Configs */
-  /*Set value to "1" to enable, set value to "?" to disable.*/
+  /*Set value to '1' to enable, set value to '?' to disable.*/
   --hideUsernames: 1;
   --shortenDisplays: 1;
   --hideAttachments: 1;
