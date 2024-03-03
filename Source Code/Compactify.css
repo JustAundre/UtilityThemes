@@ -49,7 +49,7 @@
 
 /* Makes members list compact */
 .member_aa4760 /* Selects each member on the members list */ {
-  max-height: 32px;
+  max-height: 34px;
 }
 .container__4f20e, .memberInner_a32223 /* Selects each member on the members list */ {
   margin-left: 8px;
