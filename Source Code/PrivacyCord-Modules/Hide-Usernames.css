@@ -3,34 +3,30 @@
 .title__10613,
 .discriminator_a801dd,
 .discriminator_aef524 {
-	opacity: calc(0.2 * var(--hideUsernames));
-	filter: blur(calc(var(--hideUsernames) * 8px));
-	transition-delay: calc(var(--hideUsernames) * 5s) !important;
+	opacity: 20%;
+	filter: blur(8px);
+	transition-delay: 5s !important;
 }
 
 /*When hovering over the actual username it reveals. (Takes longer to reveal.)*/
 .userTagUsernameBase__75fb1:hover,
 .discriminator_a801dd:hover,
 .discriminator_aef524:hover {
-	opacity: 1;
+	opacity: 100%;
 	filter: blur(0px);
-	max-width: calc(var(--hideUsernames) * 1000px);
-	transition: calc(var(--hideUsernames) * 0.5s) ease-in-out;
-	transition-delay: calc(var(--hideUsernames) * 5s) !important;
+	max-width: 1000px;
+	transition: 0.5s ease-in-out;
+	transition-delay: 5s !important;
 }
 
 /*Slows down the reveal of your actual username when hovering over your user card in the bottom left.*/
 .hoverRoll__041cb.forceHover__71322:not(.disabled__89e5c) .hovered__243e5,
 .hoverRoll__041cb:hover:not(.disabled__89e5c) .hovered__243e5 {
-	transition: calc(var(--hideUsernames) * 0.5s) ease-in-out;
-	transition-delay: calc(var(--hideUsernames) * 5s);
+	transition: 0.5s ease-in-out;
+	transition-delay: 5s;
 }
 
 /*Removes all tooltips.*/
 .tooltip__01384 {
-	opacity: calc(1 - var(--hideUsernames)) !important;
-}
-
-:root {
-	--hideUsernames: 1;
+	opacity: 0% !important;
 }

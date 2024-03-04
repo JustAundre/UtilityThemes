@@ -13,8 +13,7 @@
 .activityUserPopoutV2__32328 img,
 .headerIcon__5761b,
 .xboxSectionIcon__34457 {
-	opacity: calc(0.95 * var(--hideRpc));
-	filter: blur(calc(var(--hideRpc) * 10px));
+	filter: blur(10px);
 }
 
 /*Hides the Discord RPC Text.*/
@@ -28,9 +27,5 @@
 /*This is an image-*/ .voiceSectionIconWrapper_c50254,
 /*Also an image*/.speakerIconContainer__94fb2,
 .voiceChannelInfo__41ce2 {
-	opacity: calc(1 - var(--hideRpc));
-}
-
-:root {
-	--hideRpc: 1;
+	opacity: 0%;
 }

@@ -8,13 +8,13 @@
 .username__81ee6,
 .titleWrapper__482dc,
 .listName_dbd44a span {
-	font-family: 'Poppins' !important;
-	font-size: calc(var(--shortenDisplays) * 16px) !important;
-	max-width: calc(var(--shortenDisplays) * 40px);
+	font-family: 'Poppins';
+	font-size: 16px;
+	max-width: 40px;
 	text-wrap: nowrap;
-	overflow: hidden !important;
-	display: inline-flex !important;
-	transition: calc(0.5s * var(--shortenDisplays)) ease-in-out !important;
+	overflow: hidden;
+	display: inline-flex;
+	transition: 0.5s ease-in-out;
 }
 
 /*When hovering over display names and pings they will reveal-fade*/
@@ -26,10 +26,10 @@
 .username__81ee6:hover,
 .titleWrapper__482dc:hover,
 .listName_dbd44a:hover span {
-	opacity: calc(1 - var(--shortenDisplays));
-	max-width: calc(var(--shortenDisplays) * 1000px);
-	transition: calc(var(--shortenDisplays) * 0.75s) ease-in-out;
-	transition-delay: calc(var(--shortenDisplays) * 1s);
+	opacity: 0%;
+	max-width: 1000px;
+	transition: 0.75s ease-in-out;
+	transition-delay: 1s;
 }
 
 /*When long-pressing on display names and pings they reveal completely.*/
@@ -41,15 +41,15 @@
 .username__81ee6:active,
 .titleWrapper__482dc:active,
 .listName_dbd44a:active span {
-	opacity: 1;
-	max-width: calc(var(--shortenDisplays) * 1000px);
-	transition: calc(var(--shortenDisplays) * 1s) ease-in-out;
-	transition-delay: calc(1.5s * var(--shortenDisplays));
+	opacity: 100%;
+	max-width: 1000px;
+	transition: 1s ease-in-out;
+	transition-delay: 1.5s;
 }
 
 /*Removes all tooltips.*/
 .tooltip__01384 {
-	opacity: calc(1 - var(--shortenDisplays)) !important;
+	opacity: 0% !important;
 }
 
 /* Fixes "Friends" button being cutoff along with the DM names */
@@ -62,8 +62,4 @@
 	opacity: unset;
 	transition: unset;
 	transition-delay: unset;
-}
-
-:root {
-	--shortenDisplays: 1;
 }

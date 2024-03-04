@@ -1,16 +1,12 @@
 /* Lowers attachment/embed opacity, unless hovered. */
 .embedWrapper_c143d9 {
-	opacity: calc(0.1 * var(--hideAttachments));
-	filter: blur(calc(var(--hideAttachments) * 5px));
+	opacity: 10%;
+	filter: blur(5px);
 	transition: all 0.25s ease-in-out;
 }
 
 .embedWrapper_c143d9:hover {
 	filter: blur(0px);
-	opacity: 1;
+	opacity: 100%;
 	transition: all 0.5s ease-in-out;
-}
-
-:root {
-	--hideAttachments: 1;
 }

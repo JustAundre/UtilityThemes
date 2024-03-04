@@ -5,18 +5,11 @@
  * @version 1.0.0
  * @authorId 532681285961777154
 */
-@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Blur-Attachments.css');
-@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Hide-Profiles.css');
-@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Hide-RPC.css');
-@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Hide-Usernames.css');
-@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Shorten-Displays.css');
-@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Private-Settings.css');
-:root {
-  /* PrivacyCord Configs */
-  /*Set value to '1' to enable, set value to '?' to disable.*/
-  --hideUsernames: 1;
-  --shortenDisplays: 1;
-  --hideAttachments: 1;
-  --hideRpc: 1;
-  --hidePfp: 1;
-}
+
+/* Remove (or comment) the corresponding lebeled module you want to disable. */
+@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Blur-Attachments.css'); /* Blur attachments and embeds Module */
+@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Hide-Profiles.css'); /* Hide Profiles Module */
+@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Hide-RPC.css'); /* Hide Discord RPC Module */
+@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Hide-Usernames.css'); /* Hide Usernames Module */
+@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Shorten-Displays.css'); /* Shorten Displays Module */
+@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Private-Settings.css'); /* Private Settings Module */
