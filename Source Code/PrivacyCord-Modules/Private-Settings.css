@@ -1,17 +1,19 @@
 /* Replaces your username, display, phone number, and email with "ಠ_ಠ" instead */
-#my-account-tab .usernameInnerRow__7f209 .text-md-normal__4afad::before {
-    content: "ಠ_ಠ";
+#my-account-tab span.text-md-normal__4afad[data-text-variant="text-md/normal"][style="color: var(--header-primary);"]::before {
+  content: "ಠ_ಠ";
 }
-#my-account-tab .usernameInnerRow__7f209 {
-    max-width: 43px;
+#my-account-tab .usernameInnerRow__7f209, #my-account-tab span.text-md-normal__4afad[data-text-variant="text-md/normal"][style="color: var(--header-primary);"] {
+  max-width: 30px;
+  overflow: hidden;
+  display: flex;
 }
 
 /* Replaces your phone number with "ಠ_ಠ" */
 #my-account-tab .colorStandard__5111e.size14_b2af01.description__7af71.formText_e4d957.marginBottom8_f4aae3.modeDefault_c1162c::before {
     content: "Your current phone number is- ಠ_ಠ";
   }
-  #my-account-tab .colorStandard__5111e.size14_b2af01.description__7af71.formText_e4d957.marginBottom8_f4aae3.modeDefault_c1162c {
-    max-width: 222.5px;
-    overflow: hidden;
-    text-wrap: nowrap;
-  }
+#my-account-tab .colorStandard__5111e.size14_b2af01.description__7af71.formText_e4d957.marginBottom8_f4aae3.modeDefault_c1162c {
+  width: 225px;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
