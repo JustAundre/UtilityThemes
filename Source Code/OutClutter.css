@@ -136,3 +136,8 @@
 .container__4bde3.fixClipping__9c8f4 {
   display: var(--noLoadingScreen);
 }
+
+/* Removes notifications settings button from top footer */
+div.iconWrapper_af9215.clickable_d23a1a[role="button"][aria-label="Notification Settings"][aria-expanded="false"][tabindex="0"] {
+  display: none;
+}
