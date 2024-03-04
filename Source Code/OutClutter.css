@@ -5,6 +5,8 @@
  * @version Compatability Mode
  * @authorId 532681285961777154
 */
+/* Comment or delete the following import rules if you want to disable them */
+@import url("itsaundre.github.io/UtilityThemes/Source%20Code/OutClutter-Modules/Clean-Folders.css");
 :root {
   /* OutClutter configs */
   /* Set to inherit to disable, set to none to enable. */
@@ -25,6 +27,7 @@
   --noTitles: none;
   --noNowPlaying: none;
   --noLoadingScreen: none;
+  --noSmallIcons: none;
 }
 
 
