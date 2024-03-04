@@ -7,9 +7,7 @@
 .mention,
 .username__81ee6,
 .titleWrapper__482dc,
-.listName_dbd44a span,
-.userTag__4ca14 span,
-.constrainedRow_b9e8cf {
+.listName_dbd44a span {
 	font-family: 'Poppins' !important;
 	font-size: calc(var(--shortenDisplays) * 16px) !important;
 	max-width: calc(var(--shortenDisplays) * 40px);
@@ -27,9 +25,7 @@
 .mention:hover,
 .username__81ee6:hover,
 .titleWrapper__482dc:hover,
-.listName_dbd44a:hover span,
-.userTag__4ca14:hover span,
-.constrainedRow_b9e8cf:hover {
+.listName_dbd44a:hover span {
 	opacity: calc(1 - var(--shortenDisplays));
 	max-width: calc(var(--shortenDisplays) * 1000px);
 	transition: calc(var(--shortenDisplays) * 0.75s) ease-in-out;
@@ -44,9 +40,7 @@
 .mention:active,
 .username__81ee6:active,
 .titleWrapper__482dc:active,
-.listName_dbd44a:active span,
-.userTag__4ca14:active span,
-.constrainedRow_b9e8cf:active {
+.listName_dbd44a:active span {
 	opacity: 1;
 	max-width: calc(var(--shortenDisplays) * 1000px);
 	transition: calc(var(--shortenDisplays) * 1s) ease-in-out;

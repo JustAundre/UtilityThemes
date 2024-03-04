@@ -2,8 +2,7 @@
 .userTagUsernameBase__75fb1,
 .title__10613,
 .discriminator_a801dd,
-.discriminator_aef524,
-.usernameInnerRow__7f209 span {
+.discriminator_aef524 {
 	opacity: calc(0.2 * var(--hideUsernames));
 	filter: blur(calc(var(--hideUsernames) * 8px));
 	transition-delay: calc(var(--hideUsernames) * 5s) !important;
@@ -12,8 +11,7 @@
 /*When hovering over the actual username it reveals. (Takes longer to reveal.)*/
 .userTagUsernameBase__75fb1:hover,
 .discriminator_a801dd:hover,
-.discriminator_aef524:hover,
-.usernameInnerRow__7f209 span {
+.discriminator_aef524:hover {
 	opacity: 1;
 	filter: blur(0px);
 	max-width: calc(var(--hideUsernames) * 1000px);
