@@ -8,8 +8,8 @@
 .username__81ee6,
 .titleWrapper__482dc,
 .listName_dbd44a span {
-	font-family: 'Poppins';
-	font-size: 16px;
+	font-family: 'Poppins' !important;
+	font-size: 16px !important;
 	max-width: 40px;
 	text-wrap: nowrap;
 	overflow: hidden;

@@ -42,47 +42,47 @@
 
 /* Hides the Nitro button on the home page */
 [href="/shop"] {
-  display: var(--disableNitroBuy) !important;
+  display: none !important;
 }
 
 /* Hides the store button on the home page */
 [href="/store"] {
-  display: var(--disableStore) !important;
+  display: none !important;
 }
 
 /* Hides the Gift button in the message bar */
 [aria-label="Send a gift"] {
-  display: var(--disableSendGift) !important;
+  display: none !important;
 }
 
 /* Hides the GIF button in the message bar */
 [aria-label="Open GIF picker"] {
-  display: var(--disableGifPicker) !important;
+  display: none !important;
 }
 
 /* Hides the Sticker button in the message bar */
 [aria-label="Open sticker picker"] {
-  display: var(--disableStickerPicker) !important;
+  display: none !important;
 }
 
 /* Hides the help button in the top footer */
 [aria-label="Help"] {
-  display: var(--disableHelp) !important;
+  display: none !important;
 }
 
 /* Hides the Start Video call button */
 [aria-label="Start Video Call"] {
-  display: var(--disableVideoCall) !important;
+  display: none !important;
 }
 
 /* Hides Create new group DM button */
 [aria-label="New Group DM"], [aria-label="Add Friends to DM"] {
-  display: var(--disableNewGroupDm) !important;
+  display: none !important;
 }
 
 /* Hide the search bar in the home page */
 .searchBar_e4ea2a {
-  display: var(--disableSearch) !important;
+  display: none !important;
 }
 
 /* Makes the "Friends" button take the place of the search bar. */
@@ -92,34 +92,34 @@
 
 /* Who actually tweets @Discord Support when there's a connection problem? */
 [href="https://twitter.com/discord_support"] {
-  display: var(--noTweet);
+  display: none;
 }
 
 /* Removes "Server boosts" bar at the top of channels tab. */
 .container__4f639 {
-  display: var(--noBoost);
+  display: none;
 }
 [style="height: 12px;"] {
-  display: var(--noBoost);
+  display: none;
 }
 
 /* Removes activity and status text */
 .activity_a8c37a, .subtext__623a0, .subtext__1a662, .subText_ab7e13 {
-  display: var(--noStatus);
+  display: none;
 }
 
 /* Removes the download button for the Discord App */
 .scroller__3d071.none__3919e.scrollerBase__2b744 > :nth-child(6), .scroller__3d071.none__3919e.scrollerBase__2b744 > :nth-child(7) {
-  display: var(--discordStayOnWeb);
+  display: none;
 }
 
 /* Removes scrollbars from everything */
 * {
-  scrollbar-width: var(--noScrollbars) !important; /* Firefox */
-  -ms-overflow-style: var(--noScrollbars) !important; /* IE/Edge */
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE/Edge */
 }
 *::-webkit-scrollbar { /* WebKit browsers */
-  display: var(--noScrollbars) !important;
+  display: none !important;
 }
 
 /* No channel titles */
@@ -138,6 +138,6 @@
 }
 
 /* Removes notifications settings button from top footer */
-div.iconWrapper_af9215.clickable_d23a1a[role="button"][aria-label="Notification Settings"][aria-expanded="false"][tabindex="0"] {
+div[class="iconWrapper_af9215 clickable_d23a1a"][role="button"][aria-label="Notification Settings"][aria-expanded="false"][tabindex="0"] {
   display: none;
 }
