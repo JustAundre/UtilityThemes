@@ -108,17 +108,17 @@
 
 /* No channel titles */
 .title__9e2b0, .channelName_f5ab3a {
-  display: var(--noTitles);
+  display: none;
 }
 
 /* Removes the "Now Playing.." Column in the Friends tab */
 .nowPlayingColumn_f5023f {
-  display: var(--noNowPlaying);
+  display: none;
 }
 
 /* Removes loading screen */
 .container__4bde3.fixClipping__9c8f4 {
-  display: var(--noLoadingScreen);
+  display: none;
 }
 
 /* Removes notifications settings button from top footer */

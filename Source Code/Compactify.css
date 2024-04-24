@@ -48,15 +48,12 @@
 
 
 /* Makes members list compact */
-.member_aa4760 /* Selects each member on the members list */ {
-  max-height: 34px;
-}
-.container__4f20e, .memberInner_a32223 /* Selects each member on the members list */ {
+.member_aa4760, .memberInner__4dac6 /* Selects each member on the members list */ {
+  height: 34px !important;
+  align-content: center;
   margin-left: 8px;
   padding: 0 0;
-  max-height: 32px;
 }
-
 
 
 /* Makes the spacing between channel categories smaller */
