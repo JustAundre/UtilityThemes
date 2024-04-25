@@ -6,46 +6,22 @@
  * @authorId 532681285961777154
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Makes the channels list on servers more compact */
-.link__95dc0, .wrapper__7bcde {
-  padding: 0 0;
+ul[aria-label="Channels"] li[draggable] div, ul[aria-label="Channels"] li ul li {
+  height: 24px;
 }
-.containerDefault__3187b /* Makes you differentiate channels and categories better */{
+ul[aria-label="Channels"] li[draggable]:has(div[class=""]), ul[aria-label="Channels"] li [role="group"] /* Makes you differentiate channels and categories better */ {
   margin-left: 16px;
 }
-.containerDefault__3187b .spine__88e6d /* Selects the 'spines' that connects threads to channels */ {
-  translate: 0 -10px  /* Fixes the spines being too low */;
-}
-
-
 
 /* Makes DMs list more compact */
-.link__2e8e1 /* Selects every button in the DMs sidebar */ {
-  max-height: 34px;
+ul[aria-label="Direct Messages"] li /* Selects every button in the DMs sidebar */ {
+  max-height: 36px;
 }
 /* For custom fonts, fixes cut off characters */
 .name__02dbd {
   line-height: 1.2rem;
 }
-
-
 
 /* Makes members list compact */
 .member_aa4760, .memberInner__4dac6 /* Selects each member on the members list */ {
@@ -55,13 +31,10 @@
   padding: 0 0;
 }
 
-
 /* Makes the spacing between channel categories smaller */
 :root {
   --custom-category-channel-space-before-category: 8px;
 }
-
-
 
 /* Removes extra padding for messages */
 .wrapper__09ecc /* Selects messages */ {
@@ -69,6 +42,7 @@
   padding-bottom: 0;
   min-height: 0;
 }
+
 /* Slightly less vertical spacing for text */
 .markup_a7e664 /* Selects message text */ {
   line-height: 1.15rem;
@@ -76,6 +50,7 @@
 .cozyMessage__64ce7.groupStart__56db5 /* Selects the first message of every grouped message */ {
   min-height: 0;
 }
+
 /* Makes header text sent by users have less spacing */
 .markup_a7e664 h1, h1 /* Selects h1 (Header 1) elements */ {
   margin: 0;
@@ -84,10 +59,12 @@
 :root {
   --custom-emoji-size-emoji: 1rem; /* Self-explanatory */
 }
+
 /* Fixes emojis screwing up message text */
 .emojiContainer__4a804 /* Self-explanatory, selects the emoji container */ {
   display: revert;
 }
+
 /* Fixes "New Message" seperater being too low. */
 .isUnread__6f880 {
   margin: 0;
@@ -95,14 +72,12 @@
   top: .25rem;
   border-width: 3px;
 }
+
 /* Fixes ping background color being too small */
-.mentioned__58017:before {
+.mentioned_fa6fd2:before {
   all: unset;
 }
-.hasReply_febd50 .contents_f41bb2 img {
-  margin-top: unset;
-}
-.mentioned__58017 {
+.mentioned_fa6fd2 {
   background: linear-gradient(to right, rgb(255, 202, 47, .25), rgb(0, 0, 0, 0));
   border-left-color: rgb(255, 202, 47, .5);
   border-left-width: 5px;
@@ -115,14 +90,11 @@
   height: 1.2rem;
 }
 
-
 /* Reduces the margin for date separaters */
 .group-spacing-0 .divider__8cf56.hasContent__8519e /* Date separaters have margin reduced */ {
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
-
-
 
 /* Reduces bottom and top padding for images */
 .container_dbadf5 /* Selects the image containers */ {
@@ -130,8 +102,6 @@
   padding-top: .1rem;
   padding-bottom: .1rem;
 }
-
-
 
 /* Lessens the margin bewteen messages of unique users */
 .group-spacing-16 .groupStart__56db5 /* Selects every message by a different user than the message above */ {

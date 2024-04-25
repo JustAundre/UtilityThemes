@@ -6,23 +6,8 @@
  * @authorId 532681285961777154
 */
 /* Comment or delete the following import rules if you want to disable them */
+/* Cleaner-looking folders, disable if you have cleaner folders enabled from Vencord */
 @import url("https://itsaundre.github.io/UtilityThemes/Source%20Code/OutClutter-Modules/Clean-Folders.css");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Hides the Nitro button on the home page */
 [href="/shop"] {
@@ -49,6 +34,11 @@
   display: none !important;
 }
 
+/* Fixes the Emoji button having no spacing from the end of the typing bar */
+[aria-label="Select emoji"] {
+  padding-right: 16px;
+}
+
 /* Hides the help button in the top footer */
 [aria-label="Help"] {
   display: none !important;
@@ -65,7 +55,7 @@
 }
 
 /* Hide the search bar in the home page */
-.searchBar_e4ea2a {
+.searchBar__621ec {
   display: none !important;
 }
 
@@ -80,11 +70,11 @@
 }
 
 /* Removes "Server boosts" bar at the top of channels tab. */
-.container__4f639 {
+[style="height: 12px;"], [style="height: 16px;"], [aria-label="Channels"] > :nth-child(3), [aria-label="Channels"] > :nth-child(5) {
   display: none;
 }
-[style="height: 12px;"] {
-  display: none;
+[aria-label="Channels"] > :nth-child(4) {
+  padding-top: 8px;
 }
 
 /* Removes activity and status text */
@@ -93,7 +83,7 @@
 }
 
 /* Removes the download button for the Discord App */
-.scroller__3d071.none__3919e.scrollerBase__2b744 > :nth-child(6), .scroller__3d071.none__3919e.scrollerBase__2b744 > :nth-child(7) {
+[class="listItem__48528"]:has([aria-label="Download Apps"]), .guildSeparator__75928 {
   display: none;
 }
 
@@ -117,11 +107,11 @@
 }
 
 /* Removes loading screen */
-.container__4bde3.fixClipping__9c8f4 {
+div[style="opacity: 1;"] {
   display: none;
 }
 
 /* Removes notifications settings button from top footer */
-div[class="iconWrapper_af9215 clickable_d23a1a"][role="button"][aria-label="Notification Settings"][aria-expanded="false"][tabindex="0"] {
+div[aria-label="Notification Settings"][role="button"] {
   display: none;
 }
