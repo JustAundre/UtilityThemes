@@ -6,7 +6,7 @@
  * @authorId 532681285961777154
 */
 
-/* Makes the channels list on servers more compact */
+/* Makes the channels list in servers more compact */
 ul[aria-label="Channels"] li div, ul[aria-label="Channels"] li ul li {
   max-height: 24px;
 }
@@ -23,7 +23,7 @@ ul[aria-label="Direct Messages"] li /* Selects every button in the DMs sidebar *
 }
 
 /* Makes members list compact */
-[aria-label="Members"] [role="listitem"] /* Selects each member on the members list */ {
+[aria-label="Members"] [role="listitem"], div[dir="ltr"][style="overflow: hidden scroll; padding-right: 0px;"] div /* Selects each member on the members list */ {
   max-height: 34px !important;
   align-content: center;
   margin-left: 8px;
