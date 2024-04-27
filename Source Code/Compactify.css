@@ -7,103 +7,75 @@
 */
 
 /* Makes the channels list on servers more compact */
-ul[aria-label="Channels"] li[draggable] div, ul[aria-label="Channels"] li ul li {
-  height: 24px;
+ul[aria-label="Channels"] li div, ul[aria-label="Channels"] li ul li {
+  max-height: 24px;
 }
-ul[aria-label="Channels"] li[draggable]:has(div[class=""]), ul[aria-label="Channels"] li [role="group"] /* Makes you differentiate channels and categories better */ {
+div[class=""]:has(div[aria-label="Voice icon"]) {
+  max-height: unset;
+}
+ul[aria-label="Channels"] li:has(div[class=""]), ul[aria-label="Channels"] li [role="group"] /* Makes you differentiate channels and categories better */ {
   margin-left: 16px;
 }
 
 /* Makes DMs list more compact */
 ul[aria-label="Direct Messages"] li /* Selects every button in the DMs sidebar */ {
-  max-height: 36px;
-}
-/* For custom fonts, fixes cut off characters */
-.name__02dbd {
-  line-height: 1.2rem;
+  max-height: 34px;
 }
 
 /* Makes members list compact */
-.member_aa4760, .memberInner__4dac6 /* Selects each member on the members list */ {
-  height: 34px !important;
+[aria-label="Members"] [role="listitem"] /* Selects each member on the members list */ {
+  max-height: 34px !important;
   align-content: center;
   margin-left: 8px;
   padding: 0 0;
 }
 
-/* Makes the spacing between channel categories smaller */
-:root {
-  --custom-category-channel-space-before-category: 8px;
-}
-
-/* Removes extra padding for messages */
-.wrapper__09ecc /* Selects messages */ {
-  padding-top: 0;
-  padding-bottom: 0;
-  min-height: 0;
-}
-
 /* Slightly less vertical spacing for text */
-.markup_a7e664 /* Selects message text */ {
+[aria-roledescription="Message"] div div[id] /* Selects message text */ {
   line-height: 1.15rem;
-}
-.cozyMessage__64ce7.groupStart__56db5 /* Selects the first message of every grouped message */ {
-  min-height: 0;
-}
-
-/* Makes header text sent by users have less spacing */
-.markup_a7e664 h1, h1 /* Selects h1 (Header 1) elements */ {
-  margin: 0;
-  line-height: 1.5rem;
-}
-:root {
-  --custom-emoji-size-emoji: 1rem; /* Self-explanatory */
-}
-
-/* Fixes emojis screwing up message text */
-.emojiContainer__4a804 /* Self-explanatory, selects the emoji container */ {
-  display: revert;
-}
-
-/* Fixes "New Message" seperater being too low. */
-.isUnread__6f880 {
-  margin: 0;
-  margin-right: .875rem;
-  top: .25rem;
-  border-width: 3px;
 }
 
 /* Fixes ping background color being too small */
-.mentioned_fa6fd2:before {
+[aria-roledescription="Message"]:has(div div span.mention):before {
   all: unset;
 }
-.mentioned_fa6fd2 {
+[aria-roledescription="Message"]:has(div div span.mention) {
   background: linear-gradient(to right, rgb(255, 202, 47, .25), rgb(0, 0, 0, 0));
   border-left-color: rgb(255, 202, 47, .5);
   border-left-width: 5px;
   border-left-style: solid;
 }
+
 /* Truncates oversized reply previews */
-.repliedTextPreview__90291.clickable_d866f1, .repliedTextContent__75526.markup_a7e664.messageContent__21e69 {
-  width: 100px;
+[aria-roledescription="Message"] div img[alt=""][src] ~ div[tabindex="0"] {
+  max-width: 100px;
   overflow: hidden;
-  height: 1.2rem;
 }
 
 /* Reduces the margin for date separaters */
-.group-spacing-0 .divider__8cf56.hasContent__8519e /* Date separaters have margin reduced */ {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-}
-
-/* Reduces bottom and top padding for images */
-.container_dbadf5 /* Selects the image containers */ {
-  padding: 0;
-  padding-top: .1rem;
-  padding-bottom: .1rem;
+div[role="separator"] /* Date separaters have margin reduced */ {
+  margin-top: .75rem !important;
+  margin-bottom: .375rem !important;
 }
 
 /* Lessens the margin bewteen messages of unique users */
-.group-spacing-16 .groupStart__56db5 /* Selects every message by a different user than the message above */ {
-  margin-top: .2rem;
+div[aria-roledescription="Message"]:has(div h3) /* Selects every message by a different user than the message above */ {
+  margin-top: .2rem !important;
+}
+
+/* Removes the minimum height between messages */
+div[aria-roledescription="Message"] {
+  min-height: unset !important;
+}
+
+/* Makes header text sent by users have less spacing */
+h1 /* Selects h1 (Header 1) elements */ {
+  margin: 0 !important;
+  line-height: 2rem !important;
+}
+
+:root {
+  --custom-emoji-size-emoji: 1rem; /* Self-explanatory */
+  --custom-message-spacing-vertical-container-cozy: unset; /* Makes the extra spacing between messages non-existant */
+  --custom-category-channel-space-before-category: 8px; /* Makes the spacing between categories smaller */
 }
