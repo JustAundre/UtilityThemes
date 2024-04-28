@@ -23,10 +23,8 @@ ul[aria-label="Direct Messages"] li /* Selects every button in the DMs sidebar *
 }
 
 /* Makes members list compact */
-[aria-label="Members"] [role="listitem"], div[dir="ltr"][style="overflow: hidden scroll; padding-right: 0px;"] div /* Selects each member on the members list */ {
+[aria-label="Members"] [role="listitem"], div[dir="ltr"][style="overflow: hidden scroll; padding-right: 0px;"] div[aria-expanded="false"] {
   max-height: 34px !important;
-  align-content: center;
-  margin-left: 8px;
   padding: 0 0;
 }
 
