@@ -1,3 +1,10 @@
+/**
+ * @name Clean Folders
+ * @description Just like the name says.
+ * @author JustAundre
+ * @version Source Code
+ * @authorId 532681285961777154
+*/
 /* Removes server icons */
 foreignObject [role="treeitem"] div[aria-hidden="true"] div div {
   display: none;

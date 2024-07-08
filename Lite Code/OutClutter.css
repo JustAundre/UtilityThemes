@@ -6,25 +6,4 @@
  * @source No source given.
  * @authorId 532681285961777154
 */
-@import url('https://itsaundre.github.io/UtilityThemes/Source%20Code/OutClutter.css');
-:root {
-  /* OutClutter configs */
-  /* Set to inherit to disable, set to none to enable. */
-  --disableNitroBuy: none;
-  --disableStore: none;
-  --disableSendGift: none;
-  --disableGifPicker: none;
-  --disableStickerPicker: none;
-  --disableHelp: none;
-  --disableVideoCall: none;
-  --disableNewGroupDm: none;
-  --disableSearch: none;
-  --noTweet: none;
-  --noBoost: none;
-  --noStatus: none;
-  --discordStayOnWeb: none;
-  --noScrollbars: none;
-  --noTitles: none;
-  --noNowPlaying: none;
-  --noLoadingScreen: none;
-}
+@import url('https://JustAundre.github.io/UtilityThemes/Source%20Code/OutClutter.css');
