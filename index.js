@@ -15,5 +15,5 @@ function setRandomHue() {
 // Call the function initially to set the variable
 setRandomHue();
 
-// Repeat the function every 10 seconds
-setInterval(setRandomHue, 10000);
+// Repeat the function every 25 seconds
+setInterval(setRandomHue, 25000);
