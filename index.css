@@ -39,8 +39,10 @@ body {
 .background {
   filter: hue-rotate(var(--hue));
   object-fit: contain;
-  transition: filter ease-in-out 15s;
-  transition: height 0s;
+  transition: all 0s;
+  transition-property: filter;
+  transition-duration: 15s;
+  transition-timing-function: ease-in-out; 
 }
 
 /* Makes the actual site work */
