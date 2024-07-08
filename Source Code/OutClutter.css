@@ -97,7 +97,7 @@ div[style="overflow: hidden scroll; padding-right: 0px;"][dir="ltr"] > :nth-chil
 }
 
 /* Removes loading screen */
-div[style="opacity: 1;"] {
+div[data-fade="false"][style="--connecting-container-fade-duration: 200ms;--connecting-content-fade-duration: 150ms;"] {
   display: none;
 }
 
