@@ -54,23 +54,11 @@
   display: none !important;
 }
 
-/* Hide the search bar in the home page */
-.searchBar__621ec {
-  display: none !important;
-}
-
-/* Makes the "Friends" button take the place of the search bar. */
-[href="/channels/@me"] {
-	height: 35px !important;
-}
-
-/* Who actually tweets @Discord Support when there's a connection problem? */
-[href="https://twitter.com/discord_support"] {
-  display: none;
-}
-
 /* Removes "Server boosts" bar at the top of channels tab. */
-[style="height: 12px;"], [style="height: 16px;"], [aria-label="Channels"] > :nth-child(3), [aria-label="Channels"] > :nth-child(5) {
+[style="height: 12px;"],
+[style="height: 16px;"],
+[aria-label="Channels"] > :nth-child(3),
+[aria-label="Channels"] > :nth-child(5) {
   display: none;
 }
 [aria-label="Channels"] > :nth-child(4) {
@@ -78,12 +66,14 @@
 }
 
 /* Removes activity and status text */
-.activity_a8c37a, .subtext__623a0, .subtext__1a662, .subText_ab7e13 {
+a[class][aria-label][data-list-item-id][href] div > :nth-child(2) > :nth-child(2) div,
+div[class][role="listitem"][tabindex][aria-selected] div > :nth-child(2) > :nth-child(2) {
   display: none;
 }
 
 /* Removes the download button for the Discord App */
-[class="listItem__48528"]:has([aria-label="Download Apps"]), .guildSeparator__75928 {
+div[style="overflow: hidden scroll; padding-right: 0px;"][dir="ltr"] > :nth-child(6), 
+div[style="overflow: hidden scroll; padding-right: 0px;"][dir="ltr"] > :nth-child(7) {
   display: none;
 }
 

@@ -13,35 +13,34 @@ ul[aria-label="Channels"] li div, ul[aria-label="Channels"] li ul li {
 div[class=""]:has(div[aria-label="Voice icon"]) {
   max-height: unset;
 }
-ul[aria-label="Channels"] li:has(div[class=""]), ul[aria-label="Channels"] li [role="group"] /* Makes you differentiate channels and categories better */ {
+ul[aria-label="Channels"] li:has(div[class=""]),
+ul[aria-label="Channels"] li [role="group"] /* Lets you differentiate channels and categories better, optional */ {
   margin-left: 16px;
 }
 
 /* Makes DMs list more compact */
-ul[aria-label="Direct Messages"] li /* Selects every button in the DMs sidebar */ {
+a[class][aria-label][data-list-item-id][href] {
   max-height: 34px;
 }
 
 /* Makes members list compact */
-[aria-label="Members"] [role="listitem"], div[dir="ltr"][style="overflow: hidden scroll; padding-right: 0px;"] div[aria-expanded="false"] {
+div[dir="ltr"][style="overflow: hidden scroll; padding-right: 0px;"] div[aria-expanded="false"][role="listitem"] div,
+div[role="list"][aria-label="Members"][style] div[role="listitem"] div {
   max-height: 34px !important;
-  padding: 0 0;
+  padding: 0;
+}
+div[role="list"][aria-label="Members"][style] div[role="listitem"] h3 {
+  padding: 16px 8px 0 16px;
+}
+
+/* Removes avatar decorations */
+div[class][role="img"][aria-label][aria-hidden] > :nth-child(2) {
+  display: none;
 }
 
 /* Slightly less vertical spacing for text */
-[aria-roledescription="Message"] div div[id] /* Selects message text */ {
+[aria-roledescription="Message"] div div[id] {
   line-height: 1.15rem;
-}
-
-/* Fixes ping background color being too small */
-[aria-roledescription="Message"]:has(div div span.mention):before {
-  all: unset;
-}
-[aria-roledescription="Message"]:has(div div span.mention) {
-  background: linear-gradient(to right, rgb(255, 202, 47, .25), rgb(0, 0, 0, 0));
-  border-left-color: rgb(255, 202, 47, .5);
-  border-left-width: 5px;
-  border-left-style: solid;
 }
 
 /* Truncates oversized reply previews */
@@ -51,13 +50,13 @@ ul[aria-label="Direct Messages"] li /* Selects every button in the DMs sidebar *
 }
 
 /* Reduces the margin for date separaters */
-div[role="separator"] /* Date separaters have margin reduced */ {
+div[role="separator"] {
   margin-top: .75rem !important;
   margin-bottom: .375rem !important;
 }
 
 /* Lessens the margin bewteen messages of unique users */
-div[aria-roledescription="Message"]:has(div h3) /* Selects every message by a different user than the message above */ {
+div[aria-roledescription="Message"]:has(div h3) {
   margin-top: .2rem !important;
 }
 
@@ -67,9 +66,14 @@ div[aria-roledescription="Message"] {
 }
 
 /* Makes header text sent by users have less spacing */
-h1 /* Selects h1 (Header 1) elements */ {
+h1 {
   margin: 0 !important;
   line-height: 2rem !important;
+}
+
+/* Resizes the chat history search bar for DMs, GCs, and servers. */
+section[aria-label="Channel header"] div > :nth-child(2) > :nth-child(6) div div {
+  width: 32px;
 }
 
 :root {
