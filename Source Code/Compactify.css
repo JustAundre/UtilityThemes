@@ -8,19 +8,21 @@
 
 /* Makes the channels list in servers more compact */
 ul[aria-label="Channels"] li div, ul[aria-label="Channels"] li ul li {
-  max-height: 24px;
+  max-height: 24px !important;
 }
 div[class=""]:has(div[aria-label="Voice icon"]) {
   max-height: unset;
 }
-ul[aria-label="Channels"] li:has(div[class=""]),
-ul[aria-label="Channels"] li [role="group"] /* Lets you differentiate channels and categories better, optional */ {
-  margin-left: 16px;
+
+/* Removes excess left-ward padding for voice channel users */
+li > :nth-child(2) {
+  padding-left: 16px;
 }
 
-/* Makes DMs list more compact */
+/* Makes DMs list & Channels list compact */
 a[class][aria-label][data-list-item-id][href] {
   max-height: 34px;
+  padding: 1px 0;
 }
 
 /* Makes members list compact */
