@@ -56,8 +56,16 @@ div[class][role="img"][aria-label][aria-hidden] > :nth-child(2) {
 }
 
 /* Truncates oversized channel descriptor previews */
-section[aria-label="Channel header"] div div > :nth-child(5) {
+section[aria-label="Channel header"] div > :nth-child(1) > :nth-child(5) * {
+  display: none;
+}
+section[aria-label="Channel header"] div > :nth-child(1) > :nth-child(5) > :nth-child(1) {
+  display: block;
+  max-width: unset;
+}
+section[aria-label="Channel header"] div > :nth-child(1) > :nth-child(5) > :nth-child(2) {
   max-width: 128px;
+  display: inline-grid;
   overflow: hidden;
 }
 
@@ -84,8 +92,8 @@ h1 {
 }
 
 /* Resizes the chat history search bar for DMs, GCs, and servers. */
-section[aria-label="Channel header"] div > :nth-child(2) > :nth-child(6) div div {
-  width: 32px;
+section[aria-label="Channel header"] div > :nth-child(2) > :nth-child(5) div div {
+  width: 24px;
 }
 
 :root {
