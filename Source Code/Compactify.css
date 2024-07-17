@@ -9,6 +9,7 @@
 /* Makes the channels list in servers more compact */
 ul[aria-label="Channels"] li div, ul[aria-label="Channels"] li ul li {
   max-height: 24px !important;
+  min-height: 0px !important;
 }
 div[class=""]:has(div[aria-label="Voice icon"]) {
   max-height: unset;
@@ -21,7 +22,8 @@ li > :nth-child(2) {
 
 /* Makes DMs list & Channels list compact */
 a[class][aria-label][data-list-item-id][href] {
-  max-height: 34px;
+  max-height: 34px !important;
+  min-height: 0px !important;
   padding: 1px 0;
 }
 
@@ -29,6 +31,7 @@ a[class][aria-label][data-list-item-id][href] {
 div[dir="ltr"][style="overflow: hidden scroll; padding-right: 0px;"] div[aria-expanded="false"][role="listitem"] div,
 div[role="list"][aria-label="Members"][style] div[role="listitem"] div {
   max-height: 34px !important;
+  min-height: 0px !important;
   padding: 0;
 }
 div[role="list"][aria-label="Members"][style] div[role="listitem"] h3 {
@@ -48,6 +51,7 @@ div[class][role="img"][aria-label][aria-hidden] > :nth-child(2) {
 /* Truncates oversized reply previews */
 [aria-roledescription="Message"] div img[alt=""][src] ~ div[tabindex="0"] {
   max-width: 100px;
+  min-width: 0px;
   overflow: hidden;
 }
 
