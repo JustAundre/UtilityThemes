@@ -51,8 +51,13 @@ div[class][role="img"][aria-label][aria-hidden] > :nth-child(2) {
 
 /* Truncates oversized reply previews */
 [aria-roledescription="Message"] div img[alt=""][src] ~ div[tabindex="0"] {
-  max-width: 100px;
-  min-width: 0px;
+  max-width: 128px;
+  overflow: hidden;
+}
+
+/* Truncates oversized channel descriptor previews */
+section[aria-label="Channel header"] div div > :nth-child(5) {
+  max-width: 128px;
   overflow: hidden;
 }
 
