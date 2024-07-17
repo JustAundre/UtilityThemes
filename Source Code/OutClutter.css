@@ -105,3 +105,8 @@ div[data-fade="false"][style="--connecting-container-fade-duration: 200ms; --con
 div[aria-label="Notification Settings"][role="button"] {
   display: none;
 }
+
+/* Removes hang statuses (the lil' icons in multi-user VCs in Discord Servers) */
+li > :nth-child(2) div div div > :nth-child(3) {
+  display: none;
+}
