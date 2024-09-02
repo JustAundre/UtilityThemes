@@ -28,6 +28,13 @@ a[class][aria-label][data-list-item-id][href] {
   padding: 1px 0;
 }
 
+/* Lessens top spacing for user DMs */
+ul[aria-label="Direct Messages"][role="list"] h2,
+ul[aria-label="Direct Messages"][role="list"] li > :has(div[aria-label="Leave Group"]),
+ul[aria-label="Direct Messages"][role="list"] li > :has(div[aria-label="Close DM"]) {
+  transform: translate(0, -8px);
+}
+
 /* Makes members list compact */
 div[dir="ltr"][style="overflow: hidden scroll; padding-right: 0px;"] div[role="listitem"][tabindex="0"] div,
 div[role="list"][aria-label="Members"][style] div[role="listitem"] div {
@@ -55,7 +62,7 @@ div[class][role="img"][aria-label][aria-hidden] > :nth-child(2) {
   overflow: hidden;
 }
 
-/* Truncates oversized channel descriptor previews */
+/* Truncates oversized channel description previews */
 section[aria-label="Channel header"] div > :nth-child(1) > :nth-child(5) * {
   display: none;
 }
