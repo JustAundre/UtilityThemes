@@ -1,6 +1,6 @@
 /**
  * @name PrivacyCord
- * @description If you're on the web, right click the tab and click 'Pin' for greater effect.
+ * @description Discord, curtains closed.
  * @author JustAundre
  * @version 1.0.0
  * @authorId 532681285961777154
@@ -13,4 +13,3 @@
 @import url('https://JustAundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Hide-Usernames.css'); /* Hide Usernames Module */
 @import url('https://JustAundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Shorten-Displays.css'); /* Shorten Displays Module */
 @import url('https://JustAundre.github.io/UtilityThemes/Source%20Code/PrivacyCord-Modules/Private-Settings.css'); /* Private Settings Module */
-@import url("https://JustAundre.github.io/UtilityThemes/Source%20Code/OutClutter-Modules/Clean-Folders.css"); /* Cleaner-looking folders, disable if you have cleaner folders enabled from Vencord */

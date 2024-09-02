@@ -29,7 +29,7 @@ a[class][aria-label][data-list-item-id][href] {
 }
 
 /* Makes members list compact */
-div[dir="ltr"][style="overflow: hidden scroll; padding-right: 0px;"] div[aria-expanded="false"][role="listitem"] div,
+div[dir="ltr"][style="overflow: hidden scroll; padding-right: 0px;"] div[role="listitem"][tabindex="0"] div,
 div[role="list"][aria-label="Members"][style] div[role="listitem"] div {
   max-height: 34px !important;
   min-height: 0px !important;
