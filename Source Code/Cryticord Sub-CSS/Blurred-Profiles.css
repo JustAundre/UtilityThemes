@@ -1,0 +1,6 @@
+/*Blurs and lowers visibility of profile pictures.*/
+div[style="width: 32px; height: 32px;"],
+div[aria-roledescription="Message"] div img[alt=" "] {
+	opacity: 20%;
+	filter: blur(4px);
+}
