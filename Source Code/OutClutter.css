@@ -60,6 +60,7 @@
 /* Removes activity/status text, and side-icons like owner crown, server booster, and whatever else there is. */
 div[role="listitem"][tabindex="0"] div :nth-child(2) :nth-child(2),
 div[index][data-list-item-id] div :nth-child(2) :nth-child(2),
+li div a div > :nth-child(2) > :nth-child(2),
 div[style="height: 62px; opacity: 1;"] > :first-child > :first-child > :last-child > :last-child {
   display: none;
 }
