@@ -7,7 +7,7 @@
 */
 /* Comment or delete the following import rules if you want to disable them */
 /* Cleaner-looking folders, disable if you have cleaner folders enabled from Vencord */
-@import url("https://JustAundre.github.io/UtilityThemes/Source Code/OutClutter Sub-CSS/Clean-Folders.css");
+@import url("https://JustAundre.github.io/UtilityThemes/Source%20Code/OutClutter Sub-CSS/Clean-Folders.css");
 
 /* Hides the Nitro button on the home page */
 [href="/shop"] {
@@ -55,25 +55,18 @@
 }
 
 /* Removes "Server boosts" bar at the top of channels tab. */
-[style="height: 12px;"],
-[style="height: 16px;"],
-[aria-label="Channels"] > :nth-child(3),
-[aria-label="Channels"] > :nth-child(5) {
-  display: none;
-}
-[aria-label="Channels"] > :nth-child(4) {
-  padding-top: 8px;
-}
+/* Recode needed */
 
-/* Removes activity and status text */
-a[class][aria-label][data-list-item-id][href] div > :nth-child(2) > :nth-child(2) div,
-div[class][role="listitem"][tabindex][aria-selected] div > :nth-child(2) > :nth-child(2) {
+/* Removes activity/status text, and side-icons like owner crown, server booster, and whatever else there is. */
+div[role="listitem"][tabindex="0"] div :nth-child(2) :nth-child(2),
+div[index][data-list-item-id] div :nth-child(2) :nth-child(2),
+div[style="height: 62px; opacity: 1;"] > :first-child > :first-child > :last-child > :last-child {
   display: none;
 }
 
 /* Removes the download button for the Discord App */
-div[style="overflow: hidden scroll; padding-right: 0px;"][dir="ltr"] > :nth-child(6), 
-div[style="overflow: hidden scroll; padding-right: 0px;"][dir="ltr"] > :nth-child(7) {
+ul[data-list-id="guildsnav"] > :nth-child(2) > :nth-last-child(2) div[aria-label="Download Apps"],
+ul[data-list-id="guildsnav"] > :nth-child(2) > :nth-last-child(3) div:empty {
   display: none;
 }
 
@@ -86,13 +79,13 @@ div[style="overflow: hidden scroll; padding-right: 0px;"][dir="ltr"] > :nth-chil
   display: none !important;
 }
 
-/* No channel titles */
-.title__9e2b0, .channelName_f5ab3a {
+/* No header title for the "Friends" tab (https://discord.com/channels/@me) */
+section[role="navigation"] > div > div > div > h1 {
   display: none;
 }
-
-/* Removes the "Now Playing.." Column in the Friends tab */
-/* Recode needed */
+section[role="navigation"] > div > div > div:has(svg) {
+  margin-right: 0px;
+}
 
 /* Removes loading screen */
 div[data-fade="false"][style="--connecting-container-fade-duration: 200ms; --connecting-content-fade-duration: 150ms;"] {
@@ -111,6 +104,6 @@ li > :nth-child(2) div div div > :nth-child(3) {
 
 /* Removes the "Activities" section from the top of the Server Members list */
 div[role="list"][aria-label="Members"] > div:not([aria-selected]),
-h3:has(:nth-child(2)[role="button"]) {
+h3:has(:nth-child(2) [role="button"]) {
   display: none;
 }
