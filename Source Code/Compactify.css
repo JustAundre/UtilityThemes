@@ -6,26 +6,28 @@
  * @authorId 532681285961777154
 */
 
-/* Makes the channels list in servers more compact */
-ul[aria-label="Channels"] li div, ul[aria-label="Channels"] li ul li {
+/* Makes the channels list in servers more compact*/
+ul[aria-label="Channels"] li div:not([role="group"]), ul[aria-label="Channels"] li ul li {
   max-height: 24px !important;
   min-height: 0px !important;
 }
 div[class=""]:has(div[aria-label="Voice icon"]) {
   max-height: unset;
 }
+ul[aria-label="Channels"] li div[role="group"] div[data-dnd-name] {
+  max-height: 16px;
+}
+
+/* Makes DMs list compact */
+a[class][aria-label][data-list-item-id][href] {
+  max-height: 34px !important;
+  min-height: 0px !important;
+}
 
 /* Removes excess left-ward padding for voice channel users */
 li > :nth-child(2) {
   padding-left: 16px;
   max-height: unset !important;
-}
-
-/* Makes DMs list & Channels list compact */
-a[class][aria-label][data-list-item-id][href] {
-  max-height: 34px !important;
-  min-height: 0px !important;
-  padding: 1px 0;
 }
 
 /* Lessens top spacing for user DMs */
@@ -43,7 +45,7 @@ div[role="list"][aria-label="Members"][style] div[role="listitem"] div {
   padding: 0;
 }
 div[role="list"][aria-label="Members"][style] div[role="listitem"] h3 {
-  padding: 16px 8px 0 16px;
+  padding: 16px 8px 0px 16px;
 }
 div[role="list"][aria-label="Members"] > div:not([aria-selected]),
 h3:has(:nth-child(2)[role="button"]) {

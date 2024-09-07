@@ -107,3 +107,8 @@ div[role="list"][aria-label="Members"] > div:not([aria-selected]),
 h3:has(:nth-child(2) [role="button"]) {
   display: none;
 }
+
+/* Remove the "Apps" button aside the chat text input */
+main form div > :has(button[aria-label="Apps"]) {
+  display: none;
+}
