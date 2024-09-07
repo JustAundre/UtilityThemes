@@ -1,6 +1,6 @@
 /*Blurs and lowers visibility of profile pictures.*/
-div[style="width: 32px; height: 32px;"],
-div[aria-roledescription="Message"] div img[alt=" "] {
-	opacity: 20%;
-	filter: blur(4px);
+div[style="width: 32px; height: 32px;"] svg foreignObject /* foreignObject elements that are inside an SVG element that are inside div elements that are 32x32px */,
+div[aria-roledescription="Message"] div img[alt=" "], /* img elements that have the "alt" attribute with the value " " that are inside a div that is inside another div an attribute called "aria-roledescription" with a value of "Message" */ 
+div[aria-roledescription="Message"] > :nth-child(1) img /* img elements that are a direct or indirect child of the first child of a div element with the attribute "aria-roledescription" that has the value "Message"*/ {
+	filter: blur(3px);
 }

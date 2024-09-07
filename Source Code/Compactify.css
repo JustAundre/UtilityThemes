@@ -45,6 +45,10 @@ div[role="list"][aria-label="Members"][style] div[role="listitem"] div {
 div[role="list"][aria-label="Members"][style] div[role="listitem"] h3 {
   padding: 16px 8px 0 16px;
 }
+div[role="list"][aria-label="Members"] > div:not([aria-selected]),
+h3:has(:nth-child(2)[role="button"]) {
+  display: none;
+}
 
 /* Removes avatar decorations */
 div[class][role="img"][aria-label][aria-hidden] > :nth-child(2) {

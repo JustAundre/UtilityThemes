@@ -1,17 +1,10 @@
-/* Replaces your username, display, phone number, and email with "ಠ_ಠ" instead */
-#my-account-tab span.text-md-normal__4afad[data-text-variant="text-md/normal"][style="color: var(--header-primary);"]::before {
-  content: "ಠ_ಠ";
+/* Replaces your user settings with "ಠ_ಠ" instead */
+#my-account-tab div div > :nth-child(2) > :nth-child(1) > :nth-child(3)::before {
+  content: "ಠ_ಠ - Disable Crpyticord to view.";
 }
-#my-account-tab .usernameInnerRow__7f209, #my-account-tab span.text-md-normal__4afad[data-text-variant="text-md/normal"][style="color: var(--header-primary);"] {
-  max-width: 30px;
-  overflow: hidden;
-  display: flex;
+#my-account-tab div div > :nth-child(2) > :nth-child(1) > :nth-child(3) div {
+  display:none;
 }
 
 /* Removes the phone number preview at the SMS MFA Section */
-div.colorStandard__5111e.size14_b2af01.description__7af71.formText_e4d957.marginBottom8_f4aae3.modeDefault_c1162c {
-  display: none;
-}
-div.colorStandard__5111e.size14_b2af01.description__7af71.formText_e4d957.modeDefault_c1162c {
-  margin-bottom: 8px;
-}
+/* Recode Needed */

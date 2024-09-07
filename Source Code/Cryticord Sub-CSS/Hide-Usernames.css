@@ -1,17 +1,12 @@
-/*Hides and blurs usernames.*/
-.userTagUsernameBase__75fb1,
-.title__10613,
-.discriminator_a801dd,
-.discriminator_aef524 {
+/* Blurs usernames */
+.recode-needed {
 	opacity: 20%;
 	filter: blur(8px);
 	transition-delay: 5s !important;
 }
 
-/*When hovering over the actual username it reveals. (Takes longer to reveal.)*/
-.userTagUsernameBase__75fb1:hover,
-.discriminator_a801dd:hover,
-.discriminator_aef524:hover {
+/* When hovering over the actual username it reveals. (Takes longer to reveal.) */
+.recode-needed:hover {
 	opacity: 100%;
 	filter: blur(0px);
 	max-width: 1000px;
@@ -19,14 +14,13 @@
 	transition-delay: 5s !important;
 }
 
-/*Slows down the reveal of your actual username when hovering over your user card in the bottom left.*/
-.hoverRoll__041cb.forceHover__71322:not(.disabled__89e5c) .hovered__243e5,
-.hoverRoll__041cb:hover:not(.disabled__89e5c) .hovered__243e5 {
+/* Slows down the reveal of your actual username when hovering over your user card in the bottom left */
+.recode-needed {
 	transition: 0.5s ease-in-out;
 	transition-delay: 5s;
 }
 
-/*Removes all tooltips.*/
-.tooltip__01384 {
-	opacity: 0% !important;
+/* Removes Tooltips */
+body div#app-mount div:has(div#cash-app-pay-container) div div div[style="opacity: 1; transform: none;"] /* Tooltips */ {
+	display: none;
 }
