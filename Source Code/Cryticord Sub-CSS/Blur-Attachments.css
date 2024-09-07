@@ -1,12 +1,13 @@
 /* Lowers attachment/embed opacity */
-div[aria-roledescription="Message"] > :has(div[aria-label]) {
-	opacity: 20%;
-	filter: blur(5px);
-	transition: all 0.25s ease-in-out;
+div[aria-roledescription="Message"]> :has(div[aria-label]) {
+  opacity: 20%;
+  filter: blur(5px);
+  transition: all 0.25s ease-in-out;
 }
+
 /* Reverts blur and lowered opacity upon hovering */
-div[aria-roledescription="Message"] > :has(div[aria-label]):hover {
-	opacity: 100%;
-	filter: blur(0px);
-	transition: all 0.25s ease-in-out;
+div[aria-roledescription="Message"]> :has(div[aria-label]):hover {
+  opacity: 100%;
+  filter: blur(0px);
+  transition: all 0.25s ease-in-out;
 }
