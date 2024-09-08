@@ -105,7 +105,7 @@ li > :nth-child(2) div div div > :nth-child(3) {
 
 /* Removes the "Activities" section from the top of the Server Members list */
 div[role="list"][aria-label="Members"] > div:not([aria-selected]),
-h3:has(:nth-child(2)[role="button"]:not(span)) {
+h3:has(:nth-child(2) [role="button"]) {
   display: none;
 }
 
@@ -114,8 +114,23 @@ main form div > :has(button[aria-label="Apps"]) {
   display: none;
 }
 
-/* Removes the 2 random div elements that are blank but still take up space in the channels list in some servers */
-ul#channels div[style="height: 16px;"],
-ul#channels div[style="height: 12px;"] {
+/* Removes the 2 random empty div elements at the top of some servers' channels list */
+ul[aria-label="Channels"] div[style="height: 16px;"]:not([class]),
+ul[aria-label="Channels"] div[style="height: 20px;"]:not([class]) {
+  display: none;
+}
+
+/* Remove the "Server Boosts" goal at the top of servers' channels list */
+ul[aria-label="Channels"] div[style="height: 12px;"]:not([class]) ~ li:not([class]):first-of-type {
+  display: none;
+}
+
+/* Remove useless reminder at the bottom of the Server Discovery page */
+div[dir="ltr"][style="overflow: hidden scroll; padding-right: 16px;"] div > div:last-child:has(img[src="/assets/826b6a84605f7eb8a469.svg"]) {
+  display: none;
+}
+
+/* Removes the over-sized text box from when viewing your own user profile that lets you change your status */
+svg[style="min-width: 300px; min-height: 105px;"][viewBox="0 0 300 105"] ~ div:not([class]):has(path[d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z"]) {
   display: none;
 }

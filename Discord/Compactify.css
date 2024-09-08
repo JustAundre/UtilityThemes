@@ -27,7 +27,7 @@ ul[aria-label="Channels"] li ul[role="group"][aria-label] svg[width="12"][height
 }
 
 /* Makes DMs list compact */
-a[class][aria-label][data-list-item-id][href] {
+ul[aria-label="Direct Messages"] li a[class][aria-label][data-list-item-id][href] {
   max-height: 34px !important;
   min-height: 0px !important;
 }
@@ -45,11 +45,15 @@ ul[aria-label="Direct Messages"][role="list"] li > :has(div[aria-label="Close DM
 }
 
 /* Makes members list compact */
-div[dir="ltr"][style="overflow: hidden scroll; padding-right: 0px;"] div[role="listitem"][tabindex="0"] div,
-div[role="list"][aria-label="Members"][style] div[role="listitem"] div {
+div[dir="ltr"][style="overflow: hidden scroll; padding-right: 0px;"] div[role="listitem"][tabindex="0"] > div,
+div[role="list"][aria-label="Members"][style] div[role="listitem"] > div {
   max-height: 34px !important;
   min-height: 0px !important;
-  padding: 0;
+}
+div[role="list"][aria-label="Members"] > div[index],
+div[role="list"][aria-label="Members"] > div[index] > div {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 div[role="list"][aria-label="Members"][style] div[role="listitem"] h3 {
   padding: 16px 8px 0px 16px;
@@ -76,17 +80,9 @@ div[class][role="img"][aria-label][aria-hidden] > :nth-child(2) {
 }
 
 /* Truncates oversized channel description previews */
-section[aria-label="Channel header"] div > :nth-child(1) > :nth-child(5) * {
-  display: none;
-}
-section[aria-label="Channel header"] div > :nth-child(1) > :nth-child(5) > :nth-child(1) {
+section[aria-label="Channel header"] > div > div > div:has([aria-label="Open Channel Topic"][role="button"]) {
   display: block;
-  max-width: unset;
-}
-section[aria-label="Channel header"] div > :nth-child(1) > :nth-child(5) > :nth-child(2) {
   max-width: 128px;
-  display: inline-grid;
-  overflow: hidden;
 }
 
 /* Reduces the margin for date separaters */
