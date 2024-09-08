@@ -17,6 +17,13 @@ div[class=""]:has(div[aria-label="Voice icon"]) {
 ul[aria-label="Channels"] li div[role="group"] div[data-dnd-name] {
   max-height: 16px;
 }
+ul[aria-label="Channels"] li ul[role="group"][aria-label] div:empty,
+ul[aria-label="Channels"] li ul[role="group"][aria-label] svg[width="12"][height="11"] {
+  transform: translate(0px, -4px);
+}
+ul[aria-label="Channels"] li ul[role="group"][aria-label] svg[width="12"][height="11"][style="transform: rotateX(180deg) translateY(-9px);"] {
+  transform: rotateX(180deg) translateY(-5px) !important;
+}
 
 /* Makes DMs list compact */
 a[class][aria-label][data-list-item-id][href] {
@@ -25,7 +32,7 @@ a[class][aria-label][data-list-item-id][href] {
 }
 
 /* Removes excess left-ward padding for voice channel users */
-li > :nth-child(2) {
+li > :nth-child(2):not(svg) {
   padding-left: 16px;
   max-height: unset !important;
 }
