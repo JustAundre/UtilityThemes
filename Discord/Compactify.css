@@ -7,7 +7,8 @@
 */
 
 /* Makes the channels list in servers more compact*/
-ul[aria-label="Channels"] li div:not([role="group"]), ul[aria-label="Channels"] li ul li {
+ul[aria-label="Channels"] li div:not([role="group"]), ul[aria-label="Channels"] li ul li,
+ul[aria-label="Channels"] li a[aria-label][data-list-item-id] {
   max-height: 24px !important;
   min-height: 0px !important;
 }

@@ -105,7 +105,7 @@ li > :nth-child(2) div div div > :nth-child(3) {
 
 /* Removes the "Activities" section from the top of the Server Members list */
 div[role="list"][aria-label="Members"] > div:not([aria-selected]),
-h3:has(:nth-child(2) [role="button"]):not([aria-labelledby]) {
+h3:has(:nth-child(2)[role="button"]:not(span)) {
   display: none;
 }
 
