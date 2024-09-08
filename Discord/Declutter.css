@@ -113,3 +113,9 @@ h3:has(:nth-child(2) [role="button"]) {
 main form div > :has(button[aria-label="Apps"]) {
   display: none;
 }
+
+/* Removes the 2 random div elements that are blank but still take up space in the channels list in some servers */
+ul#channels div[style="height: 16px;"],
+ul#channels div[style="height: 12px;"] {
+  display: none;
+}
