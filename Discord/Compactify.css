@@ -33,7 +33,6 @@ a[class][aria-label][data-list-item-id][href] {
 
 /* Removes excess left-ward padding for voice channel users */
 li > :nth-child(2):not(svg) {
-  padding-left: 16px;
   max-height: unset !important;
 }
 
