@@ -67,24 +67,27 @@ body {
   height: 50px;
   display: flex;
   position: fixed;
-  background: rgba(255, 255, 255, 0.025);
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, .0001);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   bottom: 0%;
   left: 0%;
-  backdrop-filter: blur(25px);
+  backdrop-filter: contrast(1.025) saturate(1.025) blur(25px);
 }
 
-.footer > div {
+.footer > div.footer-text-interaction {
   width: fit-content;
+  transition-duration: .25s ease-in-out;
+}
+
+.footer-divider {
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 /* Commonly used values/colors */
 :root {
-  --footer-txt-color-normal: rgb(205, 205, 205);
-  --footer-txt-color-hover: rgb(225, 225, 225);
-  --footer-txt-color-active: rgb(255, 255, 255)
+  --footer-txt-color-normal: rgb(95 85 115);
+  --footer-txt-color-hover: rgb(145 135 165);
+  --footer-txt-color-active: rgb(195, 175, 215);
 }
