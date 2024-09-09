@@ -121,7 +121,7 @@ ul[aria-label="Channels"] div[style="height: 20px;"]:not([class]) {
 }
 
 /* Remove the "Server Boosts" goal at the top of servers' channels list */
-ul[aria-label="Channels"] div[style="height: 12px;"]:not([class]) ~ li:not([class]):first-of-type {
+ul[aria-label="Channels"] div[style="height: 12px;"]:not([class]) ~ li:not(:has(> div div[aria-label="Browse Channels"])):first-of-type {
   display: none;
 }
 
