@@ -19,3 +19,6 @@ generateRandomValues();
 
 // Set an interval to update the values every 30 seconds
 setInterval(generateRandomValues, 30000);
+
+// Call the function to make it start moving immediately
+setTimeout(generateRandomValues, 1000);
