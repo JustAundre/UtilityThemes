@@ -26,6 +26,7 @@ body {
   background: radial-gradient(50% 50% at 50% 50%, rgba(82, 80, 226, 0.24) 0%, transparent 100%);
   transform: translateY(var(--y1)) translateX(var(--x1));
   transition: 40s ease-in-out;
+  filter: blur(10px);
 }
 
 .blue-blur {
@@ -36,6 +37,7 @@ body {
   background: radial-gradient(50% 50% at 50% 50%, rgba(49, 139, 255, .24) 0%, transparent 100%);
   transform: translateY(var(--y2)) translateX(var(--x2));
   transition: 40s ease-in-out;
+  filter: blur(10px);
 }
 
 .salmon-blur {
@@ -46,6 +48,7 @@ body {
   background: radial-gradient(50% 50% at 50% 50%, rgba(231, 93, 143, .24) 0%, rgba(255, 98, 230, 0.00) 100%);
   transform: translateY(var(--y3)) translateX(var(--x3));
   transition: 40s ease-in-out;
+  filter: blur(10px);
 }
 
 .footer {
@@ -58,4 +61,5 @@ body {
   border-top-color: rgba(255, 255, 255, 0.2);
   bottom: 0%;
   left: 0%;
+  backdrop-filter: blur(50px);
 }
