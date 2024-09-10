@@ -7,13 +7,13 @@ div {
   justify-content: center;
   align-items: center;
 }
-div, span {
+div, span p {
   color: inherit;
   font-size: inherit;
-  font-family: Monospace;
+  font-family: sans-serif;
 }
 
-/* Removes the unaccounted-for extra height added by the default margins on the body element, and makes sure the website takes up all the space it's supposed to */
+/* Removes the unaccounted-for extra height added by the default margins on the body element, and makes sure the website takes up all the space it's supposed to and no extra */
 html,
 body {
   width: 100vw;
@@ -21,6 +21,9 @@ body {
   margin: 0px;
   position: absolute;
   overflow: hidden;
+}
+html {
+  font-size: var(--font-normal);
 }
 
 .linear-gradient {
@@ -77,16 +80,16 @@ body {
 .footer > div.footer-text-interaction {
   height: fit-content;
   width: fit-content;
-  transition: .25s ease-in-out;
+  transition: .125s ease-in-out;
   color: rgba(var(--footer-txt-color), .5);
   user-select: none;
 }
 .footer > div.footer-text-interaction:hover {
-  transform: scale(1.05);
+  font-size: var(--font-big);
   color: rgba(var(--footer-txt-color), .6);
 }
 .footer > div.footer-text-interaction:active {
-  transform: scale(.9);
+  font: var(--font-small);
   color: rgba(var(--footer-txt-color), .75);
 }
 
@@ -101,4 +104,7 @@ body {
 :root {
   --footer-txt-color: 190, 170, 225;
   --footer-border-divider-color: rgba(255, 255, 255, 0.1);
+  --font-normal: 12px;
+  --font-small: 10px;
+  --font-big: 14px;
 }
