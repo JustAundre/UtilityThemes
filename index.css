@@ -79,11 +79,11 @@ body {
   color: var(--footer-txt-color-normal);
 }
 .footer > div.footer-text-interaction:hover {
-  transform: scale(1.25);
+  transform: scale(1.1);
   color: var(--footer-txt-color-hover);
 }
 .footer > div.footer-text-interaction:active {
-  transform: scale(.75);
+  transform: scale(.9);
   color: var(--footer-txt-color-active);
 }
 
@@ -96,5 +96,5 @@ body {
 :root {
   --footer-txt-color-normal: rgb(95 85 115);
   --footer-txt-color-hover: rgb(145 135 165);
-  --footer-txt-color-active: rgb(195, 175, 215);
+  --footer-txt-color-active: rgb(195, 163, 228);
 }
