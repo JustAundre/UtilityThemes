@@ -66,8 +66,9 @@ body {
   display: flex;
   position: fixed;
   background: rgba(0, 0, 0, .0001);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: var(--footer-border-divider-color);
   bottom: 0%;
   left: 0%;
   backdrop-filter: contrast(1.025) saturate(1.025) blur(25px);
@@ -77,25 +78,27 @@ body {
   height: fit-content;
   width: fit-content;
   transition: .25s ease-in-out;
-  color: var(--footer-txt-color-normal);
+  color: rgba(var(--footer-txt-color), .5);
+  user-select: none;
 }
 .footer > div.footer-text-interaction:hover {
-  transform: scale(1.1);
-  color: var(--footer-txt-color-hover);
+  transform: scale(1.05);
+  color: rgba(var(--footer-txt-color), .6);
 }
 .footer > div.footer-text-interaction:active {
   transform: scale(.9);
-  color: var(--footer-txt-color-active);
+  color: rgba(var(--footer-txt-color), .75);
 }
 
-.footer-divider {
+.footer > span.footer-divider {
+  color: var(--footer-border-divider-color);
   margin-left: 4px;
   margin-right: 4px;
+  user-select: none;
 }
 
 /* Commonly used values/colors */
 :root {
-  --footer-txt-color-normal: rgb(95 85 115);
-  --footer-txt-color-hover: rgb(145 135 165);
-  --footer-txt-color-active: rgb(195, 163, 228);
+  --footer-txt-color: 190, 170, 225;
+  --footer-border-divider-color: rgba(255, 255, 255, 0.1);
 }
