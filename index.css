@@ -9,7 +9,6 @@ div {
 }
 div, span p {
   color: inherit;
-  font-size: inherit;
   font-family: sans-serif;
 }
 
@@ -21,9 +20,6 @@ body {
   margin: 0px;
   position: absolute;
   overflow: hidden;
-}
-html {
-  font-size: var(--font-normal);
 }
 
 .linear-gradient {
@@ -40,7 +36,8 @@ html {
   position: absolute;
   background: radial-gradient(50% 50% at 50% 50%, rgba(82, 80, 226, 0.24) 0%, transparent 100%);
   transform: translateY(var(--y1)) translateX(var(--x1));
-  transition: 40s ease-in-out;
+  transition: 60s ease-in-out;
+  filter: blur(10px);
 }
 
 .blue-blur {
@@ -51,6 +48,7 @@ html {
   background: radial-gradient(50% 50% at 50% 50%, rgba(49, 139, 255, .24) 0%, transparent 100%);
   transform: translateY(var(--y2)) translateX(var(--x2));
   transition: 40s ease-in-out;
+  filter: blur(10px);
 }
 
 .salmon-blur {
@@ -61,6 +59,7 @@ html {
   background: radial-gradient(50% 50% at 50% 50%, rgba(231, 93, 143, .24) 0%, rgba(255, 98, 230, 0.00) 100%);
   transform: translateY(var(--y3)) translateX(var(--x3));
   transition: 60s ease-in-out;
+  filter: blur(10px);
 }
 
 .footer {
@@ -74,37 +73,43 @@ html {
   border-top-color: var(--footer-border-divider-color);
   bottom: 0%;
   left: 0%;
-  backdrop-filter: contrast(1.025) saturate(1.025) blur(25px);
+  backdrop-filter: contrast(1.025) blur(25px);
 }
 
-.footer > div.footer-text-interaction {
+.footer > .footer-text-interaction {
   height: fit-content;
   width: fit-content;
   transition: .125s ease-in-out;
+  font-size: var(--footer-font-normal);
   color: rgba(var(--footer-txt-color), .5);
   user-select: none;
+  font-size: 16px;
+  cursor: pointer;
 }
-.footer > div.footer-text-interaction:hover {
-  font-size: var(--font-big);
+
+.footer > a.footer-text-interaction:hover {
+  font-size: 20px;
   color: rgba(var(--footer-txt-color), .6);
 }
-.footer > div.footer-text-interaction:active {
-  font: var(--font-small);
+.footer > a.footer-text-interaction:active {
+  font-size: 12px;
   color: rgba(var(--footer-txt-color), .75);
 }
 
-.footer > span.footer-divider {
+.footer > div.footer-divider {
+  height: 50%;
+  width: 0px;
   color: var(--footer-border-divider-color);
-  margin-left: 4px;
-  margin-right: 4px;
-  user-select: none;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: var(--footer-border-divider-color);
 }
 
 /* Commonly used values/colors */
 :root {
   --footer-txt-color: 190, 170, 225;
   --footer-border-divider-color: rgba(255, 255, 255, 0.1);
-  --font-normal: 12px;
-  --font-small: 10px;
-  --font-big: 14px;
 }
