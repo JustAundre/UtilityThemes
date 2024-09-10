@@ -21,4 +21,4 @@ generateRandomValues();
 setInterval(generateRandomValues, 20000);
 
 // Call the function to make it start moving immediately
-setTimeout(generateRandomValues, 1000);
+setTimeout(generateRandomValues, 500);
