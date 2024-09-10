@@ -47,7 +47,7 @@ body {
   position: absolute;
   background: radial-gradient(50% 50% at 50% 50%, rgba(49, 139, 255, .24) 0%, transparent 100%);
   transform: translateX(var(--x2)) translateY(var(--y2));
-  transition: 40s ease-in-out;
+  transition: 60s ease-in-out;
   filter: blur(10px);
 }
 
