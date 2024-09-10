@@ -61,7 +61,6 @@ body {
 }
 
 .footer {
-  color: var(--footer-txt-color-normal);
   width: 100vw;
   height: 50px;
   display: flex;
@@ -76,7 +75,16 @@ body {
 
 .footer > div.footer-text-interaction {
   width: fit-content;
-  transition-duration: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  color: var(--footer-txt-color-normal);
+}
+.footer > div.footer-text-interaction:hover {
+  transform: scale(2);
+  color: var(--footer-txt-color-hover);
+}
+.footer > div.footer-text-interaction:active {
+  transform: scale(.75);
+  color: var(--footer-txt-color-active);
 }
 
 .footer-divider {
