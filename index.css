@@ -29,37 +29,29 @@ body {
   background: linear-gradient(to top right, rgb(24, 29, 60)75%, rgb(32, 30, 75));
 }
 
-.blurple-blur {
+div.linear-gradient > div.blur {
+  display: block;
+  position: absolute;
+  transition: 60s ease;
+  filter: blur(10px);
+}
+div.linear-gradient > .blurple-blur {
   width: 150vh;
   height: 150vh;
-  display: block;
-  position: absolute;
   background: radial-gradient(50% 50% at 50% 50%, rgba(82, 80, 226, 0.24) 0%, transparent 100%);
   transform: translateX(var(--x1)) translateY(var(--y1));
-  transition: 60s ease-in-out;
-  filter: blur(10px);
 }
-
-.blue-blur {
+div.linear-gradient > .blue-blur {
   width: 175vh;
   height: 175vh;
-  display: block;
-  position: absolute;
   background: radial-gradient(50% 50% at 50% 50%, rgba(49, 139, 255, .24) 0%, transparent 100%);
   transform: translateX(var(--x2)) translateY(var(--y2));
-  transition: 60s ease-in-out;
-  filter: blur(10px);
 }
-
-.salmon-blur {
+div.linear-gradient > .salmon-blur {
   width: 200vh;
   height: 200vh;
-  display: block;
-  position: absolute;
   background: radial-gradient(50% 50% at 50% 50%, rgba(231, 93, 143, .24) 0%, transparent 100%);
   transform: translateX(var(--x3)) translateY(var(--y3));
-  transition: 60s ease-in-out;
-  filter: blur(10px);
 }
 
 .footer {
