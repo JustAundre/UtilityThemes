@@ -74,6 +74,7 @@ body {
 }
 
 .footer > div.footer-text-interaction {
+  height: fit-content;
   width: fit-content;
   transition: .25s ease-in-out;
   color: var(--footer-txt-color-normal);
