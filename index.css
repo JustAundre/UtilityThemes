@@ -79,7 +79,7 @@ body {
   color: var(--footer-txt-color-normal);
 }
 .footer > div.footer-text-interaction:hover {
-  transform: scale(2);
+  transform: scale(1.25);
   color: var(--footer-txt-color-hover);
 }
 .footer > div.footer-text-interaction:active {
