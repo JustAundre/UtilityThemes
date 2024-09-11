@@ -102,9 +102,13 @@ div[aria-roledescription="Message"] {
 }
 
 /* Makes header text sent by users have less spacing */
-h1 {
+h1, h2, h3 {
   margin: 0 !important;
-  line-height: 2rem !important;
+}
+h1:has(span span),
+h2:has(span span), 
+h3:has(span span) {
+  line-height: 1em !important;
 }
 
 /* Resizes the chat history search bar for DMs, GCs, and servers. */

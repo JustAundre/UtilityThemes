@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" xml:space="preserve">
-    <g transform="rotate(45 -183.256 429.461) scale(1.72386)">
-        <linearGradient id="a" gradientUnits="userSpaceOnUse" gradientTransform="translate(-58.042 -58.042)" x1="55.086" y1=".467" x2="51.04" y2="113.751">
-            <stop offset="0%" style="stop-color:#ab7676;stop-opacity:1"/>
-            <stop offset="100%" style="stop-color:#7349e7;stop-opacity:1"/>
-        </linearGradient>
-        <path style="stroke:#a251a9;stroke-width:0;stroke-dasharray:none;stroke-linecap:butt;stroke-dashoffset:0;stroke-linejoin:miter;stroke-miterlimit:4;fill:url(#a);fill-rule:nonzero;opacity:1" d="M-58.042-33.417c0-13.6 11.025-24.625 24.625-24.625h66.834c13.6 0 24.625 11.025 24.625 24.625v66.834c0 13.6-11.025 24.625-24.625 24.625h-66.834c-13.6 0-24.625-11.025-24.625-24.625z"/>
-    </g>
-</svg>
