@@ -109,6 +109,7 @@ h1:has(span span),
 h2:has(span span), 
 h3:has(span span) {
   line-height: 1em !important;
+  display: block;
 }
 
 /* Resizes the chat history search bar for DMs, GCs, and servers. */
