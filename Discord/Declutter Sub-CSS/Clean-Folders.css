@@ -12,7 +12,7 @@ foreignObject [role="treeitem"] div[aria-hidden="true"] div div {
 
 /* Implements the new icon */
 div[class=""][draggable="true"] div[aria-hidden="true"] {
-  background: url("https://JustAundre.github.io/UtilityThemes/Icons/folder.png");
+  background: url("https://JustAundre.github.io/UtilityThemes/Icons/Theme Images/folder.png");
   background-size: calc(var(--custom-folder-item-guild-icon-size) / 2);
   background-repeat: no-repeat;
   background-position: center;
