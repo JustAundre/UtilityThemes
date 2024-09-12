@@ -111,6 +111,11 @@ div.linear-gradient > .salmon-blur {
   border-top-color: radial-gradient();
 }
 
+.folder {
+  width: 200px;
+  transform: translateY(100vh);
+}
+
 /* Commonly used values/colors */
 :root {
   --footer-txt-color: 190, 170, 225;
