@@ -116,6 +116,7 @@ div.linear-gradient > .salmon-blur {
   transform: translateY(100vh);
   pointer-events: none;
   animation: folder-enter forwards 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  opacity: .5;
 }
 
 /* Animations */
