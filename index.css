@@ -112,7 +112,7 @@ div.linear-gradient > .salmon-blur {
 
 .item-scroller {
   height: 200px;
-  width: 100vw;
+  width: 75vw;
   border-image: radial-gradient(circle, var(--footer-border-divider-color) 0%, transparent 100%) 1;
   border-style: solid;
   border-left-width: 0px;
