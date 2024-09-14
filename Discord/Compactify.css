@@ -59,7 +59,7 @@ div[role="list"][aria-label="Members"][style] div[role="listitem"] h3 {
   padding: 16px 8px 0px 16px;
 }
 div[role="list"][aria-label="Members"] > div:not([aria-selected]),
-h3:has(:nth-child(2)[role="button"]) {
+h3:has(:nth-child(2) [role="button"]) {
   display: none;
 }
 
