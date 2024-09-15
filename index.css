@@ -140,6 +140,7 @@ img.folder {
 img.folder:hover {
   transform: scale(1.1);
   opacity: .65;
+  animation: folder-hover 1s ease;
 }
 
 img.folder:active {
@@ -186,6 +187,18 @@ img.folder:active {
   100% {
     opacity: 0%;
     display: none;
+  }
+}
+
+@keyframes folder-hover {
+  33.3% {
+    transform: rotate(15deg);
+  }
+  66.6% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: none;
   }
 }
 
