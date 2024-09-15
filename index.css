@@ -11,6 +11,11 @@ div, span p {
   color: inherit;
   font-family: sans-serif;
 }
+img, svg, foreignObject {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
 
 /* Removes the unaccounted-for extra height added by the default margins on the body element, and makes sure the website takes up all the space it's supposed to and no extra */
 html,
@@ -124,13 +129,10 @@ div.linear-gradient > .salmon-blur {
 }
 
 img.folder {
-  cursor: pointer;
-  user-select: none;
   width: 200px;
   transform: translateY(0);
   opacity: .5;
   transition: opacity .25s ease, transform .1s ease;
-  pointer-events: unset;
   animation: folder-enter 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
@@ -144,35 +146,46 @@ img.folder:active {
   opacity: .8;
 }
 
+.clickstop {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+  animation: clickstop-disable forwards ease .25s;
+  animation-delay: 2s;
+}
+
 /* Animation(s) */
 @keyframes folder-enter {
   0% {
     transform: translateY(100vh);
     width: 200px;
-    pointer-events: none;
   }
   95% {
     transform: translateY(0);
     width: 225px;
     opacity: .35;
   }
-  96% {
-    width: 220px;
-  }
-  97% {
-    width: 215px;
-  }
-  98% {
-    width: 210px;
-  }
-  99% {
-    width: 205px;
-  }
+  96% {width: 220px;}
+  97% {width: 215px;}
+  98% {width: 210px;}
+  99% {width: 205px;}
   100% {
     width: 200px;
     transform: translateY(0);
-    pointer-events: unset;
     opacity: .5;
+    cursor: pointer;
+  }
+}
+
+@keyframes clickstop-disable {
+  0% {opacity: 100%;}
+  100% {
+    opacity: 0%;
+    display: none;
   }
 }
 
