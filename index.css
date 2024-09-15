@@ -140,7 +140,7 @@ img.folder {
 img.folder:hover {
   transform: scale(1.1);
   opacity: .65;
-  animation: folder-hover .5s ease;
+  animation: folder-hover .5s ease !important;
 }
 
 img.folder:active {

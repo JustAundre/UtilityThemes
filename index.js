@@ -22,3 +22,12 @@ setInterval(generateRandomValues, 20000);
 
 // Call the function to make it start moving immediately
 setTimeout(generateRandomValues, 500);
+
+function disableEnterAnimation() {
+  const folderInitial = document.getElementsByClassName('folder');
+  for (const folder of folderInitial) {
+    folder.style.animation = 'none';
+  }
+}
+
+setTimeout(disableEnterAnimation, 2000)
