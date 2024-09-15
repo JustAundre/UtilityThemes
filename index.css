@@ -132,6 +132,7 @@ img.folder {
   width: 200px;
   transform: translateY(0);
   opacity: .5;
+  cursor: pointer;
   transition: opacity .25s ease, transform .1s ease;
   animation: folder-enter 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
@@ -177,7 +178,6 @@ img.folder:active {
     width: 200px;
     transform: translateY(0);
     opacity: .5;
-    cursor: pointer;
   }
 }
 
