@@ -7,16 +7,18 @@
 */
 
 /* Appropriately changes the text color of the block and remove friends button to the red/danger color of most other buttons that require caution */
-#user-context-remove-friend > div,
-#user-context-block > div {
+#user-context-remove-friend>div,
+#user-context-block>div {
   color: var(--status-danger);
 }
+
 #user-context-remove-friend:hover,
 #user-context-block:hover {
   background-color: var(--menu-item-danger-hover-bg);
 }
-#user-context-remove-friend:hover > div,
-#user-context-block:hover > div {
+
+#user-context-remove-friend:hover>div,
+#user-context-block:hover>div {
   color: var(--white);
 }
 

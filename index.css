@@ -7,11 +7,16 @@ div {
   justify-content: center;
   align-items: center;
 }
-div, span p {
+
+div,
+span p {
   color: inherit;
   font-family: sans-serif;
 }
-img, svg, foreignObject {
+
+img,
+svg,
+foreignObject {
   user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -34,25 +39,28 @@ body {
   background: linear-gradient(to top right, rgb(24, 29, 60)75%, rgb(32, 30, 75));
 }
 
-div.linear-gradient > div.blur {
+div.linear-gradient>div.blur {
   display: block;
   position: absolute;
   transition: 60s ease;
   filter: blur(10px);
 }
-div.linear-gradient > .blurple-blur {
+
+div.linear-gradient>.blurple-blur {
   width: 150vh;
   height: 150vh;
   background: radial-gradient(50% 50% at 50% 50%, rgba(82, 80, 226, 0.24) 0%, transparent 100%);
   transform: translateX(var(--x1)) translateY(var(--y1));
 }
-div.linear-gradient > .blue-blur {
+
+div.linear-gradient>.blue-blur {
   width: 175vh;
   height: 175vh;
   background: radial-gradient(50% 50% at 50% 50%, rgba(49, 139, 255, .24) 0%, transparent 100%);
   transform: translateX(var(--x2)) translateY(var(--y2));
 }
-div.linear-gradient > .salmon-blur {
+
+div.linear-gradient>.salmon-blur {
   width: 200vh;
   height: 200vh;
   background: radial-gradient(50% 50% at 50% 50%, rgba(231, 93, 143, .24) 0%, transparent 100%);
@@ -73,7 +81,7 @@ div.linear-gradient > .salmon-blur {
   backdrop-filter: contrast(1.025) blur(25px);
 }
 
-.footer > .footer-text-interaction {
+.footer>.footer-text-interaction {
   height: fit-content;
   width: fit-content;
   transition: .1s ease-in-out;
@@ -85,16 +93,17 @@ div.linear-gradient > .salmon-blur {
   transform: scale(.95);
 }
 
-.footer > a.footer-text-interaction:hover {
+.footer>a.footer-text-interaction:hover {
   font-size: 20px;
   color: rgba(var(--footer-txt-color), .4);
 }
-.footer > a.footer-text-interaction:active {
+
+.footer>a.footer-text-interaction:active {
   font-size: 12px;
   color: rgba(var(--footer-txt-color), .65);
 }
 
-.footer > div.footer-divider {
+.footer>div.footer-divider {
   height: 50%;
   width: 0px;
   color: var(--footer-border-divider-color);
@@ -166,15 +175,29 @@ img.folder:active {
     transform: translateY(100vh);
     width: 200px;
   }
+
   95% {
     transform: translateY(0);
     width: 225px;
     opacity: .35;
   }
-  96% {width: 220px;}
-  97% {width: 215px;}
-  98% {width: 210px;}
-  99% {width: 205px;}
+
+  96% {
+    width: 220px;
+  }
+
+  97% {
+    width: 215px;
+  }
+
+  98% {
+    width: 210px;
+  }
+
+  99% {
+    width: 205px;
+  }
+
   100% {
     width: 200px;
     transform: translateY(0);
@@ -183,7 +206,10 @@ img.folder:active {
 }
 
 @keyframes clickstop-disable {
-  0% {opacity: 100%;}
+  0% {
+    opacity: 100%;
+  }
+
   100% {
     opacity: 0%;
     display: none;
@@ -191,15 +217,41 @@ img.folder:active {
 }
 
 @keyframes folder-hover {
-  5% {transform: scale(1.02);}
-  10% {transform: scale(1.04);}
-  15% {transform: scale(1.06);}
-  20% {transform: scale(1.08);}
-  25% {transform: scale(1.1);}
-  33% {transform: rotate(15deg) scale(1.1);}
-  66% {transform: rotate(-15deg) scale(1.1);}
-  80% {transform: rotate(5deg) scale(1.1);}
-  100% {transform: scale(1.1);}
+  5% {
+    transform: scale(1.02);
+  }
+
+  10% {
+    transform: scale(1.04);
+  }
+
+  15% {
+    transform: scale(1.06);
+  }
+
+  20% {
+    transform: scale(1.08);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  33% {
+    transform: rotate(15deg) scale(1.1);
+  }
+
+  66% {
+    transform: rotate(-15deg) scale(1.1);
+  }
+
+  80% {
+    transform: rotate(5deg) scale(1.1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 /* Commonly used values/colors */
