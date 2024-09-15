@@ -144,9 +144,8 @@ div.linear-gradient > .salmon-blur {
 }
 
 img.folder:active {
-  transform: scale(.9);
-  opacity: .8;
-  animation: none !important;
+  transform: scale(.9) !important;
+  opacity: .8 !important;
 }
 
 .clickstop {
