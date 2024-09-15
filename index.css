@@ -128,24 +128,25 @@ div.linear-gradient > .salmon-blur {
   padding-bottom: 24px;
 }
 
-img.folder {
+.folder {
   width: 200px;
   transform: translateY(0);
   opacity: .5;
   cursor: pointer;
-  transition: opacity .25s ease, transform .1s ease;
+  transition: .25s ease;
   animation: folder-enter 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-img.folder:hover {
+.folder:hover {
   transform: scale(1.1);
   opacity: .65;
-  animation: folder-hover .75s ease-out !important;
+  animation: folder-hover .75s ease !important;
 }
 
 img.folder:active {
   transform: scale(.9);
   opacity: .8;
+  animation: none !important;
 }
 
 .clickstop {
@@ -160,7 +161,7 @@ img.folder:active {
   animation-delay: 2s;
 }
 
-/* Animation(s) */
+/* Animation(s) - SCUFFED. VERY. JS REQUIRED TO PROCEED DEVELOPMENT.*/
 @keyframes folder-enter {
   0% {
     transform: translateY(100vh);
@@ -191,6 +192,11 @@ img.folder:active {
 }
 
 @keyframes folder-hover {
+  5% {transform: scale(1.02);}
+  10% {transform: scale(1.04);}
+  15% {transform: scale(1.06);}
+  20% {transform: scale(1.08);}
+  25% {transform: scale(1.1);}
   33% {transform: rotate(15deg) scale(1.1);}
   66% {transform: rotate(-15deg) scale(1.1);}
   80% {transform: rotate(5deg) scale(1.1);}
