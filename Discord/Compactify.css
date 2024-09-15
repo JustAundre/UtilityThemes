@@ -113,11 +113,10 @@ h3:has(span span) {
 }
 
 /* Resizes the chat history search bar for DMs, GCs, and servers. */
-section[aria-label="Channel header"] div > :nth-child(2) > :nth-last-child(3):not([role="button"]),
-section[aria-label="Channel header"] div > :nth-child(2) > :nth-last-child(3):not([role="button"]) * {
+section[aria-label="Channel header"] div > :nth-child(2) > *:not([role="button"][tabindex]),
+section[aria-label="Channel header"] div > :nth-child(2) > *:not([role="button"][tabindex]) * {
   width: 24px;
   padding: 0;
-  margin: 0;
 }
 
 :root {
