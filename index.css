@@ -9,7 +9,8 @@ div {
 }
 
 div,
-span p {
+span,
+p {
   color: inherit;
   font-family: sans-serif;
 }
@@ -146,16 +147,9 @@ div.linear-gradient>.salmon-blur {
   animation: folder-enter 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.folder:hover {
-  transform: scale(1.1);
-  opacity: .65;
-  animation: folder-hover .75s ease !important;
-}
+.folder:hover {animation: folder-hover forwards .5s ease !important;}
 
-img.folder:active {
-  transform: scale(.9) !important;
-  opacity: .8 !important;
-}
+img.folder:active {animation: folder-active forwards .25s ease !important;}
 
 .clickstop {
   width: 100vw;
@@ -205,17 +199,6 @@ img.folder:active {
   }
 }
 
-@keyframes clickstop-disable {
-  0% {
-    opacity: 100%;
-  }
-
-  100% {
-    opacity: 0%;
-    display: none;
-  }
-}
-
 @keyframes folder-hover {
   5% {
     transform: scale(1.02);
@@ -251,6 +234,25 @@ img.folder:active {
 
   100% {
     transform: scale(1.1);
+    opacity: .65;
+  }
+}
+
+@keyframes folder-active {
+  100% {
+    transform: scale(.9);
+    opacity: .8;
+  }
+}
+
+@keyframes clickstop-disable {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+    display: none;
   }
 }
 
