@@ -86,7 +86,6 @@ div.linear-gradient>.salmon-blur {
   height: fit-content;
   width: fit-content;
   transition: .1s ease-in-out;
-  font-size: var(--footer-font-normal);
   color: rgba(var(--footer-txt-color), .25);
   user-select: none;
   font-size: 16px;
