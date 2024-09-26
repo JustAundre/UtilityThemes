@@ -1,0 +1,36 @@
+.find-me > div:not([class]) {
+  display: none;
+}
+
+/* Removes featured content carousel preview items */
+div.featured-content-carousel__item-container:not(.featured-content-carousel__item-container--offset-0.featured-content-carousel__item-container--center) {
+  display: none;
+}
+
+/* Removes sidebar */
+.side-nav[data-test-selector="side-nav"][data-a-target="side-nav-bar"] {
+  display: none;
+}
+
+/* Removes Top donators from the chat */
+.chat-room__content > *:not([aria-label="Chat messages"]):not(.chat-input):not(:not([class])) {
+  display: none;
+}
+
+/* Removes video tags */
+[aria-label="Stream Information"] div:not([class]) {
+  display: none;
+}
+div.fAVISI:has(a.tw-tag[href]) {
+  display: none;
+}
+
+/* Hides prime offers */
+.prime-offers {
+  display: none;
+}
+
+/* Removes placeholder video boxes */
+section[aria-label="Main Content"]#front-page-main-content>div>div>div:not(:not(.Layout-sc-1xcs6mc-0)) {
+  display: none;
+}

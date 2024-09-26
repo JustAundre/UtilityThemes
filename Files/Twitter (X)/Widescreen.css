@@ -1,0 +1,11 @@
+/* Makes the sidebar(s) go to the left and right edges of the screen respectively */
+div[data-testid="sidebarColumn"] {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+header[role="banner"] {
+  align-items: unset;
+  flex-grow: 0;
+}

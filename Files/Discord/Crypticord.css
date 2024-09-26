@@ -1,0 +1,19 @@
+/**
+ * @name Crypticord
+ * @description Discord, curtains closed.
+ * @author JustAundre
+ * @version 1.0.0
+ * @authorId 532681285961777154
+*/
+
+/* Remove (or comment) the corresponding lebeled module you want to disable. */
+/* Blur attachments and embeds Module */
+@import url('https://JustAundre.github.io/UtilityThemes/Files/Discord/Crypticord Sub-CSS/Blur-Attachments.css');
+/* Hide Profiles Module */
+@import url('https://JustAundre.github.io/UtilityThemes/Files/Discord/Crypticord Sub-CSS/Blurred-Profiles.css');
+/* Hide Usernames Module */
+@import url('https://JustAundre.github.io/UtilityThemes/Files/Discord/Crypticord Sub-CSS/Hide-Usernames.css');
+/* Shorten Displays Module */
+/* Recode Needed - @import url('https://JustAundre.github.io/UtilityThemes/Files/Discord/Crypticord Sub-CSS/Shorten-Displays.css'); */
+/* Private Settings Module */
+@import url('https://JustAundre.github.io/UtilityThemes/Files/Discord/Crypticord Sub-CSS/Private-Settings.css');
