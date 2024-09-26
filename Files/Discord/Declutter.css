@@ -10,50 +10,32 @@
 @import url("https://JustAundre.github.io/UtilityThemes/Files/Discord/Declutter Sub-CSS/Clean-Folders.css");
 
 /* Hides the Nitro button on the home page */
-[href="/shop"] {
-  display: none !important;
-}
+[href="/shop"] { display: none !important; }
 
 /* Hides the store button on the home page */
-[href="/store"] {
-  display: none !important;
-}
+[href="/store"] { display: none !important; }
 
 /* Hides the Gift button in the message bar */
-[aria-label="Send a gift"] {
-  display: none !important;
-}
+[aria-label="Send a gift"] { display: none !important; }
 
 /* Hides the GIF button in the message bar */
-[aria-label="Open GIF picker"] {
-  display: none !important;
-}
+[aria-label="Open GIF picker"] { display: none !important; }
 
 /* Hides the Sticker button in the message bar */
-[aria-label="Open sticker picker"] {
-  display: none !important;
-}
+[aria-label="Open sticker picker"] { display: none !important; }
 
 /* Fixes the Emoji button having no spacing from the end of the typing bar */
-[aria-label="Select emoji"] {
-  padding-right: 16px;
-}
+[aria-label="Select emoji"] { padding-right: 16px; }
 
 /* Hides the help button in the top footer */
-[aria-label="Help"] {
-  display: none !important;
-}
+[aria-label="Help"] { display: none !important; }
 
 /* Hides the Start Video call button */
-[aria-label="Start Video Call"] {
-  display: none !important;
-}
+[aria-label="Start Video Call"] { display: none !important; }
 
 /* Hides Create new group DM button */
 [aria-label="New Group DM"],
-[aria-label="Add Friends to DM"] {
-  display: none !important;
-}
+[aria-label="Add Friends to DM"] { display: none !important; }
 
 /* Removes "Server boosts" bar at the top of channels tab. */
 /* Recode needed */
@@ -62,81 +44,53 @@
 div[role="listitem"][tabindex="0"] div :nth-child(2) :nth-child(2),
 div[index][data-list-item-id] div :nth-child(2) :nth-child(2),
 li div a div> :nth-child(2)> :nth-child(2),
-div[style="height: 62px; opacity: 1;"]> :first-child> :first-child> :last-child> :last-child {
-  display: none;
-}
+div[style="height: 62px; opacity: 1;"]> :first-child> :first-child> :last-child> :last-child { display: none; }
 
 /* Removes the download button for the Discord App */
 ul[data-list-id="guildsnav"]> :nth-child(2)> :nth-last-child(2) div[aria-label="Download Apps"],
-ul[data-list-id="guildsnav"]> :nth-child(2)> :nth-last-child(3) div:empty {
-  display: none;
-}
+ul[data-list-id="guildsnav"]> :nth-child(2)> :nth-last-child(3) div:empty { display: none; }
 
 /* Removes scrollbars from everything */
 * {
-  scrollbar-width: none !important;
   /* Firefox */
-  -ms-overflow-style: none !important;
-  /* IE/Edge */
-}
+  scrollbar-width: none !important;
 
-*::-webkit-scrollbar {
-  /* WebKit browsers */
-  display: none !important;
+  /* IE/Edge */
+  -ms-overflow-style: none !important;
 }
+/* WebKit browsers */
+*::-webkit-scrollbar { display: none !important; }
 
 /* No header title for the "Friends" tab (https://discord.com/channels/@me) */
-section[role="navigation"]>div>div>div>h1 {
-  display: none;
-}
+section[role="navigation"]>div>div>div>h1 { display: none; }
 
-section[role="navigation"]>div>div>div:has(svg) {
-  margin-right: 0px;
-}
+section[role="navigation"]>div>div>div:has(svg) { margin-right: 0px; }
 
 /* Removes loading screen */
-div[data-fade="false"][style="--connecting-container-fade-duration: 200ms; --connecting-content-fade-duration: 150ms;"] {
-  display: none;
-}
+div[data-fade="false"][style="--connecting-container-fade-duration: 200ms; --connecting-content-fade-duration: 150ms;"] { display: none; }
 
 /* Removes notifications settings button from top footer */
-div[aria-label="Notification Settings"][role="button"] {
-  display: none;
-}
+div[aria-label="Notification Settings"][role="button"] { display: none; }
 
 /* Removes hang statuses (the lil' icons in multi-user VCs in Discord Servers) */
-li> :nth-child(2) div div div> :nth-child(3) {
-  display: none;
-}
+li> :nth-child(2) div div div> :nth-child(3) { display: none; }
 
 /* Removes the "Activities" section from the top of the Server Members list */
 div[role="list"][aria-label="Members"]>div:not([aria-selected]),
-h3:has(:nth-child(2) [role="button"]) {
-  display: none;
-}
+h3:has(:nth-child(2) [role="button"]) { display: none; }
 
 /* Remove the "Apps" button aside the chat text input */
-main form div> :has(button[aria-label="Apps"]) {
-  display: none;
-}
+main form div> :has(button[aria-label="Apps"]) { display: none; }
 
 /* Removes the 2 random empty div elements at the top of some servers' channels list */
 ul[aria-label="Channels"] div[style="height: 16px;"]:not([class]),
-ul[aria-label="Channels"] div[style="height: 20px;"]:not([class]) {
-  display: none;
-}
+ul[aria-label="Channels"] div[style="height: 20px;"]:not([class]) { display: none; }
 
 /* Remove the "Server Boosts" goal at the top of servers' channels list */
-ul[aria-label="Channels"] div[style="height: 12px;"]:not([class])~li:not(:has(> div div[aria-label="Browse Channels"])):first-of-type {
-  display: none;
-}
+ul[aria-label="Channels"] div[style="height: 12px;"]:not([class])~li:not(:has(> div div[aria-label="Browse Channels"])):first-of-type { display: none; }
 
 /* Remove useless reminder at the bottom of the Server Discovery page */
-div[dir="ltr"][style="overflow: hidden scroll; padding-right: 16px;"] div>div:last-child:has(img[src="/assets/826b6a84605f7eb8a469.svg"]) {
-  display: none;
-}
+div[dir="ltr"][style="overflow: hidden scroll; padding-right: 16px;"] div>div:last-child:has(img[src="/assets/826b6a84605f7eb8a469.svg"]) { display: none; }
 
 /* Removes the over-sized text box from when viewing your own user profile that lets you change your status */
-svg[style="min-width: 300px; min-height: 105px;"][viewBox="0 0 300 105"]~div:not([class]):has(path[d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z"]) {
-  display: none;
-}
+svg[style="min-width: 300px; min-height: 105px;"][viewBox="0 0 300 105"]~div:not([class]):has(path[d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z"]) { display: none; }
