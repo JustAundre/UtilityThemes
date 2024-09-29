@@ -1,18 +1,18 @@
 /**
  * @name Clean Folders
- * @description Get those eyesores you call "folders" out of here! *This* is a folder.
+ * @description Get those eyesores you call 'folders' out of here! *This* is a folder.
  * @author JustAundre
  * @version 1.0.0
  * @authorId 532681285961777154
 */
 /* Removes server icons */
-foreignObject [role="treeitem"] div[aria-hidden="true"] div div {
+foreignObject [role='treeitem'] div[aria-hidden='true'] div div {
   display: none;
 }
 
 /* Implements the new icon */
-div[class=""][draggable="true"] div[aria-hidden="true"] {
-  background: url("https://JustAundre.github.io/UtilityThemes/Icons/Theme Images/Discord Folder.png");
+div[class=''][draggable='true'] div[aria-hidden='true'] {
+  background: url('https://JustAundre.github.io/UtilityThemes/Icons/Theme Images/Discord Folder.png');
   background-size: calc(var(--custom-folder-item-guild-icon-size) / 2);
   background-repeat: no-repeat;
   background-position: center;
@@ -21,7 +21,7 @@ div[class=""][draggable="true"] div[aria-hidden="true"] {
 }
 
 /* Centers the new icon */
-div[class=""][draggable="true"] {
+div[class=''][draggable='true'] {
   display: flex;
   justify-content: center;
 }

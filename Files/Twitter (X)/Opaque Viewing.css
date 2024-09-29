@@ -1,5 +1,5 @@
 /* Solid header, removes the transparency and blur backdrop filter */
-div[aria-label="Home timeline"]>div>div:first-child {
+div[aria-label='Home timeline']>div>div:first-child {
   backdrop-filter: none;
   background: rgb(0, 0, 0);
 }

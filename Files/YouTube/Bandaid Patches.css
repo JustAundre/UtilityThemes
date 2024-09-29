@@ -1,0 +1,5 @@
+/* Disables clicking on comments' published time which reloads the page */
+#published-time-text * { pointer-events: none; }
+
+/* Truncated comments use up all the space they're given */
+#content-text span { white-space: unset; }
