@@ -64,6 +64,7 @@ div[class][role='img'][aria-label][aria-hidden]> :nth-child(2) { display: none; 
 
 /* Slightly less vertical spacing for text */
 [aria-roledescription='Message'] div div[id] { line-height: 1.15rem; }
+#---new-messages-bar { top: none; }
 
 /* Truncates oversized reply previews */
 [aria-roledescription='Message'] div img[alt=''][src]~div[tabindex='0'] {
@@ -109,8 +110,7 @@ section[aria-label='Channel header'] div> :nth-child(2)>*:not([role='button'][ta
   padding: 0;
 }
 
-/* Makes the message bar smaller
-   Requires some adjustments */
+/* Makes the message bar smaller */
 main[aria-label] form::before { display: none; }
 main[aria-label] form>div>div { margin-bottom: 6px; }
 main[aria-label] form>div:last-of-type { position: unset; }
