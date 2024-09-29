@@ -44,7 +44,8 @@ ul[aria-label='Channels'] div[style='height: 16px;']:not([class]) /* The 2 rando
 ul[aria-label='Channels'] div[style='height: 20px;']:not([class]),
 ul[aria-label='Channels'] div[style='height: 12px;']:not([class])~li:not(:has(> div div[aria-label='Browse Channels'])):first-of-type /* The 'Server Boosts' goal at the top of servers' channels list */,
 div[dir='ltr'][style='overflow: hidden scroll; padding-right: 16px;'] div>div:last-child:has(img[src='/assets/826b6a84605f7eb8a469.svg']) /* The useless reminder at the bottom of the Server Discovery page */,
-svg[style='min-width: 300px; min-height: 105px;'][viewBox='0 0 300 105']~div:not([class]):has(path[d='M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z']) /* Theover-sized text box from when viewing your own user profile that lets you change your status */
+svg[style='min-width: 300px; min-height: 105px;'][viewBox='0 0 300 105']~div:not([class]):has(path[d='M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z']) /* The over-sized text box from when viewing your own user profile that lets you change your status */,
+[aria-label="Show User Profile (Unavailable)"] /* The "Show User Profile" button but only when it's unavailable due to incompatible screen size/aspect ratio */
 { display: none !important; }
 
 [aria-label='Send a gift'] /* The 'Gift' button in the message bar */,
