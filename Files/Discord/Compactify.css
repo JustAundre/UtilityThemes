@@ -113,6 +113,7 @@ section[aria-label='Channel header'] div> :nth-child(2)>*:not([role='button'][ta
    Requires some adjustments */
 main[aria-label] form::before { display: none; }
 main[aria-label] form>div>div { margin-bottom: 6px; }
+main[aria-label] form>div:last-of-type { position: unset; }
 
 :root {
   --custom-emoji-size-emoji: 1rem;
