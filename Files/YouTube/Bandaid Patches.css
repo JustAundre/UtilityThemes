@@ -1,3 +1,11 @@
+/**
+ * @name Bandaid Patches
+ * @description Changes that make things look 'correct-er' or add QOL fixes
+ * @author JustAundre
+ * @version 1.0.0
+ * @authorId 532681285961777154
+*/
+
 /* Disables clicking on comments' published time which reloads the page */
 #published-time-text * { pointer-events: none; }
 

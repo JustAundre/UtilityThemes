@@ -1,3 +1,11 @@
+/**
+ * @name Declutter
+ * @description Get this garbage out of here!
+ * @author JustAundre
+ * @version 1.0.0
+ * @authorId 532681285961777154
+*/
+
 a[href='/i/premium_sign_up'] /* Removes 'Premium' Button from the left sidebar */,
 a[href='/i/premium_sign_up?referring_page=settings'] /* Removes 'Premium' from settings */,
 a[href='/i/verified-orgs-signup'] /* Removes 'Business' from the left sidebar */,

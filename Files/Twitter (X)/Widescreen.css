@@ -1,3 +1,11 @@
+/**
+ * @name Widescreen
+ * @description Twitter UI without that separation anxiety
+ * @author JustAundre
+ * @version 1.0.0
+ * @authorId 532681285961777154
+*/
+
 /* Makes the sidebar(s) go to the left and right edges of the screen respectively */
 div[data-testid='sidebarColumn'] {
   position: fixed;

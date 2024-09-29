@@ -1,3 +1,12 @@
+/**
+ * @name Declutter
+ * @description Finally, some room in here...
+ * @author JustAundre
+ * @version 1.0.0
+ * @authorId 532681285961777154
+*/
+
+/* I forgot what this was */
 .find-me > div:not([class]) {
   display: none;
 }

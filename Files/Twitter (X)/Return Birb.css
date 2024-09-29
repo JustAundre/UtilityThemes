@@ -1,3 +1,11 @@
+/**
+ * @name Return Birb
+ * @description Restores the home button logo as the Twitter bird from before the X rebrand
+ * @author JustAundre
+ * @version 1.0.0
+ * @authorId 532681285961777154
+*/
+
 /* Restores the X logo from, well, X, to the logo before the X rebrand (aka the Twitter Bird) */
 a[href='/home'] svg { display: none; }
 a[href='/home'] > div[dir='ltr'] { 
