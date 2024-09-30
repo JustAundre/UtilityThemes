@@ -54,6 +54,12 @@ div:has(>div>svg[style='width: 100%; height: 100%; transform: translate3d(0px, 0
 main form div> :has(button[aria-label='Apps']) /* The 'Apps' button aside the chat text input */
 { display: none; }
 
+/* After removing the Gift, GIF, and Sticker button, fixes the missing padding on the Select Emoji button */
+[aria-label='Select emoji'] {
+  padding-right: unset;
+  margin-right: unset;
+}
+
 /* After removing the Apps button aside the chat text input, fixes the 'Jump to present' bar when viewing older messages/replies */
 main div:has(>button[type='button']) {
   right: 16px
