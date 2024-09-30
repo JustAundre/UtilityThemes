@@ -46,7 +46,7 @@ div[dir='ltr'][style='overflow: hidden scroll; padding-right: 16px;'] div>div:la
 svg[style='min-width: 300px; min-height: 105px;'][viewBox='0 0 300 105']~div:not([class]):has(path[d='M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z']) /* The over-sized text box from when viewing your own user profile that lets you change your status */,
 [aria-label='Show User Profile (Unavailable)'] /* The 'Show User Profile' button but only when it's unavailable due to incompatible screen size/aspect ratio */,
 div:has(>div>svg[style='width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;']) /* The "Start the conversation" reminder in empty fourms posts */,
-div[style="position: static; height: auto;"] :last-child>div:has(div) /* All of the fourums tags, use the "See all tags" button instead */
+div[style="position: static; height: auto;"] :last-child[role="list"]>div:has(div) /* All of the fourums tags, use the "See all tags" button instead */
 { display: none !important; }
 
 [aria-label='Send a gift'] /* The 'Gift' button in the message bar */,
