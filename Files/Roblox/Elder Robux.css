@@ -1,0 +1,11 @@
+/* Old icon for dark mode Roblox */
+.dark-theme .icon-robux-28x28 {
+  background-image: url('https://images.rbxcdn.com/412b34d2c8fdaee48cfcef45e9d14639-branded_dark_11062018.svg') !important;
+  background-position: -28px -112px;
+}
+
+/* Old icon for light mode Roblox */
+.light-theme .icon-robux-28x28 {
+  background-image: url('https://images.rbxcdn.com/280dca08efdee68f40a89256d6f9f25d-branded_light.svg') !important;
+  background-position: -28px -112px;
+}
