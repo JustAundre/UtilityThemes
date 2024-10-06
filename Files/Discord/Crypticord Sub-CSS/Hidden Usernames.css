@@ -21,6 +21,9 @@
 }
 
 /* Removes Tooltips */
-body div#app-mount div:has(div#cash-app-pay-container) div div div[style='opacity: 1; transform: none;'] {
-  display: none;
+body div#app-mount div:has(div#cash-app-pay-container) ~ div:not([class]) ~ div {
+  opacity: 0 !important;
+}
+body div#app-mount div:has(div#cash-app-pay-container) ~ div:first-of-type, div#cash-app-pay-container {
+  opacity: 1 !important;
 }
