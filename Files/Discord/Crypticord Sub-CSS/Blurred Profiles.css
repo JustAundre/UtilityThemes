@@ -5,5 +5,5 @@ div[style='width: 32px; height: 32px;'] svg foreignObject,
 div[aria-roledescription='Message'] div img[alt=' '],
 /* img elements that are a direct or indirect child of the first child of a div element with the attribute 'aria-roledescription' that has the value 'Message'*/
 div[aria-roledescription='Message']> :nth-child(1) img:not([alt]) {
-  filter: blur(3px);
+  filter: blur(3px)
 }

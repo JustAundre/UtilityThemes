@@ -2,6 +2,5 @@
 .avatar-card-fullbody .avatar-card-image,
 .avatar-card-fullbody .avatar-card-link,
 .avatar .avatar-card-image,
-.avatar .avatar-card-link {
-  border-radius: 15% !important;
-}
+.avatar .avatar-card-link
+{ border-radius: 15% !important }

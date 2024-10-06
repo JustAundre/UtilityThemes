@@ -19,4 +19,4 @@ div[aria-label='Trending'] div>:has(aside[aria-label='Who to follow']) /* Remove
 a[href='/i/spaces/start'] /* Removes 'Spaces' from the left sidebar*/,
 a[href='https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb'], /* Removes X ads from 'More' in sidebar */
 a[href='/settings/monetization'] /* Removes 'Monetization' from 'More' in sidebar */
-{ display: none; }
+{ display: none }
