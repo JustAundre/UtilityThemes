@@ -1,0 +1,7 @@
+/* Changes all profile pictures to be a square */
+.avatar-card-fullbody .avatar-card-image,
+.avatar-card-fullbody .avatar-card-link,
+.avatar .avatar-card-image,
+.avatar .avatar-card-link {
+  border-radius: 15% !important;
+}
