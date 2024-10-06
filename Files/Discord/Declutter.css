@@ -15,8 +15,7 @@
   /* Firefox */
   scrollbar-width: none !important;
   /* IE/Edge */
-  -ms-overflow-style: none !important
-}
+  -ms-overflow-style: none !important }
 /* WebKit browsers */
 *::-webkit-scrollbar { display: none !important }
 
@@ -51,13 +50,10 @@ main form div> :has(button[aria-label='Apps']) /* The 'Apps' button aside the ch
 /* After removing the Gift, GIF, and Sticker button, fixes the missing padding on the Select Emoji button */
 [aria-label='Select emoji'] {
   padding-right: unset;
-  margin-right: unset
-}
+  margin-right: unset }
 
 /* After removing all of the fourums tags in favor of the "See all tags" button next to them, fixes the "See all tags" button's positioning */
 button[aria-label="see all tagse"] { position: relative }
 
 /* After removing the Apps button aside the chat text input, fixes the 'Jump to present' bar when viewing older messages/replies */
-main div:has(>button[type='button']) {
-  right: 16px
-}
+main div:has(>button[type='button']) { right: 16px }

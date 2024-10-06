@@ -14,4 +14,4 @@ div.featured-content-carousel__item-container:not(.featured-content-carousel__it
 div.fAVISI:has(a.tw-tag[href]),
 .prime-offers /* Prime offers */,
 section[aria-label='Main Content']#front-page-main-content>div>div>div:not(:not(.Layout-sc-1xcs6mc-0)) /* Removes placeholder video boxes */
-{ display: none; /* Removes all of the above */ }
+{ display: none /* Removes all of the above */ }

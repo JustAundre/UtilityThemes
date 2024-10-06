@@ -17,11 +17,9 @@ div[class=''][draggable='true'] div[aria-hidden='true'] {
   background-repeat: no-repeat;
   background-position: center;
   width: var(--custom-folder-item-guild-icon-size);
-  height: var(--custom-folder-item-guild-icon-size)
-}
+  height: var(--custom-folder-item-guild-icon-size) }
 
 /* Centers the new icon */
 div[class=''][draggable='true'] {
   display: flex;
-  justify-content: center
-}
+  justify-content: center }

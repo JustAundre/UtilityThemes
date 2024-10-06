@@ -121,6 +121,5 @@ main[aria-label] form>div:last-of-type { position: unset }
   /* Self-explanatory */
   --custom-message-spacing-vertical-container-cozy: unset;
   /* Makes the extra spacing between messages non-existant */
-  --custom-category-channel-space-before-category: 8px;
-  /* Makes the spacing between categories smaller */
-}
+  --custom-category-channel-space-before-category: 8px
+  /* Makes the spacing between categories smaller */ }
