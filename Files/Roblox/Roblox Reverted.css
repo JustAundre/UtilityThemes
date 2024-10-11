@@ -28,6 +28,9 @@
   background-size: contain;
   background-position: center;
 }
-.container-fluid > div:first-of-type ~ ul:first-of-type,
-.container-fluid > #right-navigation-header > div[data-testid="navigation-search-input"][role="search"]
+.rbx-header .rbx-navbar li {
+  flex-grow: unset;
+  width: 25%;
+}
+.container-fluid > div:first-of-type ~ ul:first-of-type
 { transform: translate(90px); }

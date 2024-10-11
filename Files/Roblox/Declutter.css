@@ -5,6 +5,6 @@ li:has(> #nav-shop) /* The 'Official Shop' button in the hamburger menu */,
 li:has(> a[href="https://www.roblox.com/giftcards-us"]) /* The 'Giftcards' button in the hamburger menu */,
 li:has(> #nav-profile) /* The 'Profile' button (just click on your profile picture instead somewhere above it) */,
 div[data-testid="home-page-game-grid"] /* 'Recommended For You' sections */,
-#footer-container.footer-container /* The footer at the bottom of the website */
+#footer-container.footer-container /* The footer at the bottom of the website */,
 .nav.navbar-right > .age-bracket-label /* Your profile and/or your age bracket indicator in the right of the navbar */
-{ display: none }
+{ display: none !important}
