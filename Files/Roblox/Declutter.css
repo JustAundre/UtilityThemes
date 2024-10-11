@@ -8,3 +8,7 @@ div[data-testid="home-page-game-grid"] /* 'Recommended For You' sections */,
 #footer-container /* The footer at the bottom of the website */,
 .nav.navbar-right > .age-bracket-label /* Your profile and/or your age bracket indicator in the right of the navbar */
 { display: none !important } /* Removes all of the above */
+
+/* Removes the padding/margins for the now removed footer */
+body { margin-bottom: 0px; }
+main#container-main { padding-bottom: 0px; }
