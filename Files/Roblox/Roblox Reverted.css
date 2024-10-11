@@ -1,5 +1,13 @@
-/* This import is needed to better fit the goal and also to fix some visual errors */
-@import url('https://JustAundre.github.io/UtilityThemes/Files/Roblox/Declutter.css')
+li:has(> a[href="https://www.roblox.com/premium/membership?ctx=leftnav"]) /* The 'Buy Premium' in the hamburger menu */,
+li:has(> a[href="https://www.roblox.com/trades"]) /* The 'Trade' button in the hamburger menu */,
+li:has(> a[href="https://blog.roblox.com"]) /* The 'Blog' button in the hamburger menu */,
+li:has(> #nav-shop) /* The 'Official Shop' button in the hamburger menu */,
+li:has(> a[href="https://www.roblox.com/giftcards-us"]) /* The 'Giftcards' button in the hamburger menu */,
+li:has(> #nav-profile) /* The 'Profile' button (just click on your profile picture instead somewhere above it) */,
+div[data-testid="home-page-game-grid"] /* 'Recommended For You' sections */,
+#footer-container /* The footer at the bottom of the website */,
+.nav.navbar-right > .age-bracket-label /* Your profile and/or your age bracket indicator in the right of the navbar */
+{ display: none !important } /* Removes all of the above */
 
 /* Old icon for dark mode Roblox */
 .dark-theme .icon-robux-28x28 {
@@ -34,3 +42,5 @@
 }
 .container-fluid > div:first-of-type ~ ul:first-of-type
 { transform: translate(90px); }
+body { margin-bottom: 0px; }
+main#container-main { padding-bottom: 0px; }
