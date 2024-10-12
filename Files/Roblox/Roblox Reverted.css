@@ -7,8 +7,13 @@ li:has(> #nav-profile) /* The 'Profile' button (just click on your profile pictu
 #navigation-robux-container /* The "Robux" button on the navbar */,
 div[data-testid="home-page-game-grid"] /* 'Recommended For You' sections */,
 #footer-container /* The footer at the bottom of the website */,
-.nav.navbar-right > .age-bracket-label /* Your profile and/or your age bracket indicator in the right of the navbar */
+.nav.navbar-right > .age-bracket-label /* Your profile and/or your age bracket indicator in the right of the navbar */,
+[app-bumper] /* The app bumper that might occasionally be fixed at the bottom of your screen talking about the Roblox android app */
 { display: none !important } /* Removes all of the above */
+
+/* Removes the padding/margins for the now removed footer */
+body { margin-bottom: 0px }
+main#container-main { padding-bottom: 0px }
 
 /* Removes the padding/margins for the now removed footer */
 body { margin-bottom: 0px }
